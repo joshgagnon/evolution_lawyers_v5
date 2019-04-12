@@ -1,0 +1,15 @@
+@import "../../layout/theme.scss";
+
+.footer {
+  background-color: $bg;
+  padding: 30px 5px ;
+  color: $text-color;
+   text-align: center;
+   .copyright {
+        padding:0 0 30px 0;
+   }
+   .links a{
+        padding: 0px 16px;
+   }
+}
+

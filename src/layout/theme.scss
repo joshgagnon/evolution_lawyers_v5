@@ -1,0 +1,18 @@
+@import '~react-md/src/scss/react-md';
+
+$md-primary-color: $md-grey-400;
+$md-secondary-color: $md-grey-100;
+$md-tertiary-color: $md-grey-300;
+
+$text-color: $md-grey-100;
+$bg: $md-grey-900;
+
+.main-container,
+.darker-background {
+    background-color: $bg;
+}
+
+a:link {
+    color: $md-secondary-color;
+    text-decoration: none;
+}
