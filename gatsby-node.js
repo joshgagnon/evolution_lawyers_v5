@@ -94,7 +94,7 @@ exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
   }
 };
 
-/*exports.createPages = ({ graphql, actions }) => {
+exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
@@ -122,7 +122,7 @@ exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
-          /* eslint no-console: "off" *//*
+          /* eslint no-console: "off" */
           console.log(result.errors);
           reject(result.errors);
         }
@@ -174,4 +174,3 @@ exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
     );
   });
 };
-*/

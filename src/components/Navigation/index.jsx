@@ -45,9 +45,7 @@ class Navigation extends Component {
 }
 
 
-
-
-export const query = graphql`
+const query = graphql`
   query {
     file(relativePath: { eq: "images/cropped-evologo.png" }) {
       childImageSharp {
@@ -66,3 +64,4 @@ export const query = graphql`
     render={data => <Navigation data={data} {...props} />}
   />
 )
+
