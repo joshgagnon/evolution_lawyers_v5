@@ -1,18 +1,34 @@
 @import '~react-md/src/scss/react-md';
 
-$md-primary-color: $md-grey-400;
-$md-secondary-color: $md-grey-100;
+$md-light-theme: false;
+
+$bg: $md-black-base;
+$md-primary-color: $bg;
+$md-secondary-color: $md-blue-300;
 $md-tertiary-color: $md-grey-300;
-
 $text-color: $md-grey-100;
-$bg: $md-grey-900;
+$md-secondary-text-color: $text-color;
+$md-toolbar-height: 100px;
+$md-primary-opacity: 1;
+$md-secondary-opacity: 1;
+ $md-primary-hover-opacity: 1;
+  $md-secondary-hover-opacity: 1;
 
+$md-btn-text-font-size: 18px !default;
+$md-btn-mobile-font-size: $md-btn-text-font-size;
+$md-btn-desktop-font-size: $md-btn-text-font-size;
+$md-btn-text-border-radius: 8px !default;
+$md-btn-text-height: 36px;
+
+
+.md-background--primary,
 .main-container,
 .darker-background {
     background-color: $bg;
+    box-shadow: none;
 }
 
 a:link {
-    color: $md-secondary-color;
+    color: $text-color;
     text-decoration: none;
 }

@@ -1,9 +1,10 @@
+@import "../../layout/theme.scss";
 
 
 .main-content {
     display: flex;
     flex-direction: column;
-
+      background-color: $bg;
     .main-container {
         display: flex;
         min-height: 100%;

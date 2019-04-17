@@ -5,6 +5,7 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
+import Home from '../components/Home';
 
 class Index extends React.Component {
   render() {
@@ -17,7 +18,7 @@ class Index extends React.Component {
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
 
-
+          <Home />
         </div>
       </Layout>
     );

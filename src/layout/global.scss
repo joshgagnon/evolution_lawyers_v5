@@ -1,6 +1,29 @@
+@import './theme.scss';
+
+
 div .mobile-fix {
     @media (max-width: 360px - 1px) {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+
+div.title-section{
+    .line{  
+        color: $text-color;
+        line-height: 70px;
+        font-size: 60px;
+        em{
+            color: $md-secondary-color;
+            font-style:normal;
+        }
+    }
+    .separator {
+        height: 7px;
+        background-color: $md-secondary-color;
+        display: block;
+        border-radius: 8px;
+        margin-top: 45px;
     }
 }
