@@ -6,7 +6,9 @@ import config from "../../../data/SiteConfig";
 import "./Home.scss";
 import Tiger from './tiger';
 import Summary from './summary';
-
+import Features from './features';
+import CataLex from './catalex';
+import Contact from './contact';
 
 class Home extends Component {
   render() {
@@ -20,6 +22,9 @@ class Home extends Component {
       <div className={"home"}>
             <Tiger />
             <Summary />
+            <Features />
+            <CataLex />
+            <Contact />
       </div>
     );
   }

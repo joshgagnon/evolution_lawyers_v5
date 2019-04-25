@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
-import './Tiger.scss';
+import './Summary.scss';
 import BackgroundImage from 'gatsby-background-image'
 import Button from "react-md/lib/Buttons";
 import Grid  from "react-md/lib/Grids";
@@ -12,18 +12,18 @@ import Cell  from "react-md/lib/Grids/Cell";
 const BackgroundSection = ({ className }) => (
     <StaticQuery query={graphql`
       query {
-        tiger: file(relativePath: { eq: "images/lionbanner-copy.jpg" }) {
+        catalex: file(relativePath: { eq: "images/catalex.png" }) {
           childImageSharp {
             fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
       }
     `}
      render={data => {
-       // Set ImageData.
-       const imageData = data.tiger.childImageSharp.fluid
+
+       const imageData = data.catalex.childImageSharp.fluid
        return (
           <BackgroundImage Tag="section"
                            className={className}
@@ -31,21 +31,10 @@ const BackgroundSection = ({ className }) => (
           >
 
       <Grid>
-        <Cell desktopOffset={7} size={5} tabletOffset={3} phoneOffset={1}>
-
-         <div className="title-section">
-            <h1 className="line">A Virtual <em>Law Firm</em></h1>
-            <h1 className="line">for modern</h1>
-            <h1 className="line">New Zealanders</h1>
-            <div className="separator" />
-            <div className="button-row" >
-
-                    <Button raised secondary className="md-cell--right">
-                      Get In Touch
-                   </Button>
-
-          </div>
-          </div>
+        <Cell  size={5} desktopOffset={1} tabletOffset={1} phoneOffset={0}>
+          <p className="big-para">
+          <em>CataLex</em>, a legal software company founded by the firm’s directors, has designed software specifically to benefit Evolution Lawyers and its clients.
+               </p>
           </Cell>
           </Grid>
           </BackgroundImage>
@@ -56,10 +45,11 @@ const BackgroundSection = ({ className }) => (
 )
 
 const StyledBackgroundSection = styled(BackgroundSection)`
-
+  width: 100%;
+  height:500px;
   background-position: center left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 `
 
-export default StyledBackgroundSection
+export default StyledBackgroundSection;

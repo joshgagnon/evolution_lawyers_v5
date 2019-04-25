@@ -17,10 +17,10 @@ class Footer extends Component {
       <footer className={fixedFooter ? "footer footer-fixed" : "footer"}>
             <div className="copyright">© Evolution Lawyers Limited 2018. All rights reserved.</div>
             <div className="links">
-                <a href="/static/pdfs/Terms-of-Engagement-effective-4-July-2018.pdf" target="_blank" rel="noopener">Terms of Engagement</a>
-                <a href="/static/pdfs/Privacy-Policy-Evolution-Lawyers-as-at-9-July-2018.pdf" target="_blank" rel="noopener">Privacy Policy</a>
-                 <a href="/static/pdfs/AMLCFT-Statement-For-Website-21-August-2018.pdf" target="_blank" rel="noopener">AMLCFT Statement</a>
-                 <a href="/static/pdfs/Email-Disclaimer-27-November-2018.pdf" target="_blank" rel="noopener">Email Disclaimer</a>
+                <a href="/assets/pdfs/Terms-of-Engagement-effective-4-July-2018.pdf" target="_blank" rel="noopener">Terms of Engagement</a>
+                <a href="/assets/pdfs/Privacy-Policy-Evolution-Lawyers-as-at-9-July-2018.pdf" target="_blank" rel="noopener">Privacy Policy</a>
+                 <a href="/assets/pdfs/AMLCFT-Statement-For-Website-21-August-2018.pdf" target="_blank" rel="noopener">AMLCFT Statement</a>
+                 <a href="/assets/pdfs/Email-Disclaimer-27-November-2018.pdf" target="_blank" rel="noopener">Email Disclaimer</a>
             </div>
       </footer>
     );

@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
-import './Tiger.scss';
+import './Summary.scss';
 import BackgroundImage from 'gatsby-background-image'
 import Button from "react-md/lib/Buttons";
 import Grid  from "react-md/lib/Grids";
@@ -29,20 +29,22 @@ const BackgroundSection = ({ className }) => (
                            className={className}
                            fluid={imageData}
           >
-         
+
       <Grid>
-        <Cell desktopOffset={7} size={5} tabletOffset={3} phoneOffset={1}>
+        <Cell  size={5} desktopOffset={1} tabletOffset={1} phoneOffset={0}>
 
          <div className="title-section">
-            <h1 className="line">A Virtual <em>Law Firm</em></h1>
-            <h1 className="line">for modern</h1>
-            <h1 className="line">New Zealanders</h1>
+            <h1 className="line">Evolved</h1>
+            <h1 className="line"><em>Legal Services</em></h1>
             <div className="separator" />
             <div className="button-row" >
-
-          
           </div>
           </div>
+          </Cell>
+          <Cell>
+          <p className="big-para">
+               Evolution Lawyers is an Auckland based law firm specialising in insolvency, commercial, company, and property law. We provide both litigation and transactional services to New Zealanders and small to medium-sized New Zealand businesses.
+               </p>
           </Cell>
           </Grid>
           </BackgroundImage>
@@ -59,4 +61,4 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-repeat: no-repeat
 `
 
-export default StyledBackgroundSection
+export default StyledBackgroundSection;

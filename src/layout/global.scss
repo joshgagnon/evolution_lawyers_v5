@@ -10,7 +10,7 @@ div .mobile-fix {
 
 
 div.title-section{
-    .line{  
+    .line{
         color: $text-color;
         line-height: 70px;
         font-size: 60px;
@@ -25,5 +25,12 @@ div.title-section{
         display: block;
         border-radius: 8px;
         margin-top: 45px;
+        margin-bottom: 45px;
     }
+}
+
+.button-row {
+    text-align:center;
+    margin-bottom:45px;
+    width:100%;
 }
