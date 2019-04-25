@@ -26,7 +26,7 @@ const Features = ({ data: { feesIcon, virtualIcon, mobileIcon, paperlessIcon, se
        <FeatureRow title="Virtual" icon={virtualIcon} text={<p>We are a virtual, cloud based law firm. We can work from any location, at any time. We can also provide you with remote access to your documents.</p> } />
        <FeatureRow title="Mobile" icon={mobileIcon} text={<p>We are a mobile law firm with no central office. If you are in Auckland, we can meet at a location and time convenient to you. If not, we can arrange something else.</p> } />
        <FeatureRow title="Paperless" icon={paperlessIcon} text={<p>Environmentally friendly and efficient, our paperless offices save costs and the planet.</p> } />
-       <FeatureRow title="Secure" icon={secureIcon} text={<p>We use NetDocuments, the leader in cloud-based document management and recommended by the American Bar Association.</p> } />
+       <FeatureRow title="Secure" icon={secureIcon} text={<p>We use our own, secure practice management software that has been designed specifically for Evolution Lawyers.</p> } />
        <FeatureRow title="Credit Card" icon={creditCardIcon} text={<p>You can pay our invoices or deposit money into our trust account by credit or debit card. We take Visa & Mastercard.</p> } />
        </section>
 

@@ -6,43 +6,7 @@ import GetNavList from "./NavList";
 import "./Navigation.scss";
 import Img from "gatsby-image/withIEPolyfill";
 import { StaticQuery, graphql } from "gatsby"
-
-class ToolbarContentComponent extends Component {
-    render() {
-        const { data } = this.props;
-        return <div>
-            <Img
-              fixed={data.file.childImageSharp.fixed}
-              objectFit="cover"
-              objectPosition="50% 50%"
-              alt=""
-            />
-        </div>
-    }
-}
-
-class Navigation extends Component {
-  render() {
-    const { children, config, LocalTitle, data } = this.props;
-    const footerLinks = LocalTitle !== "About";
-
-    return (
-      <NavigationDrawer
-        drawerTitle={config.siteTitle}
-        contentClassName="main-content"
-        navItems={GetNavList(config)}
-        mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
-        tabletDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
-        desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
-        toolbarChildren={<ToolbarContentComponent data={data}/>}
-        toolbarActions={<ToolbarActions config={config} />}
-        >
-        <div className="main-container">{children}</div>
-        <Footer userLinks={footerLinks} />
-      </NavigationDrawer>
-    );
-  }
-}
+import { Toolbar } from 'react-md';
 
 
 const query = graphql`
@@ -58,10 +22,53 @@ const query = graphql`
     }
   }`;
 
- export default props => (
-  <StaticQuery
+
+const Title = props =>  <StaticQuery
     query={query}
-    render={data => <Navigation data={data} {...props} />}
+    render={data => <div>
+            <Img
+              fixed={data.file.childImageSharp.fixed}
+              objectFit="cover"
+              objectPosition="50% 50%"
+              alt="Evolution Lawyers"
+            />
+        </div> }
   />
-)
+
+
+
+export default class Navigation extends Component {
+  render() {
+    const { children, config, LocalTitle, data } = this.props;
+
+
+    return ( <div>
+            <Toolbar
+            title={<Title />}
+            />
+                <div className="main-container">{ children }</div>
+
+        <Footer userLinks={true} />
+        </div>
+    );
+  }
+}
+
+/*  <NavigationDrawer
+        drawerTitle={config.siteTitle}
+        contentClassName="main-content"
+        navItems={GetNavList(config)}
+        mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
+        tabletDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
+        desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
+        toolbarChildren={<ToolbarContentComponent data={data}/>}
+        toolbarActions={<ToolbarActions config={config} />}
+        >
+        <div className="main-container">{ children }</div>
+
+        <Footer userLinks={footerLinks} />
+
+      </NavigationDrawer> */
+
+
 
