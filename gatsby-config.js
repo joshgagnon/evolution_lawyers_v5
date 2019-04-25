@@ -116,24 +116,39 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
         description: config.siteDescription,
-        start_url: config.pathPrefix,
+        start_url: "/",
         background_color: "#e0e0e0",
         theme_color: "#c62828",
         display: "minimal-ui",
         icons: [
-          {
-            src: "/logos/logo-192.png",
-            sizes: "192x192",
-            type: "image/png"
-          },
-          {
-            src: "/logos/logo-512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
+        {
+            "src": "/assets/favicons/android-chrome-36x36.png",
+            "sizes": "36x36",
+            "type": "image/png",
+            "density": 0.75
+        },
+        {
+            "src": "/assets/favicons/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png",
+            "density": 1
+        },
+        {
+            "src": "/assets/favicons/android-chrome-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "density": 1.5
+        },
+        {
+            "src": "/assets/favicons/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "density": 2
+        }
         ]
       }
     },
+      `gatsby-plugin-favicon`,
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-feed",

@@ -34,3 +34,21 @@ div.title-section{
     margin-bottom:45px;
     width:100%;
 }
+
+html{
+    font-display: auto;
+}
+
+html,
+.md-background--primary,
+.main-container,
+.darker-background {
+    background-color: $bg;
+    box-shadow: none;
+
+}
+
+a:link {
+    color: $text-color;
+    text-decoration: none;
+}
