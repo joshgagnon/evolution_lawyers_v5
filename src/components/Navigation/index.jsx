@@ -16,7 +16,7 @@ const query = graphql`
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
         fixed(height: 40) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_noBase64
         }
       }
     }
