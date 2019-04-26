@@ -4,7 +4,7 @@ const config = {
   siteTitleAlt: "Evolution Lawyers", // Alternative site title for SEO.
   //siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://evolution-lawyers.netlify.com", // Domain of your website without pathPrefix.
-  pathPrefix: "/gatsby-material-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
+  pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   siteDescription: "A virtual law firm for modern New Zealanders", // Website description used for RSS feeds/meta description tag.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
   siteGATrackingID: "UA-47311644-4", // Tracking code ID for google analytics.
