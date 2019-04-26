@@ -66,7 +66,7 @@ const CardForm = (props) => {
 const Contact = ({ className }) => {
    return <section id="contact">
       <Grid>
-        <Cell size={6} tabletSize={10} phoneSize={12} desktopOffset={3} tabletOffset={1} phoneOffset={0} className="get-in-touch">
+        <Cell size={6} tabletSize={6} phoneSize={4} desktopOffset={3} tabletOffset={1} phoneOffset={0} className="get-in-touch">
 
          <div className="title-section">
             <h1 className="line">Get in touch</h1>
@@ -80,7 +80,7 @@ const Contact = ({ className }) => {
 
           </Cell>
 
-           <Cell size={6} tabletSize={10} phoneSize={12} desktopOffset={3} tabletOffset={1} phoneOffset={0}>
+           <Cell size={6} tabletSize={6} phoneSize={4} desktopOffset={3} tabletOffset={1} phoneOffset={0}>
               <CardForm />
           </Cell>
           </Grid>
