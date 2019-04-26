@@ -9,12 +9,12 @@ import Cell  from "react-md/lib/Grids/Cell";
 
 
 
-const BackgroundSection = ({ className }) => (
+const BackgroundSection = (props) => (
     <StaticQuery query={graphql`
       query {
         file(relativePath: { eq: "images/tube-min.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 500) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -26,7 +26,7 @@ const BackgroundSection = ({ className }) => (
        const imageData = data.file.childImageSharp.fluid
        return (
           <BackgroundImage Tag="section"
-                           className={className}
+                           className="summary"
                            fluid={imageData}
           >
 
@@ -54,11 +54,4 @@ const BackgroundSection = ({ className }) => (
     />
 )
 
-const StyledBackgroundSection = styled(BackgroundSection)`
-  width: 100%;
-  height:500px;
-  background-position: center right;
-  background-repeat: no-repeat
-`
-
-export default StyledBackgroundSection;
+export default BackgroundSection;

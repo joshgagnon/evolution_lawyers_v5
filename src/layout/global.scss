@@ -9,7 +9,11 @@ div .mobile-fix {
 }
 
 
+
 div.title-section{
+    &.right {
+        text-align:right;
+    }
     .line{
         color: $text-color;
         line-height: 70px;
@@ -26,6 +30,7 @@ div.title-section{
         border-radius: 8px;
         margin-top: 45px;
         margin-bottom: 45px;
+        width:25%;
     }
 }
 

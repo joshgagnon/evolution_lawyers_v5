@@ -1,13 +1,14 @@
 @import "../../layout/theme.scss";
 
-
-div.title-section{
-
-
-    .separator {
-        width: 25%;
-    }
-    .button-row{
-
-    }
+.tiger{
+      height: 100vh;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+      display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .md-grid{
+    width:100%;
+  }
 }

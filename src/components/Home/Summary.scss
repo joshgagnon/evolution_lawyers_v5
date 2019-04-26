@@ -2,3 +2,15 @@
     font-size:22px;
     line-height:33px;
 }
+
+.summary {
+      width: 100%;
+  height:100vh;
+  max-height: 500px;
+  background-size: contain;
+  background-position: 110% 50%;
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}

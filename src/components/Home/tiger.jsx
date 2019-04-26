@@ -9,7 +9,7 @@ import Cell  from "react-md/lib/Grids/Cell";
 
 
 
-const BackgroundSection = ({ className }) => (
+const BackgroundSection = (props) => (
     <StaticQuery query={graphql`
       query {
         tiger: file(relativePath: { eq: "images/lionbanner-copy.jpg" }) {
@@ -26,7 +26,7 @@ const BackgroundSection = ({ className }) => (
        const imageData = data.tiger.childImageSharp.fluid
        return (
           <BackgroundImage Tag="section"
-                           className={className}
+                           className={'tiger'}
                            fluid={imageData}
           >
 
@@ -55,11 +55,6 @@ const BackgroundSection = ({ className }) => (
     />
 )
 
-const StyledBackgroundSection = styled(BackgroundSection)`
 
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover;
-`
 
-export default StyledBackgroundSection
+export default BackgroundSection
