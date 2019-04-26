@@ -16,12 +16,15 @@ div.title-section{
     }
     .line{
         color: $text-color;
-        line-height: 70px;
-        font-size: 60px;
+              line-height: 70px;
+            font-size: 60px;
         em{
             color: $md-secondary-color;
             font-style:normal;
         }
+      @media #{$md-tablet-media} {
+
+      }
     }
     .separator {
         height: 7px;
@@ -32,6 +35,9 @@ div.title-section{
         margin-bottom: 48px;
         width:25%;
     }
+
+
+
 }
 
 .button-row {

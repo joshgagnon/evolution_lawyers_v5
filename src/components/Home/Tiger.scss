@@ -6,9 +6,36 @@
   background-repeat: no-repeat;
   background-size: contain;
       display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
+  text-align: right;
+  text-shadow:1px 1px black;
+  .title-section .line {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .button-row {
+    text-align: right;
+  }
+      @media #{$md-tablet-media} {
+        text-align: left;
+          justify-content: center;
+          .title-section .line {
+            font-size: 60px;
+            line-height: 70px;
+          }
+  .button-row {
+    text-align: center;
+  }
+      }
+
+      @media #{$md-desktop-media} {
+
+          text-shadow:none;
+      }
+
   .md-grid{
     width:100%;
   }
+
 }

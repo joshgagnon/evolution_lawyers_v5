@@ -39,8 +39,9 @@ const Title = props =>  <StaticQuery
     render={data => <div>
             <Img
               fixed={data.file.childImageSharp.fixed}
-              objectFit="cover"
+              objectFit="contain"
               objectPosition="50% 50%"
+              style={{maxWidth: '70vw'}}
               alt="Evolution Lawyers"
             />
         </div> }

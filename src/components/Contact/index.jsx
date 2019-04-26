@@ -80,7 +80,7 @@ const Contact = ({ className }) => {
 
           </Cell>
 
-           <Cell size={4} tabletSize={10} phoneSize={12} desktopOffset={4} tabletOffset={1} phoneOffset={0}>
+           <Cell size={6} tabletSize={10} phoneSize={12} desktopOffset={3} tabletOffset={1} phoneOffset={0}>
               <CardForm />
           </Cell>
           </Grid>

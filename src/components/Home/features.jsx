@@ -1,26 +1,29 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import Button from "react-md/lib/Buttons";
-import Grid  from "react-md/lib/Grids";
-import Cell  from "react-md/lib/Grids/Cell";
+import {Cell, Grid, Card }  from "react-md";
 import './Features.scss'
 import BackgroundImage from 'gatsby-background-image'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const FeatureRow = ({ title, text, icon }) => {
-    return <Grid className="feature-item">
-        <Cell className="feature-box-wrapper">
+    return <Grid>
+    <Cell size={12}>
+    <Grid className="feature-item">
+        <Cell className="feature-box-wrapper" size={3} offset={0}>
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
             <div className="feature-box">
                 <i className={icon} />
             </div>
             </ScrollAnimation>
         </Cell>
-        <Cell className="feature-text">
-            <ScrollAnimation animateIn='slideInRight' animateOnce={true} offset={10}>
+        <Cell className="feature-text" size={5}>
+            <ScrollAnimation animateIn='slideInRight' animateOnce={true}>
             <h2>{ title } </h2>
             { text }
             </ScrollAnimation>
+        </Cell>
+        </Grid>
         </Cell>
         </Grid>
 }

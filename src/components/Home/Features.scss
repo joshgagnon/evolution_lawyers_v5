@@ -3,9 +3,22 @@
 .features {
     background-size:contain;
     background-position: 0%;
+    .md-cell{
+        margin:0px;
+    }
+     @media #{$md-tablet-media} {
+        .md-cell{
+            margin:8px;
+        }
+    }
+
 .feature-item{
     color: $text-color;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
     .feature-text {
+      position:relative;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -14,7 +27,16 @@
     }
     }
     .feature-box-wrapper{
-        text-align: center;
+           text-align: center;
+           z-index:1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        @media #{$md-tablet-media} {
+            text-align: right;
+        }
     }
     .feature-box{
         padding: 28px;
@@ -24,8 +46,19 @@
         width: 166px;
         text-align: center;
         display: inline-block;
-
     }
+}
+.feature-text:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    border-radius: 8px;
+    left: -100px;
+    right: -100px;
+        top: -8px;
+        bottom: -8px;
+
+
 }
 margin-bottom:100px;
 }

@@ -6,6 +6,17 @@
     padding-left:30px;
 
     .links {
+        display:none;
+        @media #{$md-mobile-media} {
+            & {
+                display:none;
+            }
+        }
+        @media #{$md-tablet-media} {
+            & {
+                display: block;
+            }
+        }
         a, a:visited {
             font-size: 30px;
             padding:0 8px;

@@ -43,7 +43,7 @@ const BackgroundSection = (props) => (
           </ScrollAnimation>
 
           </Cell>
-          <Cell>
+          <Cell tabletSize={12}>
                <ScrollAnimation animateIn='slideInRight' animateOnce={true} offset={10}>
           <p className="big-para">
                Evolution Lawyers is an Auckland based law firm specialising in insolvency, commercial, company, and property law. We provide both litigation and transactional services to New Zealanders and small to medium-sized New Zealand businesses.
