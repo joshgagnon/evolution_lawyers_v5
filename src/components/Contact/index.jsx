@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Button, TextField } from 'react-md';
-import Grid  from "react-md/lib/Grids";
-import Cell  from "react-md/lib/Grids/Cell";
+import { Button, TextField, Grid, Cell, Card } from 'react-md';
+import config from "../../../data/SiteConfig";
+import './Contact.scss';
 
 const ContactForm = () => <form
   name="contact"
@@ -13,38 +13,40 @@ const ContactForm = () => <form
   <input type="hidden" name="form-name" value="contact" />
 <Grid>
     <TextField
-    id="contact-name"
+        id="contact-name"
       label="Name"
       lineDirection="center"
       placeholder="Name"
       className="md-cell md-cell--bottom md-cell--6"
+      required
     />
     <TextField
     id="contact-phone"
-      id="floating-center-title"
       label="Phone"
       lineDirection="center"
       placeholder="Phone"
       className="md-cell md-cell--bottom md-cell--6"
+      required
     />
 
     <TextField
     id="contact-email"
-      id="floating-center-title"
       label="Email"
       type="email"
       lineDirection="center"
       placeholder="Email"
       className="md-cell md-cell--bottom md-cell--12"
+      required
     />
 
      <TextField
     id="contact-message"
-      id="floating-center-title"
+        label="Message"
       rows={4}
       lineDirection="center"
       placeholder="Your Message..."
       className="md-cell md-cell--bottom  md-cell--12"
+      required
     />
 
     <div className="button-row" >
@@ -54,6 +56,11 @@ const ContactForm = () => <form
 </form>
 
 
+const CardForm = (props) => {
+    return <Card>
+        <ContactForm />
+    </Card>
+}
 
 
 const Contact = ({ className }) => {
@@ -68,12 +75,13 @@ const Contact = ({ className }) => {
           <p className="big-para">
                Need legal assistance? Send us a message or give us a call. We’re happy to help.
           </p>
-
+          <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}><span className="fa fa-phone" /> { config.phone }</a></div>
+          <div className="contact-row"><a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a></div>
 
           </Cell>
 
           <Cell>
-              <ContactForm />
+              <CardForm />
           </Cell>
           </Grid>
        </section>

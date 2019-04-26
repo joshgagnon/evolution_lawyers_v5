@@ -1,0 +1,11 @@
+@import "../../layout/theme.scss";
+
+.contact-row {
+    a {
+        color: $md-secondary-color;
+        font-size: 24px;
+    }
+    .fa {
+        margin-right:24px;
+    }
+}

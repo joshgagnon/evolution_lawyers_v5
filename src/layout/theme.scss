@@ -4,7 +4,7 @@ $md-light-theme: false;
 
 $bg: $md-black-base;
 $md-primary-color: $bg;
-$md-secondary-color: #4a90e2;
+$md-secondary-color: #3575CF; //rgb(65, 128, 210); //#4a90e2;
 $md-tertiary-color: $md-grey-300;
 $text-color: $md-grey-100;
 $md-secondary-text-color: $text-color;
@@ -20,16 +20,3 @@ $md-btn-desktop-font-size: $md-btn-text-font-size;
 $md-btn-text-border-radius: 8px !default;
 $md-btn-text-height: 36px;
 
-html,
-.md-background--primary,
-.main-container,
-.darker-background {
-    background-color: $bg;
-    box-shadow: none;
-
-}
-
-a:link {
-    color: $text-color;
-    text-decoration: none;
-}

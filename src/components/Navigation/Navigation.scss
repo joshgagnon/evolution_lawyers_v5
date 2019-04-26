@@ -1,23 +1,15 @@
 @import "../../layout/theme.scss";
 
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-      background-color: $bg;
-    .main-container {
-        display: flex;
-        min-height: 100%;
-        flex-direction: column;
-        flex: 1;
-
-        .main-content {
-            flex: 1;
-        }
-    }
-}
-
 
 .md-toolbar {
-    padding-left:40px
+    padding-left:30px;
+
+    .links {
+        a, a:visited {
+            font-size: 30px;
+            padding:0 8px;
+            color: $text-color;
+        }
+    }
 }

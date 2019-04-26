@@ -3,15 +3,19 @@ const config = {
   siteTitleShort: "Evolution Lawyers", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Evolution Lawyers", // Alternative site title for SEO.
   //siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://objective-kilby-843f3e.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://evolution-lawyers.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-material-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
-  fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
-  siteDescription: "Evolution Lawyers", // Website description used for RSS feeds/meta description tag.
-  siteRss: "/rss.xml", // Path to the RSS file.
+  siteDescription: "A virtual law firm for modern New Zealanders", // Website description used for RSS feeds/meta description tag.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
   siteGATrackingID: "UA-47311644-4", // Tracking code ID for google analytics.
-  //disqusShortname: "https-vagr9k-github-io-gatsby-material-starter", // Disqus shortname.
-  postDefaultCategoryID: "Tech", // Default category for posts.
+
+  phone: '0800 352 993',
+  email: 'mail@evolutionlawyers.nz',
+  twitter: 'https://twitter.com/evolutionlawyer',
+  facebook: 'https://www.facebook.com/evolutionlawyers',
+  youtube: 'https://www.youtube.com/channel/UCTogLQNyy8dub3Psog8B7Vg',
+  linkedin: 'https://in.linkedin.com/company/evolution-lawyers-limited',
+
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
   //userName: "Material User", // Username to display in the author segment.
@@ -40,6 +44,8 @@ const config = {
     }
   ],*/
   copyright: "Copyright © 2019. CataLex Ltd" // Copyright string for the footer of the website and RSS feed.
+
+
 };
 
 // Validate
