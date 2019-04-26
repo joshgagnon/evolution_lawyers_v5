@@ -26,10 +26,10 @@ div.title-section{
     .separator {
         height: 7px;
         background-color: $md-secondary-color;
-        display: block;
+        display: inline-block;
         border-radius: 8px;
-        margin-top: 45px;
-        margin-bottom: 45px;
+        margin-top: 16px;
+        margin-bottom: 48px;
         width:25%;
     }
 }

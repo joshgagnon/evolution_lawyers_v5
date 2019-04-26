@@ -1,7 +1,5 @@
-.big-para {
-    font-size:22px;
-    line-height:33px;
-}
+@import "../../layout/theme.scss";
+
 
 .summary {
       width: 100%;
@@ -12,5 +10,10 @@
     display: flex;
   justify-content: center;
   flex-direction: column;
+.big-para {
+    font-size:22px;
+    line-height:33px;
+}
 
 }
+
