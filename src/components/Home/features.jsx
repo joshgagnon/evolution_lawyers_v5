@@ -5,18 +5,22 @@ import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import './Features.scss'
 import BackgroundImage from 'gatsby-background-image'
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const FeatureRow = ({ title, text, icon }) => {
     return <Grid className="feature-item">
         <Cell className="feature-box-wrapper">
+        <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
             <div className="feature-box">
                 <i className={icon} />
             </div>
+            </ScrollAnimation>
         </Cell>
         <Cell className="feature-text">
-        <h2>{ title } </h2>
-        { text }
+            <ScrollAnimation animateIn='slideInRight' animateOnce={true} offset={10}>
+            <h2>{ title } </h2>
+            { text }
+            </ScrollAnimation>
         </Cell>
         </Grid>
 }

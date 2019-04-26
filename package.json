@@ -4,6 +4,7 @@
   "version": "2.0.0",
   "author": "Joshua Gagnon <josh@catalex.nz>",
   "dependencies": {
+    "animate.css": "^3.7.0",
     "font-awesome": "^4.7.0",
     "gatsby": "2.0.91",
     "gatsby-background-image": "^0.3.4",
