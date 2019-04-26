@@ -3,10 +3,12 @@
 .features {
     background-size:contain;
     background-position: 0%;
+       text-align:center;
     .md-cell{
         margin:0px;
     }
      @media #{$md-tablet-media} {
+           text-align:left;
         .md-cell{
             margin:8px;
         }
@@ -17,14 +19,15 @@
       display: flex;
       justify-content: center;
       flex-direction: row;
+
     .feature-text {
       position:relative;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      p{
-          font-size:18px;
-    }
+         p{
+              font-size:18px;
+        }
     }
     .feature-box-wrapper{
            text-align: center;

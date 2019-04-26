@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-lodash",
+   // "gatsby-plugin-lodash",
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
@@ -70,7 +70,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-twitter",
+    //"gatsby-plugin-twitter",
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
@@ -109,36 +109,11 @@ module.exports = {
         background_color: "#e0e0e0",
         theme_color: "#c62828",
         display: "minimal-ui",
-        icons: [
-        {
-            "src": "/favicons/android-chrome-36x36.png",
-            "sizes": "36x36",
-            "type": "image/png",
-            "density": 0.75
-        },
-        {
-            "src": "/favicons/android-chrome-48x48.png",
-            "sizes": "48x48",
-            "type": "image/png",
-            "density": 1
-        },
-        {
-            "src": "/favicons/android-chrome-72x72.png",
-            "sizes": "72x72",
-            "type": "image/png",
-            "density": 1.5
-        },
-        {
-            "src": "/favicons/android-chrome-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png",
-            "density": 2
-        }
-        ]
+         icon: `src/favicon.png`
       }
     },
+
       `gatsby-plugin-favicon`,
-    "gatsby-plugin-offline",
 
 
     {
@@ -154,7 +129,7 @@ module.exports = {
           }
         ],
       },
-    }
+    },
 
 
     /*{
@@ -228,5 +203,6 @@ module.exports = {
         ]
       }
     }*/
+    "gatsby-plugin-offline",
   ]
 };

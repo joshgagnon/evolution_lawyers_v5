@@ -5,3 +5,6 @@ exports.onClientEntry = () => {
     console.log(`# IntersectionObserver is polyfilled!`)
   }
 }
+
+require("typeface-roboto");
+require("material-icons");

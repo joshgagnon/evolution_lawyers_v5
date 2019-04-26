@@ -41,7 +41,7 @@ const BackgroundSection = (props) => (
             <div className="separator" />
             <div className="button-row" >
                     <ScrollAnimation animateIn='pulse' animateOnce={true} offset={10}>
-                    <Button raised secondary className="md-cell--right" href="#contact">
+                    <Button raised secondary className="md-cell--right" href="#contact" iconClassName="fa fa-paper-plane">
                       Get In Touch
                    </Button>
                    </ScrollAnimation>

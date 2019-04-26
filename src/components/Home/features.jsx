@@ -47,7 +47,7 @@ export default props =>  <StaticQuery query={graphql`
       query {
         file(relativePath: { eq: "images/newlong.jpg" }) {
           childImageSharp {
-            fluid(quality: 100) {
+            fluid(quality: 60) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }

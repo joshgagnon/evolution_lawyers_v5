@@ -4,10 +4,18 @@
 #contact {
     margin-bottom: 60px;
     .contact-row {
-        margin-left:60px;
+
         a {
             color: $md-secondary-color;
-            font-size: 24px;
+            font-size: 16px;
+
+        }
+        @media #{$md-tablet-media} {
+             margin-left:60px;
+            a {
+                 font-size: 24px;
+                text-align: right;
+            }
         }
         .fa {
            // margin-right:24px;
