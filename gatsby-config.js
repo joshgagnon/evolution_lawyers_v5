@@ -139,7 +139,7 @@ module.exports = {
     },
       `gatsby-plugin-favicon`,
     "gatsby-plugin-offline",
-    {
+    /*{
       resolve: "gatsby-plugin-feed",
       options: {
         setup(ref) {
@@ -209,6 +209,6 @@ module.exports = {
           }
         ]
       }
-    }
+    }*/
   ]
 };

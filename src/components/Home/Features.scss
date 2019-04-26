@@ -1,0 +1,31 @@
+@import "../../layout/theme.scss";
+
+.features {
+    background-size:contain;
+    background-position: 0%;
+.feature-item{
+    color: $text-color;
+    .feature-text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      p{
+          font-size:18px;
+    }
+    }
+    .feature-box-wrapper{
+        text-align: center;
+    }
+    .feature-box{
+        padding: 28px;
+        background-color: $md-secondary-color;
+        border-radius: 8px;
+        font-size:48px;
+        width: 166px;
+        text-align: center;
+        display: inline-block;
+
+    }
+}
+margin-bottom:100px;
+}
