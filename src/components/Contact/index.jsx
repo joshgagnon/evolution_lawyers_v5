@@ -7,13 +7,14 @@ const ContactForm = () => <form
   name="contact"
   method="post"
   data-netlify="true"
-  data-netlify-honeypot="bot-field"
+  data-netlify-recaptcha="true"
 >
-  <input type="hidden" name="bot-field" />
   <input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="subject" value="contact request" />
 <Grid>
     <TextField
         id="contact-name"
+        name="name"
       label="Name"
       lineDirection="center"
       placeholder="Name"
@@ -22,6 +23,7 @@ const ContactForm = () => <form
     />
     <TextField
     id="contact-phone"
+    name="phone"
       label="Phone"
       lineDirection="center"
       placeholder="Phone"
@@ -31,6 +33,7 @@ const ContactForm = () => <form
 
     <TextField
     id="contact-email"
+    name="email"
       label="Email"
       type="email"
       lineDirection="center"
@@ -41,6 +44,7 @@ const ContactForm = () => <form
 
      <TextField
     id="contact-message"
+    name="message"
         label="Message"
       rows={4}
       lineDirection="center"
@@ -48,7 +52,7 @@ const ContactForm = () => <form
       className="md-cell md-cell--bottom  md-cell--12"
       required
     />
-
+<div data-netlify-recaptcha="true"></div>
     <div className="button-row" >
         <Button type="submit" raised secondary className="md-cell--right" iconClassName="fa fa-paper-plane">Send</Button>
     </div>
