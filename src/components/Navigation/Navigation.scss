@@ -23,4 +23,24 @@
             color: $text-color;
         }
     }
+    .nav-menu, .logo{
+        vertical-align:top;
+    }
+}
+
+.main-nav-menu {
+        width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    background: black;
+    .links {
+        text-align: right;
+
+        a{
+            display:block;
+        }
+    }
 }

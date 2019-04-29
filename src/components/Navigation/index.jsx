@@ -6,18 +6,41 @@ import GetNavList from "./NavList";
 import "./Navigation.scss";
 import Img from "gatsby-image/withIEPolyfill";
 import { StaticQuery, graphql } from "gatsby"
-import { Toolbar, MenuButton } from 'react-md';
+import { Toolbar, MenuButton, ListItem, Grid, Cell  } from 'react-md';
 import config from "../../../data/SiteConfig";
 
-const KebabMenu = ({ id, className, menuItems }) => (
-  <MenuButton
-    id={id}
 
-    className={className}
-    menuItems={menuItems}
-  >
-more_vert
-  </MenuButton>
+const NavMenu = (props) => <div className="main-nav-menu">
+    <Grid>
+      <Cell className="links" size={6}>
+        <a href="/">Home</a>
+        <a href="/team">The Team</a>
+        <a href="/services">Services</a>
+        <a href="/fees">Fees</a>
+        <a href="/guides">Guides</a>
+      </Cell>
+
+    </Grid>
+
+            
+</div>
+
+
+const KebabMenu = ({ id, className, menuItems }) => (
+    <MenuButton
+      id="nav-menu"
+      className="nav-menu"
+      icon
+      menuItems={<NavMenu/>}
+      listInline
+      position={MenuButton.Positions.TOP_LEFT}
+      anchor={{
+        x: MenuButton.HorizontalAnchors.CENTER,
+        y: MenuButton.VerticalAnchors.CENTER,
+      }}
+    >
+      more_vert
+    </MenuButton>
 );
 
 const query = graphql`
@@ -37,7 +60,9 @@ const query = graphql`
 const Title = props =>  <StaticQuery
     query={query}
     render={data => <div>
+          <KebabMenu />
             <Img
+            className="logo"
               fixed={data.file.childImageSharp.fixed}
               objectFit="contain"
               objectPosition="50% 50%"
@@ -56,6 +81,7 @@ export default class Navigation extends Component {
 
     return ( <div>
             <Toolbar
+            fixed
             title={<Title />}
             //  nav={<Nav />}
               actions={

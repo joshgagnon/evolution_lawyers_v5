@@ -57,6 +57,12 @@ html,
     box-shadow: none;
 
 }
+.main-container{
+margin-top:$md-toolbar-height;
+}
+.md-toolbar{
+    background-color: $md-primary-color;
+}
 
 a:link {
     color: $text-color;

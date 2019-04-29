@@ -78,6 +78,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-netlify-cms",
+    'gatsby-plugin-page-transitions',
     //"gatsby-plugin-twitter",
     {
       resolve: "gatsby-plugin-sitemap",
