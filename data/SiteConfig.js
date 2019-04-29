@@ -11,10 +11,15 @@ const config = {
 
   phone: '0800 352 993',
   email: 'mail@evolutionlawyers.nz',
+  fax: '09 929 3332',
   twitter: 'https://twitter.com/evolutionlawyer',
   facebook: 'https://www.facebook.com/evolutionlawyers',
   youtube: 'https://www.youtube.com/channel/UCTogLQNyy8dub3Psog8B7Vg',
   linkedin: 'https://in.linkedin.com/company/evolution-lawyers-limited',
+
+  address: [
+'18/465 Mount Eden Rd',' Mount Eden', 'Auckland 1024',
+  ],
 
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.

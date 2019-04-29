@@ -10,14 +10,35 @@ import { Toolbar, MenuButton, ListItem, Grid, Cell  } from 'react-md';
 import config from "../../../data/SiteConfig";
 
 
+const ContactMenu = (props) => {
+  return <div>
+          <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}><span className="fa fa-phone" /> { config.phone }</a></div>
+          <div className="contact-row"><a href={`tel:${config.fax.replace(' ', '')}`}><span className="fa fa-fax" /> { config.fax }</a></div>
+          <div className="address">
+          { config.address.map((add, i) => {
+            return <div className="address-row" key={i}>
+              { add }
+            </div>
+          })}
+          <div className="address-row"><em>(By appointment only)</em></div>
+          </div>
+          <div className="contact-row"><a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a></div>
+
+
+</div>
+}
+
 const NavMenu = (props) => <div className="main-nav-menu">
     <Grid>
-      <Cell className="links" size={6}>
+      <Cell className="nav-links" size={6}>
         <a href="/">Home</a>
         <a href="/team">The Team</a>
         <a href="/services">Services</a>
         <a href="/fees">Fees</a>
         <a href="/guides">Guides</a>
+      </Cell>
+      <Cell size={6}>
+        <ContactMenu />
       </Cell>
 
     </Grid>
