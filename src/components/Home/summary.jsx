@@ -28,6 +28,10 @@ const BackgroundSection = (props) => (
           <BackgroundImage Tag="section"
                            className="summary"
                            fluid={imageData}
+                            style={{
+                              backgroundSize: "contain",
+                              backgroundPosition: "110% 50%"
+                           }}
           >
 
       <Grid>

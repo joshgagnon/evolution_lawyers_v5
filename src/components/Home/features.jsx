@@ -5,6 +5,8 @@ import {Cell, Grid, Card }  from "react-md";
 import './Features.scss'
 import BackgroundImage from 'gatsby-background-image'
 import ScrollAnimation from 'react-animate-on-scroll';
+import styled from 'styled-components'
+
 
 const FeatureRow = ({ title, text, icon }) => {
     return <Grid>
@@ -43,7 +45,7 @@ const Features = (props) => {
  };
 
 
-export default props =>  <StaticQuery query={graphql`
+const FeaturesWithBG = (props) => <StaticQuery query={graphql`
       query {
         file(relativePath: { eq: "images/newlong.jpg" }) {
           childImageSharp {
@@ -60,8 +62,18 @@ export default props =>  <StaticQuery query={graphql`
           <BackgroundImage Tag="section"
                            className={'features'}
                            fluid={imageData}
+                           style={{
+                              backgroundSize: "contain",
+                              backgroundPosition: "0%",
+                              textAlign: "center"
+                           }}
           >
           <Features />
           </BackgroundImage>)
       }
   } />
+
+
+
+
+export default FeaturesWithBG;

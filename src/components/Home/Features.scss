@@ -1,9 +1,5 @@
 @import "../../layout/theme.scss";
-.features, .features::before, .features::after {
-    background-size:contain !important;
-    background-position: 0%;
-       text-align:center;
-}
+
 .features {
 
     .md-cell{
