@@ -7,7 +7,6 @@ import "./Home.scss";
 import Tiger from './tiger';
 import Summary from './summary';
 import Features from './features';
-import CataLex from './catalex';
 import Contact from '../Contact';
 
 class Home extends Component {

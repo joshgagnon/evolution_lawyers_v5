@@ -12,7 +12,7 @@ import Trusts from './trusts'
 import Company from './company';
 import Insolvency  from './insolvency';
 import Litigation from './litigation';
-
+import Contact from '../Contact';
 const Title = (props) => (
     <StaticQuery 
     query={graphql`
@@ -53,6 +53,7 @@ const Services = (props) => {
   <Company />
   <Insolvency />
   <Litigation />
+  <Contact />
   </div>
 }
 
