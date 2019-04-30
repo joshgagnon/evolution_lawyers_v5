@@ -9,7 +9,6 @@ import Summary from './summary';
 import Features from './features';
 import CataLex from './catalex';
 import Contact from '../Contact';
-import PageTransition from 'gatsby-plugin-page-transitions';
 
 class Home extends Component {
   render() {
@@ -19,14 +18,12 @@ class Home extends Component {
     if (!copyright) {
       return null;
     }
-    return (<PageTransition >
-      <div className={"home"}>
+    return ( <div className={"home"}>
             <Tiger />
             <Summary />
             <Features />
             <Contact />
       </div>
-      </PageTransition>
     );
   }
 }

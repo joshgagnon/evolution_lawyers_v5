@@ -35,9 +35,6 @@ div.title-section{
         margin-bottom: 48px;
         width:25%;
     }
-
-
-
 }
 
 .button-row {
@@ -83,3 +80,30 @@ a:link {
     font-size:22px;
     line-height:33px;
 }
+
+
+
+.services-section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+        overflow-x: hidden;
+    h1 {
+        color: $md-secondary-color;
+    }
+    a {
+        color: $md-secondary-color;
+    }
+    .mid-para {
+         font-size:18px;
+        line-height:26px;       
+    }
+    &.services-section-img{
+       text-align: center;
+        img {
+            border-radius: 35px;
+        
+        }
+    }
+}
+
