@@ -1,7 +1,7 @@
 @import "../../layout/theme.scss";
 
 
-.summary {
+.summary, .summary::after, ..summary::before {
       width: 100%;
   min-height:100vh;
   max-height: 500px;
