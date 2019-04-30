@@ -63,8 +63,8 @@ const FeaturesWithBG = (props) => <StaticQuery query={graphql`
                            className={'features'}
                            fluid={imageData}
                            style={{
-                              backgroundSize: "contain",
-                              backgroundPosition: "0%",
+                              backgroundSize: "contain  !important",
+                              backgroundPosition: "0  !important",
                               textAlign: "center"
                            }}
           >

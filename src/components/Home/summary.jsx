@@ -29,8 +29,8 @@ const BackgroundSection = (props) => (
                            className="summary"
                            fluid={imageData}
                             style={{
-                              backgroundSize: "contain",
-                              backgroundPosition: "110% 50%"
+                              backgroundSize: "contain  !important",
+                              backgroundPosition: "110% 50%  !important"
                            }}
           >
 
