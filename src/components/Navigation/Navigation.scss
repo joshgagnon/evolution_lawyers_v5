@@ -35,22 +35,34 @@
     right: 0;
     top: 100px;
     bottom: 0;
-    background: black;
+    background-color:$bg;
+    .nav-links, .contact-menu {
+            flex-direction: column;
+    justify-content: center;
+    display: flex;
+    }
     .nav-links {
+        padding-left:48px;
         text-align: right;
 
         a{
             color: $text-color;
             font-size:36px;
-            display:block;
         }
+    }
+    .contact-menu > div{
+        margin-left:28px;
+    }
+    .address{
+        margin-top:20px;
+        margin-bottom:20px;
     }
 
     .contact-row, .address-row{
         a {
             color: $md-secondary-color;
         }
-        font-size: 24px;
+        font-size: 18px;
         color: $text-color;
     }
 }

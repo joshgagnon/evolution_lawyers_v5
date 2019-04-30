@@ -31,13 +31,13 @@ const ContactMenu = (props) => {
 const NavMenu = (props) => <div className="main-nav-menu">
     <Grid>
       <Cell className="nav-links" size={6}>
-        <a href="/">Home</a>
-        <a href="/team">The Team</a>
-        <a href="/services">Services</a>
-        <a href="/fees">Fees</a>
-        <a href="/guides">Guides</a>
+        <div><a href="/">Home</a></div>
+        <div><a href="/team">The Team</a></div>
+        <div><a href="/services">Services</a></div>
+        <div><a href="/fees">Fees</a></div>
+        <div><a href="/guides">Guides</a></div>
       </Cell>
-      <Cell size={6}>
+      <Cell  className="contact-menu" size={6}>
         <ContactMenu />
       </Cell>
 
