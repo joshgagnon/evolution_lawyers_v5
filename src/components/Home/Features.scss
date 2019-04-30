@@ -1,7 +1,7 @@
 @import "../../layout/theme.scss";
 
 .features {
-    background-size:contain;
+    background-size:contain !important;
     background-position: 0%;
        text-align:center;
     .md-cell{
