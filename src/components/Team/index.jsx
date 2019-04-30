@@ -108,7 +108,7 @@ const Members = (props) => {
         return <Grid className="members">
             { MEMBERS.map((member, i) => {
                 const image = data.source.edges.find(e => e.node.name === member.photo).node.childImageSharp.fluid;
-                return <Cell size={4}>
+                return <Cell size={4} key={i}>
                     <Member member={member} key={i} image={image} />
                     </Cell>
             }) }

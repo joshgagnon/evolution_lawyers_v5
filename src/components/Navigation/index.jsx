@@ -28,41 +28,64 @@ const ContactMenu = (props) => {
 </div>
 }
 
-const NavMenu = (props) => <div className="main-nav-menu">
+const NavMenu = (props) => {
+  return <div className="main-nav-menu">
     <Grid>
-      <Cell className="nav-links" size={6}>
-        <div><a href="/">Home</a></div>
-        <div><a href="/team">The Team</a></div>
-        <div><a href="/services">Services</a></div>
-        <div><a href="/fees">Fees</a></div>
-        <div><a href="/guides">Guides</a></div>
+      <Cell className="nav-links" size={6} >
+        <div><a href="/" onClick={props.onNavClick}>Home</a></div>
+        <div><a href="/team" onClick={props.onNavClick}>The Team</a></div>
+        <div><a href="/services" onClick={props.onNavClick}>Services</a></div>
+        <div><a href="/fees" onClick={props.onNavClick}>Fees</a></div>
+        <div><a href="/guides" onClick={props.onNavClick}>Guides</a></div>
       </Cell>
       <Cell  className="contact-menu" size={6}>
         <ContactMenu />
       </Cell>
 
-    </Grid>
-
-            
+    </Grid>         
 </div>
+}
+
+class KebabMenu extends React.PureComponent {
+  state = { visible: false };
+
+  show = () => {
+    this.setState({ visible: !this.state.visible });
+  };
+
+  toggle = () => {
+    this.setState({ visible: !this.state.visible });
+  };
 
 
-const KebabMenu = ({ id, className, menuItems }) => (
-    <MenuButton
-      id="nav-menu"
-      className="nav-menu"
-      icon
-      menuItems={<NavMenu/>}
-      listInline
-      position={MenuButton.Positions.TOP_LEFT}
-      anchor={{
-        x: MenuButton.HorizontalAnchors.CENTER,
-        y: MenuButton.VerticalAnchors.CENTER,
-      }}
-    >
-      more_vert
-    </MenuButton>
-);
+  hide = () => {
+    this.setState({ visible: false });
+  };
+
+  render() {
+    const { id, className, menuItems } = this.props;
+    return <MenuButton
+        id="nav-menu"
+        className="nav-menu"
+        icon
+        menuItems={<NavMenu onNavClick={this.hide}/>}
+        listInline
+        position={MenuButton.Positions.TOP_LEFT}
+        defaultVisible={false}
+        onVisibilityChange={this.toggle}
+        visible={this.state.visible}
+        onClose={this.hide}
+        onClick={this.show}
+        transitionName="md-layover"
+        anchor={{
+          x: MenuButton.HorizontalAnchors.CENTER,
+          y: MenuButton.VerticalAnchors.CENTER,
+        }}
+      >
+        more_vert
+      </MenuButton>
+    }
+};
 
 const query = graphql`
   query {

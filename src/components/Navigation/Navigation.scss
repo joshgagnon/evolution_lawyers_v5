@@ -36,10 +36,12 @@
     top: 100px;
     bottom: 0;
     background-color:$bg;
+     overflow-y: auto;
+
     .nav-links, .contact-menu {
-            flex-direction: column;
-    justify-content: center;
-    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
     }
     .nav-links {
         padding-left:48px;
@@ -64,5 +66,9 @@
         }
         font-size: 18px;
         color: $text-color;
+        em{
+            font-size: 14px;
+        }
     }
 }
+
