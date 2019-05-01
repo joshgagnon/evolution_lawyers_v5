@@ -37,6 +37,30 @@ div.title-section{
     }
 }
 
+
+div.sub-title-section{
+
+    .line{
+        color: $text-color;
+              line-height: 40px;
+            font-size: 30px;
+        em{
+            color: $md-secondary-color;
+            font-style:normal;
+        }
+    }
+    .separator {
+        height: 7px;
+        background-color: $md-secondary-color;
+        display: inline-block;
+        border-radius: 8px;
+        margin-top: 0px;
+        margin-bottom: 48px;
+        width:25%;
+    }
+}
+
+
 .button-row {
     text-align:center;
     width:100%;
@@ -96,13 +120,13 @@ a:link {
     }
     .mid-para {
          font-size:18px;
-        line-height:26px;       
+        line-height:26px;
     }
     &.services-section-img{
        text-align: center;
         img {
             border-radius: 35px;
-        
+
         }
     }
 }

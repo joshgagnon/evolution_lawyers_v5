@@ -6,8 +6,8 @@ const config = {
   siteUrl: "https://evolution-lawyers.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   siteDescription: "A virtual law firm for modern New Zealanders", // Website description used for RSS feeds/meta description tag.
-  siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  siteGATrackingID: "UA-47311644-4", // Tracking code ID for google analytics.
+  //siteFBAppID: "1825356251115265", // FB Application ID for using app insights
+  siteGATrackingID: "UA-138160565-1", // Tracking code ID for google analytics.
 
   phone: '0800 352 993',
   email: 'mail@evolutionlawyers.nz',

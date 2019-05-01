@@ -8,6 +8,9 @@ import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Img from "gatsby-image/withIEPolyfill";
 import './Guides.scss';
+import GuideIcons from './guideIcons';
+
+
 
 const Title = (props) => (
     <StaticQuery
@@ -51,9 +54,9 @@ const Guides = (props) => {
 
   return <div className="guides container">
   <Title />
-
+  <GuideIcons />
   </div>
 }
 
 
-export default Guides
+export default Guides;
