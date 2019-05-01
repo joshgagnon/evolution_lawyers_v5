@@ -35,14 +35,14 @@ const NavMenu = (props) => {
         <div><a href="/" onClick={props.onNavClick}>Home</a></div>
         <div><a href="/team" onClick={props.onNavClick}>The Team</a></div>
         <div><a href="/services" onClick={props.onNavClick}>Services</a></div>
-        <div><a href="/fees" onClick={props.onNavClick}>Fees</a></div>
+        {/*<div><a href="/fees" onClick={props.onNavClick}>Fees</a></div> */}
         <div><a href="/guides" onClick={props.onNavClick}>Guides</a></div>
       </Cell>
       <Cell  className="contact-menu" size={6}>
         <ContactMenu />
       </Cell>
 
-    </Grid>         
+    </Grid>
 </div>
 }
 

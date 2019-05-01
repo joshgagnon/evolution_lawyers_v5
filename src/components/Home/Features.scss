@@ -34,9 +34,16 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-
+    }
+    .feature-text{
+        h2{
+                margin-top: 14px;
+        }
         @media #{$md-tablet-media} {
-            text-align: right;
+            text-align: left;
+            h2{
+                margin-top:0;
+            }
         }
     }
     .feature-box{
