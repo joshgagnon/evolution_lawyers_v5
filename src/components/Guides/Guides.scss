@@ -5,3 +5,28 @@
   justify-content: center;
   flex-direction: column;
 }
+
+
+.guide-button {
+    text-align: center;
+        display: block;
+    width: 33%;
+    min-width:200px;
+    img{
+        border-radius:8px;
+        display: block;
+        margin: 0 auto 12px auto;
+    }
+    font-weight: bold;
+    font-size:22px;
+    margin-bottom:30px;
+
+}
+
+
+.guide-button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        flex-wrap: wrap;
+}

@@ -9,7 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Img from "gatsby-image/withIEPolyfill";
 import './Guides.scss';
 import GuideIcons from './guideIcons';
-
+import Contact from '../Contact';
 
 
 const Title = (props) => (
@@ -55,6 +55,7 @@ const Guides = (props) => {
   return <div className="guides container">
   <Title />
   <GuideIcons />
+  <Contact/>
   </div>
 }
 

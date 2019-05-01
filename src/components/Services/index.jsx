@@ -13,8 +13,10 @@ import Company from './company';
 import Insolvency  from './insolvency';
 import Litigation from './litigation';
 import Contact from '../Contact';
+
+
 const Title = (props) => (
-    <StaticQuery 
+    <StaticQuery
     query={graphql`
       query {
         file(relativePath: { eq: "images/feesbg.jpg" }) {
@@ -29,7 +31,7 @@ const Title = (props) => (
         return ( /*<BackgroundImage Tag="section"
                            className="services"
                            fluid={data.file.childImageSharp.fluid}> */
-          
+
       <Grid>
     <Cell size={12} style={{textAlign: 'center'}}>
        <div className="title-section">

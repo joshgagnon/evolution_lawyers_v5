@@ -10,7 +10,7 @@ class AboutPage extends Component {
       <Layout location={this.props.location} title="About">
         <div className="about-container">
           <Helmet>
-            <title>{`About | ${config.siteTitle}`}</title>
+            <title>{`Guides | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}/about/`} />
           </Helmet>
           <Guides />
