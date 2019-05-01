@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import Layout from "../layout";
-import About from "../components/About";
+import Guides from "../components/Guides";
 import config from "../../data/SiteConfig";
 
-class AboutPage extends Component {
+class GuidesPage extends Component {
   render() {
     return (
-      <Layout location={this.props.location} title="About">
-        <div className="about-container">
+      <Layout location={this.props.location} title="The Guides">
+        <div className="guides-container">
           <Helmet>
-            <title>{`About | ${config.siteTitle}`}</title>
-            <link rel="canonical" href={`${config.siteUrl}/about/`} />
+            <title>{`Guides | ${config.siteTitle}`}</title>
+            <link rel="canonical" href={`${config.siteUrl}/guides/`} />
           </Helmet>
-          <About />
+          <Guides />
         </div>
       </Layout>
     );
   }
 }
 
-export default AboutPage;
+export default GuidesPage;
