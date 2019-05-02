@@ -23,16 +23,17 @@ const Trusts = props =>  <StaticQuery
     }
   }`}
     render={data => <Grid>
-          <Cell tabletSize={6} size={6} className="services-section services-section-img">
+          <Cell tabletSize={6} tabletSize={8}  size={6} className="services-section services-section-img" >
                   <ScrollAnimation animateIn='slideInLeft' animateOnce={true} offset={10}>
             <Img
             className="services-image"
               fixed={data.file.childImageSharp.fixed}
               alt="Evolution Lawyers"
+                          style={{maxWidth:'100%'}}
             />
             </ScrollAnimation>
         </Cell>
-       <Cell size={5} desktopOffset={1} tabletOffset={1} phoneOffset={0}  className="services-section">
+       <Cell size={5} phoneOffset={0}  className="services-section">
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
         <h1>Trusts & Estates</h1>
 

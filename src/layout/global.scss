@@ -16,14 +16,18 @@ div.title-section{
     }
     .line{
         color: $text-color;
-              line-height: 70px;
-            font-size: 60px;
+              line-height: 50px;
+            font-size: 40px;
         em{
             color: $md-secondary-color;
             font-style:normal;
         }
-      @media #{$md-tablet-media} {
 
+
+
+      @media #{$md-desktop-media} {
+              line-height: 70px;
+            font-size: 60px;
       }
     }
     .separator {

@@ -23,7 +23,7 @@ const Company = props =>  <StaticQuery
     }
   }`}
     render={data => <Grid>
-       <Cell size={5} desktopOffset={1} tabletOffset={1} phoneOffset={0}  className="services-section">
+       <Cell size={5} desktopOffset={1} tabletOffset={1} phoneOffset={0}  tabletSize={8}  className="services-section"  order={1} desktopOrder={0}>
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
         <h1>Company & Commercial</h1>
 
@@ -31,10 +31,11 @@ const Company = props =>  <StaticQuery
 Our team can assist with the formation and operation of your small-to-medium sized company. Whether it be preparing a shareholders’ agreement, attending to corporate governance matters, assisting with transactions involving shares or assets, preparing terms of trade, or assisting with borrowing, lending, or security arrangements, we can provide advice and documentation to protect your company and help it grow.        </p>
         </ScrollAnimation>
        </Cell>
-          <Cell tabletSize={6} size={6} className="services-section services-section-img">
+          <Cell tabletSize={6} size={6} className="services-section services-section-img"  tabletSize={8}  order={0} desktopOrder={1}>
                   <ScrollAnimation animateIn='slideInRight' animateOnce={true} offset={10}>
             <Img
             className="services-image"
+                        style={{maxWidth:'100%'}}
               fixed={data.file.childImageSharp.fixed}
               alt="Evolution Lawyers"
             />

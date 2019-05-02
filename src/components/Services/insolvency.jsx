@@ -23,21 +23,22 @@ const Insolvency = props =>  <StaticQuery
     }
   }`}
     render={data => <Grid>
-          <Cell tabletSize={6} size={6} className="services-section services-section-img">
-                  <ScrollAnimation animateIn='slideInLeft' animateOnce={true} offset={10}>
+          <Cell size={6} tabletSize={8} className="services-section services-section-img">
+                  <ScrollAnimation animateIn='slideInLeft' animateOnce={true} offset={10} >
             <Img
             className="services-image"
               fixed={data.file.childImageSharp.fixed}
               alt="Evolution Lawyers"
+                          style={{maxWidth:'100%'}}
             />
             </ScrollAnimation>
         </Cell>
-       <Cell size={5} desktopOffset={1} tabletOffset={1} phoneOffset={0}  className="services-section">
+       <Cell size={5}  tabletSize={8}   phoneOffset={0}  className="services-section">
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
         <h1>Insolvency</h1>
 
         <p className="mid-para">
-Evolution Lawyers are specialists in most areas of insolvency law, including summary judgment for debts, mortgagee sales, bankruptcy, liquidation, and receivership. We adopt a practical and efficient approach to insolvency problems designed to ensure the best possible outcome for our clients, sometimes in the worst possible situations. If you are owed money that you want back, or are in a tight spot with creditors and want to know your options, take the next step and give us a call.     
+Evolution Lawyers are specialists in most areas of insolvency law, including summary judgment for debts, mortgagee sales, bankruptcy, liquidation, and receivership. We adopt a practical and efficient approach to insolvency problems designed to ensure the best possible outcome for our clients, sometimes in the worst possible situations. If you are owed money that you want back, or are in a tight spot with creditors and want to know your options, take the next step and give us a call.
        </p>
    </ScrollAnimation>
        </Cell>

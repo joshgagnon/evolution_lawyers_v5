@@ -23,7 +23,7 @@ const Litigation = props =>  <StaticQuery
     }
   }`}
     render={data => <Grid>
-       <Cell size={5} desktopOffset={1} tabletOffset={1} phoneOffset={0}  className="services-section">
+       <Cell size={5}   tabletSize={8} desktopOffset={1}  phoneOffset={0}  className="services-section" order={1} desktopOrder={0}>
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
         <h1>Commercial Litigation</h1>
 
@@ -32,9 +32,10 @@ If you have tried everything else but your business is still in dispute with som
         </p>
         </ScrollAnimation>
        </Cell>
-          <Cell tabletSize={6} size={6} className="services-section services-section-img">
-                  <ScrollAnimation animateIn='slideInRight' animateOnce={true} offset={10}>
+          <Cell tabletSize={8}  size={6} className="services-section services-section-img"  order={0} desktopOrder={1}>
+                  <ScrollAnimation animateIn='slideInRight' animateOnce={true} offset={10} >
             <Img
+                        style={{maxWidth:'100%'}}
             className="services-image"
               fixed={data.file.childImageSharp.fixed}
               alt="Evolution Lawyers"
