@@ -1,7 +1,7 @@
 @import "../../layout/theme.scss";
 
 .tiger{
-      height: 100vh;
+
   background-position: center left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -11,22 +11,28 @@
   text-align: right;
   text-shadow:1px 1px black;
   .title-section .line {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 36px;
   }
   .button-row {
-    text-align: right;
+    text-align: center;
+    margin-top: 250px;
   }
-      @media #{$md-tablet-media} {
+
+
+
+      @media #{$md-desktop-media} {
+              height: 100vh;
         text-align: left;
           justify-content: center;
           .title-section .line {
             font-size: 60px;
             line-height: 70px;
           }
-  .button-row {
-    text-align: center;
-  }
+        .button-row {
+          text-align: center;
+           margin-top:0;
+        }
       }
 
       @media #{$md-desktop-media} {

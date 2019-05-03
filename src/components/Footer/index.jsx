@@ -16,6 +16,16 @@ class Footer extends Component {
     return (
       <footer className={fixedFooter ? "footer footer-fixed" : "footer"}>
             <div className="copyright">© Evolution Lawyers Limited 2018. All rights reserved.</div>
+
+            <div className="nav-links">
+
+              <a href="/" >Home</a>
+             <a href="/team" >The Team</a>
+              <a href="/services" >Services</a>
+              {/*<a href="/fees" onClick={props.onNavClick}>Fees</a></div> */}
+             <a href="/resources" >Resources</a>
+          </div>
+
             <div className="links">
                 <a href="/assets/pdfs/Terms-of-Engagement-effective-4-July-2018.pdf" target="_blank" rel="noopener">Terms of Engagement</a>
                 <a href="/assets/pdfs/Privacy-Policy-Evolution-Lawyers-as-at-9-July-2018.pdf" target="_blank" rel="noopener">Privacy Policy</a>

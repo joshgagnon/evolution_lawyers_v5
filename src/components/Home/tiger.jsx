@@ -32,7 +32,7 @@ const BackgroundSection = (props) => (
           >
 
       <Grid>
-        <Cell desktopOffset={7} size={5} tabletOffset={3} phoneOffset={1}>
+        <Cell desktopOffset={7} size={5} tabletOffset={3} phoneOffset={0}>
 
          <div className="title-section">
             <h1 className="line">A Virtual <em>Law Firm</em></h1>

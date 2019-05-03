@@ -11,10 +11,13 @@
         padding:20px;
         font-size:16px;
         .qualifications {
-            padding-bottom:16px;
+           
         }
         .name, .title{
             font-size: 24px;
+        }
+        .title {
+            padding-top:16px;
         }
         .phone a {
             margin: 0 12px;
@@ -30,5 +33,5 @@
     background-color: $md-secondary-color;
     color: $text-color;
     text-align:center;
-margin-bottom: 48px;
+    height:100%;
 }

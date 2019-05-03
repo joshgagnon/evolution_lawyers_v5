@@ -3,9 +3,20 @@
 
 
 .md-toolbar {
-    padding-left:30px;
+    padding-left:16px;
+    .nav-menu {
+        padding-top: 0;
+    }
 
     .links {
+
+        a, a:visited {
+            font-size: 30px;
+            padding:0 8px;
+            color: $text-color;
+        }
+    }
+    .md-toolbar--action-right .links {
         display:none;
         @media #{$md-mobile-media} {
             & {
@@ -16,11 +27,6 @@
             & {
                 display: block;
             }
-        }
-        a, a:visited {
-            font-size: 30px;
-            padding:0 8px;
-            color: $text-color;
         }
     }
     .nav-menu, .logo{
@@ -45,12 +51,18 @@
     }
     .nav-links {
         padding-left:48px;
-        text-align: right;
-
+        text-align: center;
+        @media #{$md-tablet-media} {
+           text-align: right;
+        }
         a{
             color: $text-color;
             font-size:36px;
+            &:hover {
+                color: $md-secondary-color;
+            }
         }
+
     }
     .contact-menu > div{
         margin-left:28px;

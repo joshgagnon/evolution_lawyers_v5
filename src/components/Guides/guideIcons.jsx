@@ -75,8 +75,6 @@ const GuideIcons= (props) => (
     </Grid>
 
 
-Debt Recovery
-
 
    </BackgroundImage>
   }

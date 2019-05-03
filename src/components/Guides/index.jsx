@@ -12,6 +12,16 @@ import GuideIcons from './guideIcons';
 import Contact from '../Contact';
 
 
+const Youtube = (props) => {
+  return <Grid>
+    <Cell  size={12} style={{textAlign: 'center', margin: '36px 0'}}>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/zBnEiSyJqNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+     </Cell>
+  </Grid>
+}
+
+
 const Title = (props) => (
     <StaticQuery
     query={graphql`
@@ -33,14 +43,18 @@ const Title = (props) => (
     <Cell size={6} tabletSize={8} desktopOffset={1} phoneOffset={0} tabletOffset={0} className="guides-title">
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
        <div className="title-section">
-       <h1 className="line"><em>Our</em> Guides</h1>
+       <h1 className="line"><em>Our</em> Resources</h1>
             <div className="separator" />
 
       </div>
 
       <p className="big-para">
-Welcome to our Guides section. Here you can find useful and plain English summaries about the law and various legal processes. We have prepared these guides to answer some of the more common questions our clients have about their matters. Although we hope you find our guides helpful, we stress that they are not a substitute for obtaining legal advice from a registered lawyer. If you need that, get in touch.
-      </p>
+Welcome to our Resources section. Here you can
+find useful videos and plain English summaries about the law and various legal
+processes. We have prepared these resources to answer some of the more
+common questions our clients have about their matters. Although we hope you
+find our resources helpful, we stress that they are not a substitute for obtaining
+legal advice from a registered lawyer. If you need that, please get in touch.    </p>
       </ScrollAnimation>
     </Cell>
     </Grid>
@@ -55,6 +69,7 @@ const Guides = (props) => {
   return <div className="guides container">
   <Title />
   <GuideIcons />
+  <Youtube />
   <Contact/>
   </div>
 }

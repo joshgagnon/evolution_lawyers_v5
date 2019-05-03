@@ -6,10 +6,16 @@
   color: $text-color;
    text-align: center;
    .copyright {
-        padding:0 0 30px 0;
+        padding:0 0 16px 0;
    }
-   .links a{
+   .links a, .nav-links a{
         padding: 0px 16px;
+   }
+   .nav-links{
+     padding:0 0 16px 0;
+       a {
+      color:$md-secondary-color;
+     }
    }
 }
 
