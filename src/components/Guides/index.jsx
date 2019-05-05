@@ -15,7 +15,7 @@ import Contact from '../Contact';
 const Youtube = (props) => {
   return <Grid>
     <Cell  size={12} style={{textAlign: 'center', margin: '36px 0'}}>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/zBnEiSyJqNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <iframe style={{maxWidth: '100%'}} width="560" height="315" src="https://www.youtube.com/embed/zBnEiSyJqNs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
      </Cell>
   </Grid>
