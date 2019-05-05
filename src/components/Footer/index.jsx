@@ -22,7 +22,7 @@ class Footer extends Component {
               <a href="/" >Home</a>
              <a href="/team" >The Team</a>
               <a href="/services" >Services</a>
-              {/*<a href="/fees" onClick={props.onNavClick}>Fees</a></div> */}
+              <a href="/fees" >Fees</a>
              <a href="/resources" >Resources</a>
           </div>
 

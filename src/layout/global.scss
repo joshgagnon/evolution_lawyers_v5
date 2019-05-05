@@ -108,9 +108,26 @@ a:link {
     font-size:22px;
     line-height:33px;
 }
-
-
-
+.mid-para {
+     font-size:18px;
+    line-height:26px;
+}
+.small-para {
+     font-size:16px;
+    line-height:20px;
+    a{
+        color: $md-secondary-color;
+    }
+}
+.emph-para {
+     font-size:18px;
+    line-height:26px;
+    color: $md-secondary-color;
+    font-weight: bold;
+}
+.bottom-pad{
+    padding-bottom:30px;
+}
 .services-section {
     display:flex;
     flex-direction: column;
@@ -122,10 +139,7 @@ a:link {
     a {
         color: $md-secondary-color;
     }
-    .mid-para {
-         font-size:18px;
-        line-height:26px;
-    }
+
     &.services-section-img{
        text-align: center;
         img {
@@ -133,5 +147,18 @@ a:link {
 
         }
     }
+}
+
+.fee-table{
+    margin-bottom:36px;
+    .table-title{
+        text-align: center;
+    }
+}
+
+.md-table-header th{
+    color: $md-secondary-color;
+    font-weight: bold;
+    font-size:16px;
 }
 
