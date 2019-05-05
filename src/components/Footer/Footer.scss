@@ -11,11 +11,20 @@
    .links a, .nav-links a{
         padding: 0px 16px;
    }
+   .links {
+        a:visited{
+           color: $text-color;
+        }
+   }
    .nav-links{
      padding:0 0 16px 0;
        a {
-      color:$md-secondary-color;
-     }
+          color:$md-secondary-color;
+         }
+        a:visited{
+            color: $md-secondary-color;
+        }
+
    }
 }
 

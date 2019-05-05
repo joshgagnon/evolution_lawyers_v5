@@ -8,7 +8,7 @@ import Conveyancing from '../../components/Fees/conveyancing'
 class ConveyancingPage extends Component {
   render() {
     return (
-      <Layout location={this.props.location} title="ConvEyancing">
+      <Layout location={this.props.location} title="Conveyancing">
         <div className="about-container">
           <Helmet>
             <title>{`Conveyancing | ${config.siteTitle}`}</title>

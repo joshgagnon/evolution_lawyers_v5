@@ -8,7 +8,7 @@ import Company from '../../components/Fees/company'
 class CompanyPage extends Component {
   render() {
     return (
-      <Layout location={this.props.location} title="Debt Recovery">
+      <Layout location={this.props.location} title="Company & Commercial">
         <div className="about-container">
           <Helmet>
             <title>{`Company & Commercial | ${config.siteTitle}`}</title>

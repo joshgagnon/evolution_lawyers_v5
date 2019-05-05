@@ -3,7 +3,6 @@ import UserLinks from "../UserLinks";
 import config from "../../../data/SiteConfig";
 import "./Fees.scss";
 import {Cell, Grid, Button}  from "react-md";
-
 import FeeTable from './feeTable';
 import Contact from '../Contact';
 
@@ -40,7 +39,7 @@ class Fees extends Component {
 the more common services are set out below: </p>
 
           </Cell>
-          </Grid>
+
 
 
           <Cell size={6} tabletSize={8} desktopOffset={3} tabletOffset={0}>
@@ -61,10 +60,13 @@ the more common services are set out below: </p>
           </Cell>
 
 
-
-
+                </Grid>
           </section>
+
+
+
           <Contact />
+
           </div>
     );
   }

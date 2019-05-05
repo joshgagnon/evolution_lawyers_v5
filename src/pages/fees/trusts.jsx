@@ -8,7 +8,7 @@ import Trusts from '../../components/Fees/trusts'
 class TrustsPage extends Component {
   render() {
     return (
-      <Layout location={this.props.location} title="Debt Recovery">
+      <Layout location={this.props.location} title="Trusts & Estates">
         <div className="about-container">
           <Helmet>
             <title>{`Trusts & Estates | ${config.siteTitle}`}</title>

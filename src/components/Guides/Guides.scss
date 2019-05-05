@@ -1,3 +1,5 @@
+@import "../../layout/theme.scss";
+
 .guides-title{
     height: 100vh;
   max-height: 600px;
@@ -20,6 +22,10 @@
     font-weight: bold;
     font-size:22px;
     margin-bottom:30px;
+    &:visited{
+        color: $md-secondary-color;
+    }
+
 
 }
 
