@@ -80,7 +80,7 @@ const Contact = ({ className }) => {
           <p className="big-para">
                Need legal assistance? Send us a message or give us a call. We’re happy to help.
           </p>
-          <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}><span className="fa fa-phone" /> { config.phone }</a></div>
+          <div className="contact-row"><a href={`tel:${config.phone.replace(/ /g, '')}`}><span className="fa fa-phone" /> { config.phone }</a></div>
           <div className="contact-row"><a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a></div>
 
           </Cell>
