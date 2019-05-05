@@ -29,7 +29,7 @@ class Fees extends Component {
             <Grid>
             <Cell size={12}>
            <div className="title-section">
-           <h1 className="line">Conveyaning</h1>
+           <h1 className="line">Conveyancing</h1>
                 <div className="separator" />
           </div>
           </Cell>
