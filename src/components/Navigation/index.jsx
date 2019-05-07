@@ -67,7 +67,7 @@ class KebabMenu extends React.PureComponent {
   state = { visible: false };
 
   show = () => {
-    this.setState({ visible: !this.state.visible });
+    this.setState({ visible: true });
   };
 
   toggle = () => {
@@ -85,14 +85,14 @@ class KebabMenu extends React.PureComponent {
         id="nav-menu"
         className="nav-menu"
 
-        menuItems={<NavMenu onNavClick={this.hide} wolf={wolf}/>}
+        menuItems={<NavMenu wolf={wolf}/>}
         listInline
         position={MenuButton.Positions.TOP_LEFT}
         defaultVisible={false}
-        onVisibilityChange={this.toggle}
-        visible={this.state.visible}
-        onClose={this.hide}
-        onClick={this.show}
+        //onVisibilityChange={this.toggle}
+       // visible={this.state.visible}
+       // onClose={this.hide}
+       // onClick={this.toggle}
         transitionName="md-layover"
         anchor={{
           x: MenuButton.HorizontalAnchors.CENTER,
@@ -133,7 +133,7 @@ const Title = props =>  <StaticQuery
     render={data => <div>
           <KebabMenu wolf={data.wolf} />
             <Img
-            className="logo"
+              className="logo"
               fixed={data.logo.childImageSharp.fixed}
               objectFit="contain"
               objectPosition="50% 50%"
