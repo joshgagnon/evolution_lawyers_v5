@@ -13,7 +13,7 @@ const data = {
         ['Refinance', '$680', '$1,050'],
         ['Sale', '$780', '$1,100'],
         ['Purchase', '$880', '$1,300'],
-        ['Refinance &amp; Transfer', '$1,000', '$1,500'],
+        ['Refinance & Transfer', '$1,000', '$1,500'],
         ['Pre-auction Document Review', '$250', '$375'],
         ['Increasing Priority Amount', '$480', '$730'],
         ['Purchase “off the plans”', '$1,500', '$2,000']

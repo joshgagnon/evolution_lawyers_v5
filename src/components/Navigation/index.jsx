@@ -86,14 +86,14 @@ class KebabMenu extends React.PureComponent {
         className="nav-menu"
       role="button"
       aria-label="menu"
-        menuItems={<NavMenu wolf={wolf}/>}
+        menuItems={<NavMenu onNavClick={this.hide} wolf={wolf}/>}
         listInline
         position={MenuButton.Positions.TOP_LEFT}
         defaultVisible={false}
-        //onVisibilityChange={this.toggle}
-       // visible={this.state.visible}
-       // onClose={this.hide}
-       // onClick={this.toggle}
+        onVisibilityChange={this.toggle}
+        visible={this.state.visible}
+        onClose={this.hide}
+        onClick={this.toggle}
         transitionName="md-layover"
         anchor={{
           x: MenuButton.HorizontalAnchors.CENTER,
