@@ -84,7 +84,8 @@ class KebabMenu extends React.PureComponent {
     return <MenuButton
         id="nav-menu"
         className="nav-menu"
-
+      role="button"
+      aria-label="menu"
         menuItems={<NavMenu wolf={wolf}/>}
         listInline
         position={MenuButton.Positions.TOP_LEFT}
