@@ -14,7 +14,16 @@ const ContactMenu = (props) => {
   return <div>
           <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}><span className="fa fa-phone" /> { config.phone }</a></div>
           <div className="contact-row"><a href={`tel:${config.fax.replace(' ', '')}`}><span className="fa fa-fax" /> { config.fax }</a></div>
+          <div className="po-address">
+           <div className="address-row"><em>Postal Address</em></div>
+          { config.poAddress.map((add, i) => {
+            return <div className="address-row" key={i}>
+              { add }
+            </div>
+          })}
+          </div>
           <div className="address">
+           <div className="address-row"><em>Address</em></div>
           { config.address.map((add, i) => {
             return <div className="address-row" key={i}>
               { add }
@@ -25,17 +34,16 @@ const ContactMenu = (props) => {
           <div className="contact-row"><a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a></div>
 </div>
 }
-
+// style={{position: 'absolute',left: 0, right:0, top: 0, bottom: 0, overflow: 'auto'}}
 const NavMenu = (props) => {
 
     const imageData = props.wolf.childImageSharp.fluid
-    return <div className="main-nav-menu">
+    return <div className="main-nav-menu md-dialog--full-page md-dialog">
    <BackgroundImage Tag="section"
-   style={{height: '100%'}}
-                         className={'guidebg'}
-                         fluid={imageData}
+          className={'guidebg'}
+          style={{backgroundSize: 'contain'}}
+          fluid={imageData}
         >
-
       <Grid>
         <Cell className="nav-links" size={6} tabletSize={4}>
           <div><a href="/" onClick={props.onNavClick}>Home</a></div>

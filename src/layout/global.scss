@@ -45,13 +45,10 @@ div.title-section{
 div.sub-title-section{
 
     .line{
-        color: $text-color;
+   color: $md-secondary-color;
               line-height: 40px;
             font-size: 30px;
-        em{
-            color: $md-secondary-color;
-            font-style:normal;
-        }
+
     }
     .separator {
         height: 7px;

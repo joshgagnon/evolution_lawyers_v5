@@ -15,7 +15,7 @@ class Footer extends Component {
     }
     return (
       <footer className={fixedFooter ? "footer footer-fixed" : "footer"}>
-            <div className="copyright">© Evolution Lawyers Limited 2018. All rights reserved.</div>
+            <div className="copyright">© Evolution Lawyers Limited 2019. All rights reserved.</div>
 
             <div className="nav-links">
 

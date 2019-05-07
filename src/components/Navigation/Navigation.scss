@@ -35,14 +35,12 @@
 }
 
 .main-nav-menu {
+    &.md-dialog--full-page {
+        top:100px;
+
+    }
         width: 100%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 100px;
-    bottom: 0;
     background-color:$bg;
-     overflow-y: auto;
 
     .nav-links, .contact-menu {
         flex-direction: column;
@@ -50,7 +48,6 @@
         display: flex;
     }
     .nav-links {
-        padding-left:48px;
         text-align: center;
         @media #{$md-tablet-media} {
            text-align: right;
@@ -67,9 +64,11 @@
     .contact-menu > div{
         margin-left:28px;
     }
-    .address{
-        margin-top:20px;
-        margin-bottom:20px;
+    .po-address{
+        margin-top:16px;
+    }
+    .address, .po-address{
+        margin-bottom:16px;
     }
 
     .contact-row, .address-row{
