@@ -19,11 +19,11 @@ class Footer extends Component {
 
             <div className="nav-links">
 
-              <a href="/" >Home</a>
-             <a href="/team" >The Team</a>
-              <a href="/services" >Services</a>
-              <a href="/fees" >Fees</a>
-             <a href="/resources" >Resources</a>
+              <Link to="/" >Home</Link>
+             <Link to="/team" >The Team</Link>
+              <Link to="/services" >Services</Link>
+              <Link to="/fees" >Fees</Link>
+             <Link to="/resources" >Resources</Link>
           </div>
 
             <div className="links">

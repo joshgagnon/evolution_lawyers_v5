@@ -4,7 +4,9 @@ import config from "../../../data/SiteConfig";
 import "./Fees.scss";
 import {Cell, Grid, Button }  from "react-md";
 import Contact from '../Contact';
+import { Link } from "gatsby";
 
+const buttonClass = 'md-btn md-btn--raised md-btn--text md-btn--raised-pressed md-pointer--hover md-background--secondary md-background--secondary-hover md-inline-block';
 
 class Fees extends Component {
   render() {
@@ -36,10 +38,10 @@ class Fees extends Component {
 
           <Cell size={6} tabletSize={8} desktopOffset={3} tabletOffset={0}>
           <div className="fee-button-row">
-              <Button href="fees/conveyancing" raised secondary >Conveyancing</Button>
-               <Button href="fees/debtrecovery" raised secondary >Debt Recovery</Button>
-               <Button href="fees/trusts" raised secondary >Trusts &amp; Estates</Button>
-               <Button href="fees/company" raised secondary >Company &amp; Commercial</Button>
+              <Link className={buttonClass} to="fees/conveyancing">Conveyancing</Link>
+               <Link className={buttonClass} to="fees/debtrecovery">Debt Recovery</Link>
+               <Link className={buttonClass} to="fees/trusts" >Trusts &amp; Estates</Link>
+               <Link className={buttonClass} to="fees/company" >Company &amp; Commercial</Link>
                </div>
           </Cell>
 

@@ -9,6 +9,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { Toolbar, MenuButton, ListItem, Grid, Cell  } from 'react-md';
 import config from "../../../data/SiteConfig";
 import BackgroundImage from 'gatsby-background-image'
+import { Link } from "gatsby"
 
 const ContactMenu = (props) => {
   return <div>
@@ -34,7 +35,7 @@ const ContactMenu = (props) => {
           <div className="contact-row"><a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a></div>
 </div>
 }
-// style={{position: 'absolute',left: 0, right:0, top: 0, bottom: 0, overflow: 'auto'}}
+
 const NavMenu = (props) => {
 
     const imageData = props.wolf.childImageSharp.fluid
@@ -46,11 +47,11 @@ const NavMenu = (props) => {
         >
       <Grid>
         <Cell className="nav-links" size={6} tabletSize={4}>
-          <div><a href="/" onClick={props.onNavClick}>Home</a></div>
-          <div><a href="/team" onClick={props.onNavClick}>The Team</a></div>
-          <div><a href="/services" onClick={props.onNavClick}>Services</a></div>
-          <div><a href="/fees" onClick={props.onNavClick}>Fees</a></div>
-          <div><a href="/resources" onClick={props.onNavClick}>Resources</a></div>
+          <div><Link  to="/" onClick={props.onNavClick}>Home</Link></div>
+          <div><Link  to="/team" onClick={props.onNavClick}>The Team</Link></div>
+          <div><Link  to="/services" onClick={props.onNavClick}>Services</Link></div>
+          <div><Link  to="/fees" onClick={props.onNavClick}>Fees</Link></div>
+          <div><Link  to="/resources" onClick={props.onNavClick}>Resources</Link></div>
         </Cell>
         <Cell  className="contact-menu" size={6}  tabletSize={4}>
           <ContactMenu />
@@ -88,6 +89,9 @@ class KebabMenu extends React.PureComponent {
       aria-label="menu"
         menuItems={<NavMenu onNavClick={this.hide} wolf={wolf}/>}
         listInline
+
+        fillViewportHeight={true}
+        fillViewportWidth={true}
         position={MenuButton.Positions.TOP_LEFT}
         defaultVisible={false}
         onVisibilityChange={this.toggle}
@@ -133,6 +137,8 @@ const Title = props =>  <StaticQuery
     query={query}
     render={data => <div>
           <KebabMenu wolf={data.wolf} />
+
+
             <Img
               className="logo"
               fixed={data.logo.childImageSharp.fixed}

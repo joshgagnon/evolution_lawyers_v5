@@ -8,24 +8,26 @@ import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Img from "gatsby-image/withIEPolyfill";
 import './Guides.scss';
+import { Link } from "gatsby";
+
 
 export const ConveyancingIcons = (props) => {
     return <Cell size={8} desktopOffset={2} className="guide-button-row">
 
-        <a  className="guide-button" href="/docs/buying">
+        <Link  className="guide-button" to="/docs/buying">
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}><img src="/assets/images/guidehome.jpg" alt="Buying" /></ScrollAnimation>
             <span className="guide-text">BUYING</span>
-        </a>
+        </Link>
 
-        <a className="guide-button"  href="/docs/selling">
+        <Link className="guide-button"  to="/docs/selling">
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}><img src="/assets/images/guidesell.jpg" alt="Selling" /></ScrollAnimation>
             <span className="guide-text">SELLING</span>
-        </a>
+           </Link>
 
-        <a className="guide-button"  href="/docs/refinancing">
+        <Link  className="guide-button"  to="/docs/refinancing">
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}><img src="/assets/images/guideref.jpg" alt="Refinancing" /></ScrollAnimation>
             <span className="guide-text">REFINANCING</span>
-        </a>
+           </Link>
 
     </Cell>
 }
@@ -33,10 +35,10 @@ export const ConveyancingIcons = (props) => {
 
 export const DebtRecoveryIcons = (props) => {
     return     <Cell size={8} desktopOffset={2} className="guide-button-row">
-        <a  className="guide-button" href="/docs/debtrecovery">
+        <Link  className="guide-button" to="/docs/debtrecovery">
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}><img src="/assets/images/debt.jpg" alt="Debt recovery and disbursements" /></ScrollAnimation>
             <span className="guide-text">DEBT RECOVERY &amp; DISBURSEMENTS</span>
-        </a>
+           </Link>
 
 
     </Cell>
