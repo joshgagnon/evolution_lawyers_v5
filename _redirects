@@ -1,0 +1,10 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://www.evolutionlawyers.com/* https://www.evolutionlawyers.nz/:splat 301!
+https://evolutionlawyers.com/* https://www.evolutionlawyers.nz/:splat 301!
+https://www.evolutionlawyers.co.nz/* https://www.evolutionlawyers.nz/:splat 301!
+https://evolutionlawyers.co.nz/* https://www.evolutionlawyers.nz/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://evolution-lawyers.netlify.com/* https://www.evolutionlawyers.nz/:splat 301!
