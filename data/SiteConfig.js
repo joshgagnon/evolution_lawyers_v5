@@ -3,7 +3,7 @@ const config = {
   siteTitleShort: "Evolution Lawyers", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Evolution Lawyers", // Alternative site title for SEO.
   //siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://evolution-lawyers.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://www.evolutionlawyers.nz", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   siteDescription: "A virtual law firm for modern New Zealanders", // Website description used for RSS feeds/meta description tag.
   //siteFBAppID: "1825356251115265", // FB Application ID for using app insights

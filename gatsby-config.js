@@ -62,12 +62,36 @@ module.exports = {
         ]
       }
     },
-    {
+    /*{
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: config.siteGATrackingID
       }
+    },*/
+
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          config.siteGATrackingID, // Google Analytics / GA
+          //"AW-CONVERSION_ID", // Google Ads / Adwords / AW
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared accross all trackingIds
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: false,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+
+        },
+      },
     },
+
+
     {
       resolve: "gatsby-plugin-nprogress",
       options: {

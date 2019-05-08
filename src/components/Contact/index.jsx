@@ -3,6 +3,11 @@ import { Button, TextField, Grid, Cell, Card } from 'react-md';
 import config from "../../../data/SiteConfig";
 import './Contact.scss';
 
+const formSubmit = () => {
+    typeof window !== "undefined" && window.gtag("event", "submit", {'event_category': 'contact form submission'  });
+}
+
+
 const ContactForm = () => <form
   name="contact"
   method="post"
@@ -55,7 +60,7 @@ const ContactForm = () => <form
     />
 <div data-netlify-recaptcha="true"></div>
     <div className="button-row" >
-        <Button type="submit" raised secondary className="md-cell--right" iconClassName="fa fa-paper-plane">Send</Button>
+        <Button type="submit" raised secondary className="md-cell--right" iconClassName="fa fa-paper-plane" onClick={formSubmit}>Send</Button>
     </div>
  </Grid>
 </form>
