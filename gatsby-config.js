@@ -77,13 +77,6 @@ module.exports = {
           config.siteGATrackingID, // Google Analytics / GA
           //"AW-CONVERSION_ID", // Google Ads / Adwords / AW
         ],
-        // This object gets passed directly to the gtag config command
-        // This config will be shared accross all trackingIds
-        gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
-          anonymize_ip: false,
-          cookie_expires: 0,
-        },
         // This object is used for configuration specific to this plugin
         pluginConfig: {
 

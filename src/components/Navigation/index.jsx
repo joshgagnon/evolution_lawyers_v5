@@ -11,6 +11,16 @@ import config from "../../../data/SiteConfig";
 import BackgroundImage from 'gatsby-background-image'
 import { Link } from "gatsby"
 
+
+const clickEmailTopMenu = () => {
+    typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'email link - top menu'  });
+}
+
+const clickEmail = () => {
+    typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'email link'  });
+}
+
+
 const ContactMenu = (props) => {
   return <div>
           <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}><span className="fa fa-phone" /> { config.phone }</a></div>
@@ -32,7 +42,7 @@ const ContactMenu = (props) => {
           })}
           <div className="address-row"><em>(By appointment only)</em></div>
           </div>
-          <div className="contact-row"><a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a></div>
+          <div className="contact-row"><a href={`mailto:${config.email}`} onClick={clickEmail}><span className="fa fa-envelope" /> { config.email }</a></div>
 </div>
 }
 
@@ -177,7 +187,7 @@ const ExternalLinks = (props) =>   <div className="links">
                     <span className="sr-only">Phone</span>
                 </a>
 
-                <a href={`mailto:${config.email}`} target="_blank" rel="noopener">
+                <a href={`mailto:${config.email}`}  onClick={clickEmailTopMenu} target="_blank" rel="noopener">
                     <i aria-hidden="true" className="fa fa-envelope" title="Email"></i>
                     <span className="sr-only">Email</span>
                 </a>
