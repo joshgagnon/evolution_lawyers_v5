@@ -56,7 +56,7 @@ Order for Summary Judgment (undefended hearing)
 
 ['Bankruptcy Notice',  '$900', '$1,350'],
 ['Creditors Application',  '$1,800', '$2,700'],
-['Order for Adjudication',  '$750', '$$1,000'],
+['Order for Adjudication',  '$750', '$1,000'],
 ]
 };
 

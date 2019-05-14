@@ -38,7 +38,7 @@ const Text = () => {
 <li><strong>Unit Titles</strong>
 
 <p>If your property is a unit title, the body corporate levies you have paid will be apportioned in the same way as the council rates.&nbsp; We will contact the body corporate administrator to confirm what levies have been paid.</p>
-<p>When selling a unit title, you are required to provide the purchaser with <a href="http://www.reaa.govt.nz/ForLicensees/Documents/Licensee%20Information%20Sheets/Info%20Sheet%20-%20Unit%20Titles%20Act%202010%20Licensee%20-%20022016.pdf" target="_blank" rel="noopener">pre-contract and pre-settlement disclosure statements</a>.&nbsp; The pre-settlement disclosure must be provided at least five working days before settlement, and if it is not then the purchaser can cancel the agreement.&nbsp; We will obtain the statement from the body corporate administrator and provide it to the purchaser on your behalf.</p>
+<p>When selling a unit title, you are required to provide the purchaser with <a href="https://reagovtnz.cwp.govt.nz/real-estate-professionals/listing-a-property/unit-title-guidance/" target="_blank" rel="noopener">pre-contract and pre-settlement disclosure statements</a>.&nbsp; The pre-settlement disclosure must be provided at least five working days before settlement, and if it is not then the purchaser can cancel the agreement.&nbsp; We will obtain the statement from the body corporate administrator and provide it to the purchaser on your behalf.</p>
 </li>
 
 <li><strong>Trust Account</strong>
@@ -55,7 +55,7 @@ const Text = () => {
 <p>Anybody who sells a property must complete and sign and <a href="http://www.linz.govt.nz/land/land-registration/prepare-and-submit-your-dealing/property-tax-compliance-requirements" target="_blank" rel="noopener">land transfer tax statement</a>.&nbsp; The property title cannot be transferred without it.&nbsp; If the property you are selling was not your main home, you must provide your IRD number.&nbsp; An IRD number is always required where the property is held in a trust.</p>
 </li><li><strong>Signing Documents</strong>
 
-<p>If you are in Auckland, we can meet at a location convenient to you to sign up the documents required to complete the purchase.&nbsp; This will include the Authority &amp; Instruction Form and land transfer tax statement.&nbsp; We will make other arrangements if you live outside Auckland.</p>
+<p>If you are in Auckland, we can meet at a location convenient to you to sign up the documents required to complete the sale.&nbsp; This will include the Authority &amp; Instruction Form and land transfer tax statement.&nbsp; We will make other arrangements if you live outside Auckland.</p>
 </li><li><strong>Settlement Day</strong>
 
 <p>The sale will be completed on settlement day, which will be agreed in the sale and purchase agreement.&nbsp; We will do everything we can to complete settlement as early as possible, however, settlements are often delayed by things that are out of your and our hands.&nbsp; If we think there is a risk settlement may not go ahead as planned, we will let you know straight away.</p>
@@ -70,7 +70,7 @@ class Doc extends Component {
     return (<section className="doc">
             <Grid>
             <Cell size={8} desktopOffset={2}>
-            <h1 className="doc-title">SELLING A RESIDENTIAL PROPERY</h1>
+            <h1 className="doc-title">SELLING A RESIDENTIAL PROPERTY</h1>
 
             <Text />
             <Disclaimer />

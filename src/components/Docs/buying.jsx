@@ -21,13 +21,14 @@ const Text = () => {
 <li><strong>Your Loan and Mortgage</strong>
 
 <p>Unless you are very fortunate, you will be taking out a loan to buy the property.&nbsp; The loan will be secured by a mortgage over the property.&nbsp;</p>
-<p>As well as being your lawyer, we will also act for the mortgagee (usually a bank) as part of the transaction.&nbsp; The bank engages us to protect their interests in connection with the transaction.&nbsp; We do that by ensuring the mortgage is registered over the property title at the same time it is transferred to you.&nbsp; Most banks also ask us to complete their disclosure requirements under <a href="http://www.comcom.govt.nz/consumer-credit/consumer-credit-fact-sheets/credit-contracts-and-consumer-finance-act/">consumer protection law</a>.&nbsp;</p>
+<p>As well as being your lawyer, we will also act for the mortgagee (usually a bank) as part of the transaction.&nbsp; The bank engages us to protect their interests in connection with the transaction.&nbsp; We do that by ensuring the mortgage is registered over the property title at the same time it is transferred to you.&nbsp; Most banks also ask us to complete their disclosure requirements under <a href="https://comcom.govt.nz/__data/assets/pdf_file/0023/91571/Consumer-credit-contracts-overview-Fact-sheet-Oct-2012.pdf">consumer protection law</a>.&nbsp;</p>
 <p>The time we take to fulfil the bank’s requirements is taken into account in our fee estimate for property purchases.</p>
     </li>
+    
 <li><strong>KiwiSaver Withdrawal</strong>
 
 <p>If you have KiwiSaver and would like to put all or some of those funds towards the purchase price, you will need to apply to your KiwiSaver provider.&nbsp; You can only use KiwiSaver funds to purchase a home that you intend to live in.&nbsp; The earlier the application is submitted, the better, as most providers take up to two weeks to process them.&nbsp;</p>
-<p>KiwiSaver providers require a solicitor’s undertaking, which we will provide that your KiwiSaver funds will only be used to go towards the purchase price on settlement.&nbsp; The funds cannot be used be for any other purpose before or after settlement, such as repaying a loan from a third party.</p>
+<p>KiwiSaver providers require a solicitor’s undertaking, which we will provide, that your KiwiSaver funds will only be used to go towards your deposit or to the purchase price on settlement.&nbsp; The funds cannot be used be for any other purpose before or after settlement, such as repaying a loan from a third party.</p>
     </li>
 <li><strong>Trust Account</strong>
 
@@ -40,7 +41,7 @@ const Text = () => {
     </li>
 <li><strong>Tax Details</strong>
 
-<p>Anybody who purchases a property must complete and sign and <a href="http://www.linz.govt.nz/land/land-registration/prepare-and-submit-your-dealing/property-tax-compliance-requirements">land transfer tax statement</a>.&nbsp; The property title cannot be transferred without it.&nbsp; If the property you are buying will not be your main home, you must provide your IRD number.&nbsp; An IRD number is always required where the property is to be held in a trust.</p>
+<p>Anybody who purchases a property must complete and sign a <a href="http://www.linz.govt.nz/land/land-registration/prepare-and-submit-your-dealing/property-tax-compliance-requirements">land transfer tax statement</a>.&nbsp; The property title cannot be transferred without it.&nbsp; If the property you are buying will not be your main home, you must provide your IRD number.&nbsp; An IRD number is always required where the property is to be held in a trust.</p>
     </li>
 <li><strong>Signing Documents</strong>
 

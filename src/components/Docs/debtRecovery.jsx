@@ -20,7 +20,7 @@ const Text = () => {
 <li>Creditor’s application - $1,800</li>
 <li>Order for adjudication - $750</li>
 </ul>
-<p><em>For debts owed by companies</em></p>
+<p><em>For debts owed by companies:</em></p>
 <ul>
 <li>Formal demand - $250</li>
 <li>Statutory demand - $350</li>
@@ -185,17 +185,17 @@ const Text = () => {
 
 <p>These steps in the process relate to debts owed by individuals.</p>
 <ul>
-<li><strong>Step Two – Summary Judgment Application - $1,800</strong></li>
+<li><strong>Step Two – Summary Judgment application - $1,800</strong></li>
 </ul>
-<p>We recommend filing and serving summary judgment proceedings in the District Court (for debts under $200,000) or High Court (for debts $200,000 and over) if the individual does not satisfy the formal demand.</p>
+<p>We recommend filing and serving summary judgment proceedings in the District Court (for debts under $350,000) or High Court (for debts $350,000 and over) if the individual does not satisfy the formal demand.</p>
 <p>Our fee includes:</p>
 <ul>
 <li>Preparing statement of claim, summary judgment application, notice of proceeding, list of documents, and affidavit in support</li>
 <li>Arranging swearing of affidavit in support of summary judgment Application</li>
 <li>Finalising documents for filing with the relevant Court</li>
-<li>Arranging personal service of documents on the debtor, if possible.</li>
-<li>If an order for deemed or substituted service is required, our additional fee is $1,000 for preparing the necessary documents and obtaining the required order.</li>
-<li>Preparing, arranging swearing of, and filing affidavit of service.</li>
+<li>Arranging personal service of documents on the debtor, if possible</li>
+<li>If an order for deemed or substituted service is required, our additional fee is $1,000 for preparing the necessary documents and obtaining the required order</li>
+<li>Preparing, arranging swearing of, and filing affidavit of service</li>
 </ul>
 <p>If the debtor does not oppose the summary judgment application, move to Step Three. &nbsp;Disbursements at this stage will include Court filing fees, the service agent’s fee, and our office disbursement of $50.</p>
 <ul>
@@ -209,8 +209,7 @@ const Text = () => {
 <li>Appearing at, or arranging for an agent to appear at, the first call of the summary judgment application</li>
 <li>Sealing order for summary judgment</li>
 </ul>
-<p>Disbursements at this step will include Court filing fees, agency fees (if an agent is</p>
-<p>required for an out-of-town Court appearance), and our office disbursement of $50.</p>
+<p>Disbursements at this step will include Court filing fees, agency fees (if an agent is required for an out-of-town Court appearance), and our office disbursement of $50.</p>
 <p>At this point, we recommend considering sending a copy of the sealed order to the debtor in the form of a further formal demand. This would involve repeating Step One.</p>
 <p>If the Court order does not result in repayment, move to Individual Step Four.</p>
 <ul>
@@ -250,8 +249,7 @@ const Text = () => {
 <li>Appearing at, or arranging for an agent to appear at, the first call of the creditor’s application</li>
 <li>Sealing order for adjudication</li>
 </ul>
-<p>Disbursements at this step will include Court filing fees, agency fees (if an agent is</p>
-<p>required for an out-of-town Court appearance), and our office disbursement of $50.</p>
+<p>Disbursements at this step will include Court filing fees, agency fees (if an agent is required for an out-of-town Court appearance), and our office disbursement of $50.</p>
 <p>At this point, the Official Assignee will be responsible for repaying the individual’s debt out of the assets available in his or her estate, to the extent those assets are able to repay the debt. The creditor will submit a proof of debt in the bankruptcy when prompted by the Official Assignee. No further recovery action may be taken against the individual.</p>
     </li>
 
@@ -295,8 +293,7 @@ const Text = () => {
 <li>Appearing at, or arranging for an agent to appear at, the first call of the liquidation application</li>
 <li>Sealing order for liquidation</li>
 </ul>
-<p>Disbursements at this step will include Court filing fees, agency fees (if an agent is</p>
-<p>required for an out-of-town Court appearance), and our office disbursement of $50.</p>
+<p>Disbursements at this step will include Court filing fees, agency fees (if an agent is required for an out-of-town Court appearance), and our office disbursement of $50.</p>
 <p>At this point, the appointed liquidator will be responsible for satisfying the company’s debt out of the assets available in liquidation, to the extent those assets are able to repay the debt. The creditor should submit a proof of debt in the liquidation when prompted by the liquidator. No further recovery action may be taken against the company.</p>
     </li>
 
