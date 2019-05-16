@@ -10,7 +10,7 @@ const Text = () => {
 
 <ol>
 <li><strong>Conveyancing</strong>
-<p>Refinancing a residential property by entering into a new mortgage with a different bank falls within the category of transactions lawyers term “<a href="https://browser.catalex.nz/open_definition/24121-DLM364970/">conveyancing</a>”.&nbsp; This short guide sets out some things you might want to know about what is involved in a property purchase refinance.</p>
+<p>Refinancing a residential property by entering into a new mortgage with a different bank falls within the category of transactions lawyers term “<a href="https://browser.catalex.nz/open_definition/24121-DLM364970/">conveyancing</a>”.&nbsp; This short guide sets out some things you might want to know about what is involved in a refinance conveyance.</p>
 </li><li><strong>Your Existing Mortgage</strong>
 
 <p>A refinance always involves the discharge of the existing mortgage over your property.&nbsp; That requires repaying any amounts you owe the current mortgagee (usually a bank) that are secured by the mortgage.&nbsp; Usually, this will mean all amounts you owe the bank.&nbsp;</p>

@@ -1,9 +1,11 @@
 .fee-button-row{
+    & > div {
+            display: inline-block;
+    }
     text-align: center;
     a{
         margin: 0 30px 20px 30px;
-font-size: 22px;
-    line-height: 28px;
+
 
     }
     padding-bottom:36px;

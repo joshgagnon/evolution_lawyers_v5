@@ -5,7 +5,7 @@ import "./Fees.scss";
 import {Cell, Grid, Button }  from "react-md";
 import Contact from '../Contact';
 import { Link } from "gatsby";
-
+import ScrollAnimation from 'react-animate-on-scroll';
 const buttonClass = 'md-btn md-btn--raised md-btn--text md-btn--raised-pressed md-pointer--hover md-background--secondary md-background--secondary-hover md-inline-block';
 
 class Fees extends Component {
@@ -38,10 +38,11 @@ class Fees extends Component {
 
           <Cell size={6} tabletSize={8} desktopOffset={3} tabletOffset={0}>
           <div className="fee-button-row">
-              <Link className={buttonClass} to="fees/conveyancing">Conveyancing</Link>
-               <Link className={buttonClass} to="fees/debtrecovery">Debt Recovery</Link>
-               <Link className={buttonClass} to="fees/trusts" >Trusts &amp; Estates</Link>
-               <Link className={buttonClass} to="fees/company" >Company &amp; Commercial</Link>
+
+              <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10} delay={500} ><Link className={buttonClass} to="fees/conveyancing"><i class="fa fa-mail-forward" aria-hidden="true" /> Conveyancing</Link></ScrollAnimation>
+               <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10} delay={750} ><Link className={buttonClass} to="fees/debtrecovery"><i class="fa fa-mail-forward" aria-hidden="true" /> Debt Recovery</Link></ScrollAnimation>
+               <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10} delay={1000} ><Link className={buttonClass} to="fees/trusts" ><i class="fa fa-mail-forward" aria-hidden="true" /> Trusts &amp; Estates</Link></ScrollAnimation>
+               <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10} delay={1250}><Link className={buttonClass} to="fees/company" ><i class="fa fa-mail-forward" aria-hidden="true" /> Company &amp; Commercial</Link></ScrollAnimation>
                </div>
           </Cell>
 

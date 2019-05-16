@@ -191,7 +191,7 @@ const Text = () => {
 <p>Our fee includes:</p>
 <ul>
 <li>Preparing statement of claim, summary judgment application, notice of proceeding, list of documents, and affidavit in support</li>
-<li>Arranging swearing of affidavit in support of summary judgment Application</li>
+<li>Arranging swearing of affidavit in support of summary judgment application</li>
 <li>Finalising documents for filing with the relevant Court</li>
 <li>Arranging personal service of documents on the debtor, if possible</li>
 <li>If an order for deemed or substituted service is required, our additional fee is $1,000 for preparing the necessary documents and obtaining the required order</li>
