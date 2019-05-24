@@ -13,7 +13,7 @@ const company = {
     title: 'Company',
     rows: [
 ['Incorporating a Company', '$250', '$500'],
-['Incorporating a Company with a Standard Constitution', '$500', '$380'],
+['Incorporating a Company with a Standard Constitution', '$500', '$800'],
 
 ['Assisting with Company Administration (Annual Fee)', '$250', '$450'],
 
