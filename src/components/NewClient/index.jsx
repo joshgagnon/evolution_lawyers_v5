@@ -101,7 +101,9 @@ will not be required to provide any card details or other payment information. W
     </ul>
           </ScrollAnimation>
 
+    <ScrollAnimation animateIn='fadeIn' animateOnce={true} delay={2500}>
           <NewClientForm />
+          </ScrollAnimation>
     </Cell>
     </Grid>
    </BackgroundImage>
