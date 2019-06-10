@@ -16,7 +16,7 @@ const config = {
   facebook: 'https://www.facebook.com/evolutionlawyers',
   youtube: 'https://www.youtube.com/channel/UCTogLQNyy8dub3Psog8B7Vg',
   linkedin: 'https://in.linkedin.com/company/evolution-lawyers-limited',
-
+  newClientTarget: 'https://elf.evolutionlawyers.nz/contact-us',
   address: [
 '18/465 Mount Eden Rd',' Mount Eden', 'Auckland 1024',
   ],

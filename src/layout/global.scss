@@ -112,8 +112,14 @@ a:link {
 .small-para {
      font-size:16px;
     line-height:20px;
+    color: $text-color;
     a{
         color: $md-secondary-color;
+    }
+}
+.small-list{
+    li{
+        padding-bottom:8px;
     }
 }
 .emph-para {
