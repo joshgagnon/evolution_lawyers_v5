@@ -29,7 +29,7 @@ const Title = (props) => (
         file(relativePath: { eq: "images/keyboard.png" }) {
           childImageSharp {
             fluid(quality: 70) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
@@ -54,7 +54,8 @@ find useful videos and plain English summaries about the law and various legal
 processes. We have prepared these resources to answer some of the more
 common questions our clients have about their matters. Although we hope you
 find our resources helpful, we stress that they are not a substitute for obtaining
-legal advice from a registered lawyer. If you need that, please get in touch.    </p>
+legal advice from a registered lawyer. If you need that, please get in touch.
+</p>
       </ScrollAnimation>
     </Cell>
     </Grid>

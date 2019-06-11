@@ -7,7 +7,7 @@ import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Img from "gatsby-image/withIEPolyfill";
-import './Guides.scss';
+import './GuideIcons.scss';
 import { Link } from "gatsby";
 
 
@@ -45,23 +45,8 @@ export const DebtRecoveryIcons = (props) => {
 }
 
 const GuideIcons = (props) => (
-    <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "images/lion.png" }) {
-          childImageSharp {
-            fluid(quality: 70) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }`}
-     render={data => {
-        return <BackgroundImage Tag="section"
-                           className="guide-icons"
-                           fluid={data.file.childImageSharp.fluid}>
-
-      <Grid>
+                               <section className="guide-icons">
+    <Grid>
     <Cell size={10} tabletSize={8} desktopOffset={1} phoneOffset={0} tabletOffset={0}>
        <div className="sub-title-section" style={{textAlign:'center'}}>
        <h1 className="line">Residential Conveyancing</h1>
@@ -83,13 +68,8 @@ const GuideIcons = (props) => (
     <DebtRecoveryIcons />
 
     </Grid>
-
-
-
-   </BackgroundImage>
-  }
-  }
-  />);
+    </section>
+);
 
 
   export default GuideIcons;
