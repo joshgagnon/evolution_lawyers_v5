@@ -94,7 +94,7 @@ will not be required to provide any card details or other payment information. W
     insufficient resource or expertise to complete the required work;</li>
 
 
-    <li>we may require further information or documents before we can complete the required work, for example to comply with our obligations under the
+    <li>we may require further information or documents before we can complete the required work, for example to comply with our obligations under the 
      <a href="https://browser.catalex.nz/open_article/instrument/DLM2140700" rel="noopener noreferrer">Anti-Money Laundering and Countering Financing of Terrorism Act 2009</a>; and</li>
 
     <li>if you are not the new client noted on the form, you have authority to submit this form on the new client’s behalf.</li>
