@@ -88,6 +88,12 @@ const Contact = ({ className }) => {
           <div className="contact-row"><a href={`tel:${config.phone.replace(/ /g, '')}`}><span className="fa fa-phone" /> { config.phone }</a></div>
           <div className="contact-row"><a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a></div>
 
+          <div >
+          <br/>
+                    <Button raised secondary className="md-cell--right" href="/new-client" iconClassName="fa fa-user-plus">
+                      Become a Client
+                   </Button>
+                   </div>
           </Cell>
 
            <Cell size={6} tabletSize={6} phoneSize={4} desktopOffset={3} tabletOffset={1} phoneOffset={0}>

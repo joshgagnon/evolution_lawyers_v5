@@ -40,12 +40,17 @@ const BackgroundSection = (props) => (
             <h1 className="line">New Zealanders</h1>
             <div className="separator" />
             <div className="button-row" >
-                    <ScrollAnimation animateIn='pulse' animateOnce={true} offset={10}>
+                    <ScrollAnimation animateIn='pulse' animateOnce={true} offset={10} style={{display: 'inline-block', margin:8}}>
                     <Button raised secondary className="md-cell--right" href="#contact" iconClassName="fa fa-paper-plane">
                       Get In Touch
                    </Button>
                    </ScrollAnimation>
 
+                    <ScrollAnimation animateIn='pulse' animateOnce={true} delay={500} style={{display: 'inline-block', margin:8}}>
+                    <Button raised secondary className="md-cell--right" href="/new-client" iconClassName="fa fa-user-plus">
+                      Become a Client
+                   </Button>
+                   </ScrollAnimation>
           </div>
           </div>
           </Cell>

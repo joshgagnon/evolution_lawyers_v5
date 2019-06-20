@@ -62,6 +62,7 @@ const NavMenu = (props) => {
           <div><Link  to="/services" onClick={props.onNavClick}>Services</Link></div>
           <div><Link  to="/fees" onClick={props.onNavClick}>Fees</Link></div>
           <div><Link  to="/resources" onClick={props.onNavClick}>Resources</Link></div>
+          <div><Link  to="/new-client" onClick={props.onNavClick}>New Client Signup</Link></div>
         </Cell>
         <Cell  className="contact-menu" size={6}  tabletSize={4}>
           <ContactMenu />
