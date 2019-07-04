@@ -43,15 +43,6 @@ const MEMBERS = [
         email: 'kieran@evolutionlawyers.nz',
         linkedIn: 'https://nz.linkedin.com/in/kieran-boyle-29564399',
         photo: 'Kieran'
-    }, {
-        name: 'Michelle Pereira',
-        qualifications: 'BCom, LLB',
-        title: 'Solicitor',
-        phone: '+64 9 623 092',
-        mobile: '+64 27 225 2740',
-        email: 'michelle@evolutionlawyers.nz',
-        linkedIn: 'https://www.linkedin.com/in/michelle-pereira-3661b187/',
-        photo: 'Michelle'
     }
 
 ]
