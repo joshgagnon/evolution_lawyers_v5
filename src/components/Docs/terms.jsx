@@ -160,15 +160,19 @@ const Text = () => {
                 <p>Fees will be invoiced on a monthly basis and on completion of the matter, unless otherwise agreed.&nbsp; Payment is due within 14 days of the date of the invoice.</p>
                 <p>Our invoices may be paid by electronic funds transfer to our bank account, by debit or credit card, or, if we hold funds for you in our trust account, by way of deduction from those funds.&nbsp; We do not accept payment of our invoices in cash.</p>
                 <p>Please let us know as soon as possible if you are unable to pay our invoice by the due date.&nbsp;</p>
-                <p>If an invoice is not paid when due, we may:</p>
+
+
+
+                <p><em>Overdue Invoices</em></p>
+
+
+                <p>If an invoice is not paid when due, we may do any or all of the following without notice to you:</p>
                 <ul>
-                    <li>charge interest on the outstanding amount at the rate of 15% per annum, calculated daily based on a year of 365 days, from the due date until the date of actual payment;</li>
-                </ul>
-                <ul>
-                    <li>charge you for the fees, expenses, and disbursements we incur in recovering or attempting to recover your outstanding indebtedness to us, on a solicitor-client basis. We may charge those fees, disbursements, and expenses to you in accordance with these standard terms, as if you were our client for the matter; or</li>
-                </ul>
-                <ul>
-                    <li>cease acting for you.</li>
+                    <li>Charge interest on the outstanding amount at the rate of 15% per annum, calculated daily based on a year of 365 days, from the due date until the date of actual payment.</li>
+
+                    <li>Charge you for the fees, expenses, and disbursements we incur in recovering or attempting to recover your outstanding indebtedness, including all third party debt collection agency costs and legal fees on a solicitor-client basis.  If we issue legal proceedings against you seeking judgment for the amount owed under these terms of engagement and represent ourselves in those proceedings, we will be entitled to costs in an amount equal to the time incurred by us in the proceeding multiplied by the relevant hourly rate set out above, plus expenses such as court fees and trace and service fees.  Our time will be calculated as if we were acting for a client of the firm in the proceeding and otherwise in accordance with these terms of engagement.</li>
+
+                    <li>Cease acting for you.</li>
                 </ul>
                 <p>It is your responsibility to pay our invoices when due.&nbsp; If we are acting for more than one person in a matter, each client, and all of them together, will be responsible for paying our invoices.&nbsp; It does not matter if you expect another person to reimburse you or pay the fee on your behalf.&nbsp; Your responsibility to pay our invoice will also not be affected by our invoice being addressed to another person.&nbsp;</p>
                 <p><em>Estimates and Fixed Fees </em></p>
@@ -183,7 +187,7 @@ const Text = () => {
                     <li>The matter will proceed to completion in the manner anticipated by your instructions and within any indicated, or a normal, timeframe.</li>
                 </ul>
                 <ul>
-                    <li>You will provide any required information or instructions in a timely and efficient manner.</li>
+                    <li>You will provide any required information, documents, or instructions in a timely and efficient manner.</li>
                 </ul>
                 <ul>
                     <li>No unforeseen impediments will arise.</li>
@@ -263,7 +267,7 @@ const Text = () => {
                 <p>Email thomas@evolutionlawyers.nz.</p>
                 <p>The New Zealand Law Society operates the Lawyers Complaints Service.&nbsp; To make a complaint to that service, phone 0800 261 201 to be connected to your nearest Complaints Service Office.&nbsp;</p>
                 <p><em>Unjustified Complaints</em></p>
-                <p>We acknowledge your right to complain as set out above if you feel we have breached our obligations.&nbsp; However, responding to formal complaints is a time consuming and costly exercise.&nbsp; &nbsp;For that reason, if you complain about our services to the Lawyers Complaints Service and the relevant Standards Committee and, if applicable, the Legal Complaints Review Officer, determines that no action is required in respect of the complaint, we may, in our absolute discretion, charge $250 (plus GST) to you to partially compensate us for the time and resources required to respond to the complaint.</p>
+                <p>We acknowledge your right to complain as set out above if you feel we have breached our obligations.&nbsp; However, responding to formal complaints is a time consuming and costly exercise.&nbsp; &nbsp;For that reason, if you complain about our services to the Lawyers Complaints Service and the relevant Standards Committee and, if applicable, the Legal Complaints Review Officer, determines that no action is required in respect of the complaint, we may, in our absolute discretion, charge $500 (plus GST) to you to partially compensate us for the time and resources required to respond to the complaint.</p>
                 <p><em>Professional Indemnity Insurance</em></p>
                 <p>We hold professional indemnity insurance that meets or exceeds the minimum standards specified by the New Zealand Law Society.</p>
                 <p><em>Lawyers’ Fidelity Fund</em></p>
