@@ -24,7 +24,9 @@ export default class MainLayout extends React.Component {
                elem.appendChild(script);
              </script>
 
-            <noscript><a href="https://www.clickcease.com" rel="nofollow"><img src="https://monitor.clickcease.com/stats/stats.aspx"  alt="ClickCease"/></a></noscript>
+            <noscript>
+            {' <a href="https://www.clickcease.com" rel="nofollow"><img src="https://monitor.clickcease.com/stats/stats.aspx"  alt="ClickCease"/></a>' }
+            </noscript>
 
 
           </Helmet>
