@@ -14,8 +14,19 @@ export default class MainLayout extends React.Component {
       <Navigation config={config} LocalTitle={this.props.title}>
         <div>
           <Helmet>
-
             <meta name="description" content={config.siteDescription} />
+            <script type="text/javascript">
+               var script = document.createElement("script");
+               script.async = true; script.type = "text/javascript";
+               var target = 'https://www.clickcease.com/monitor/stat.js';
+               script.src = target;
+               var elem = document.head;
+               elem.appendChild(script);
+             </script>
+
+            <noscript><a href="https://www.clickcease.com" rel="nofollow"><img src="https://monitor.clickcease.com/stats/stats.aspx"  alt="ClickCease"/></a></noscript>
+
+
           </Helmet>
           {children}
         </div>
