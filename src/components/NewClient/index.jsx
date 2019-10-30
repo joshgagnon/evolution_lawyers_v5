@@ -20,6 +20,7 @@ class NewClientForm  extends React.Component {
         return <form
           name="new-client"
           method="post"
+          data-netlify-recaptcha="true" 
           action={config.newClientTarget}
         >
         <input type="hidden" name="bot-field" />
@@ -36,7 +37,7 @@ class NewClientForm  extends React.Component {
               required
             />
             </div>
-        <div data-netlify-recaptcha="true"></div>
+          <div data-netlify-recaptcha="true"></div>
             <div className="button-row" >
                 <Button type="submit" raised secondary className="md-cell--right" iconClassName="fa fa-paper-plane" disabled={!this.state.value}>Next</Button>
             </div>
