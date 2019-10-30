@@ -59,7 +59,7 @@ const ContactForm = () => <form
       className="md-cell md-cell--bottom  md-cell--12"
       required
     />
-  <div data-netlify-recaptcha="true"></div>
+
     <div className="button-row" >
         <Button type="submit" raised secondary className="md-cell--right" iconClassName="fa fa-paper-plane" onClick={formSubmit}>Send</Button>
     </div>

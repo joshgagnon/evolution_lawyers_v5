@@ -8,7 +8,7 @@ const config = {
   siteDescription: "A virtual law firm for modern New Zealanders", // Website description used for RSS feeds/meta description tag.
   //siteFBAppID: "1825356251115265", // FB Application ID for using app insights
   siteGATrackingID: "UA-138160565-1", // Tracking code ID for google analytics.
-
+  recaptcha: "6LdOKcAUAAAAACO96Tasgjv3aNTv3kSqSmtWUKhb",
   phone: '0800 352 993',
   email: 'mail@evolutionlawyers.nz',
   fax: '09 929 3332',

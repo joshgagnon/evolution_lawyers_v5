@@ -12,12 +12,18 @@ import Img from "gatsby-image/withIEPolyfill";
 //import './Guides.scss';
 //import GuideIcons from './guideIcons';
 
+import {
+  GoogleReCaptchaProvider,
+  GoogleReCaptcha
+} from 'react-google-recaptcha-v3';
+  
 
 class NewClientForm  extends React.Component {
-    state = {value: false}
+    state = {value: false, reCaptcha: false}
     onChange = (value) => this.setState({ value })
     render() {
-        return <form
+        return <GoogleReCaptchaProvider reCaptchaKey={config.recaptcha}>
+        <form
           name="new-client"
           method="post"
           data-netlify-recaptcha="true" 
@@ -37,12 +43,14 @@ class NewClientForm  extends React.Component {
               required
             />
             </div>
-          <div data-netlify-recaptcha="true"></div>
+    <GoogleReCaptcha onVerify={token => this.setState({recaptcha: true})} />
+
             <div className="button-row" >
-                <Button type="submit" raised secondary className="md-cell--right" iconClassName="fa fa-paper-plane" disabled={!this.state.value}>Next</Button>
+                <Button type="submit" raised secondary className="md-cell--right" iconClassName="fa fa-paper-plane" disabled={!this.state.value || !this.state.recaptcha}>Next</Button>
             </div>
          </Grid>
         </form>
+  </GoogleReCaptchaProvider>
     }
 }
 
