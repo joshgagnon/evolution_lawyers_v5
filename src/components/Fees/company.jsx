@@ -20,7 +20,6 @@ const company = {
 ['Effecting Change of Directors', '$150', '$260'],
 ['Effecting Simple Transfer or Issue of Shares', '$250', '$380'],
 
-['Removing Company from Register (no liquidation)', '$250', '$380'],
     ]
 };
 
@@ -28,10 +27,10 @@ const commercial = {
     headers: ['Service', 'Fee estimate*', 'Approximate invoice total**'],
     title: 'Commercial',
     rows: [
-['Preparing Standard Terms of Trade', '$500 - $750', 'From $680'],
-['Specific or General Security over Personal Property', '$300', '$460'],
-['Simple Loan Agreement', '$250', '$380'],
-['Simple Personal Guarantee', '$250', '$380']
+['Preparing Standard Terms of Trade', '$750 - $1,500', 'From $950'],
+['Grant and registration of security interest in personal property', '$500 - $950', '$680'],
+['Prepare and advice on simple loan agreement', '$500 - $950', '$680'],
+['Prepare and advice on simple guarantee', '$500 - $950', '$680']
     ]
 };
 class Fees extends Component {
