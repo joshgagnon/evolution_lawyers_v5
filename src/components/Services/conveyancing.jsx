@@ -28,7 +28,7 @@ const Conveyancing = props =>  <StaticQuery
         <h1>Conveyancing</h1>
 
         <p className="mid-para">
-We provide both commercial and residential conveyancing services. Our residential conveyancing services are competitively priced, with fees starting from $880 for a purchase, $780 for sale, and $680 for a refinance (each excluding GST and disbursements). In most cases we do not exceed those estimates. Please contact <a href="mailto:kieran@evolutionlawyers.nz">Kieran Boyle</a>, our conveyancing specialist, to find out more.
+We provide both commercial and residential conveyancing services. Our residential conveyancing services are competitively priced, with fees starting from $950 for a purchase, $850 for sale, and $680 for a refinance (each excluding GST and disbursements). In most cases we do not exceed those estimates. Please contact <a href="mailto:kieran@evolutionlawyers.nz">Kieran Boyle</a>, our conveyancing specialist, to find out more.
         </p>
         </ScrollAnimation>
        </Cell>

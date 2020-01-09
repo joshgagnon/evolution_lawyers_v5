@@ -6,6 +6,7 @@ import {Cell, Grid, Button}  from "react-md";
 import FeeTable from './feeTable';
 import Contact from '../Contact';
 
+// also see components/Services
 
 const data = {
     headers: ['Service', 'Fee estimate*', 'Approximate invoice total**'],
