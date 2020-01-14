@@ -119,8 +119,8 @@ const Title = (props) => (
             <p className="big-para">
             Evolution Lawyers makes your journey that little bit easier by offering a 10% discount on our fee for your conveyancing.  Just quote this ad to claim the discount.
             </p>
-
-            <p className="big-para">
+            <br/>
+            <p className="small-para">
                     Available only to first home buyers. Discount applies to our recorded time for services provided, but not to expenses, disbursements, or GST. 
             </p>  
 
