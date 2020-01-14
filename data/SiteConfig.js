@@ -21,7 +21,7 @@ const config = {
 '18/465 Mount Eden Rd',' Mount Eden', 'Auckland 1024',
   ],
   poAddress:[
-'PO Box 41089', 'St Lukes', 'Auckland 1346'
+'PO Box 67003, Mount Eden, Auckland, 1349'
   ],
 
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
