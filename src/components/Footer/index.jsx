@@ -13,9 +13,10 @@ class Footer extends Component {
     if (!copyright) {
       return null;
     }
+    const year = (new Date).getFullYear();
     return (
       <footer className={fixedFooter ? "footer footer-fixed" : "footer"}>
-            <div className="copyright">© Evolution Lawyers Limited 2019. All rights reserved.</div>
+            <div className="copyright">© Evolution Lawyers Limited { year } All rights reserved.</div>
 
             <div className="nav-links">
 
