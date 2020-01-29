@@ -43,6 +43,12 @@ const MEMBERS = [
         email: 'kieran@evolutionlawyers.nz',
         linkedIn: 'https://nz.linkedin.com/in/kieran-boyle-29564399',
         photo: 'Kieran'
+    }, {
+        name: 'Lindy van Eck',
+        title: 'Legal Secretary',
+        phone: '+64 9 623 0927',
+        mobile: '+64 27 546 9744',
+        photo: 'lindy-2'
     }
 
 ]
@@ -61,15 +67,15 @@ const Member = (props) => {
     <a href={`tel:${phone.replace(' ', '')}`}><i className="fa fa-phone"/> { phone }</a>
     <a href={`tel:${mobile.replace(' ', '')}`}><i className="fa fa-mobile"/> { mobile }</a>
     </div>
-      <div className="email">
-    <a href={`mailto:${email}`}><i className="fa fa-envelope"/> { email }</a>
-    </div>
-    <div className="social">
+      { email && <div className="email">
+      <a href={`mailto:${email}`}><i className="fa fa-envelope"/> { email }</a>
+    </div> }
+    { linkedIn && <div className="social">
                 <a href={linkedIn} target="_blank" rel="noopener">
                     <i aria-hidden="true" className="fa fa-linkedin-square" title="LinkedIn"></i>
                     <span className="sr-only">LinkedIn</span>
                 </a>
-                </div>
+                </div> }
                 </div>
 
     </div>
