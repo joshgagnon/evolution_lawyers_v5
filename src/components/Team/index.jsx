@@ -48,6 +48,7 @@ const MEMBERS = [
         title: 'Legal Secretary',
         phone: '+64 9 623 0927',
         mobile: '+64 27 546 9744',
+        email: 'lindy@evolutionlawyers.nz',
         photo: 'lindy-2'
     }
 
