@@ -116,7 +116,7 @@ class KebabMenu extends React.PureComponent {
         }}
         icon
       >
-        <i className="fa fa-bars" />
+        { this.state.visible ? <i className="fa fa-times" /> : <i className="fa fa-bars" /> }
       </MenuButton>
     }
 };
