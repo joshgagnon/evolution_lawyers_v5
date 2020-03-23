@@ -11,7 +11,7 @@ class FirstHomeBuyersPage extends Component {
         <div className="first-home-buyers-container">
           <Helmet>
             <title>{`First Home Buyers | ${config.siteTitle}`}</title>
-            <link rel="canonical" href={`${config.siteUrl}/team/`} />
+            <link rel="canonical" href={`${config.siteUrl}/first-home-buyers/`} />
           </Helmet>
           <FirstHomeBuyers />
         </div>
