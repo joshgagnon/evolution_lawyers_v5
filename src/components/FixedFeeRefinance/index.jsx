@@ -14,7 +14,7 @@ import Contact from '../Contact';
 const Title = (props) => (
     <StaticQuery query={graphql`
       query {
-        file(relativePath: { eq: "images/firsthome.jpg" }) {
+        file(relativePath: { eq: "images/House family.jpg" }) {
           childImageSharp {
             fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
@@ -51,7 +51,7 @@ const Title = (props) => (
             <p className="big-para">
             We can complete the legal side of your residential mortgage refinance for $1,000 all up, including fees, disbursements, expenses, and GST.  You’ll be hard pressed to find a better deal anywhere in New Zealand.
             </p>
-            <br/>
+            
             <p className="big-para">
 We can also complete the entire process remotely, with no requirement for a face-to-face meeting.  All you need is a computer and a decent Internet connection.
             </p>  
