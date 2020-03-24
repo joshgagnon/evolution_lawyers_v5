@@ -49,7 +49,7 @@ const Title = (props) => (
             </p>
 
             <p className="big-para">
-            We can complete the legal side of your residential mortgage refinance for $1,000 all up, including fees, disbursements, expenses, and GST.  You’ll be hard pressed to find a better deal anywhere in New Zealand.
+            We can complete the legal side of your residential mortgage refinance for <span className="bold underline">$1,000</span> all up, including fees, disbursements, expenses, and GST.  You’ll be hard pressed to find a better deal anywhere in New Zealand.
             </p>
             
             <p className="big-para">

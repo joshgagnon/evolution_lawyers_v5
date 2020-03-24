@@ -6,3 +6,11 @@
     margin:30px 0;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration:underline;
+    text-decoration-color: $md-secondary-color;
+}
