@@ -266,11 +266,7 @@ const Text = () => {
                 </ul>
                 <p>Email thomas@evolutionlawyers.nz.</p>
                 <p>The New Zealand Law Society operates the Lawyers Complaints Service.&nbsp; To make a complaint to that service, phone 0800 261 201 to be connected to your nearest Complaints Service Office.&nbsp;</p>
-                <p><em>Unjustified Complaints</em></p>
-                <p>We acknowledge your right to complain as set out above if you feel we have breached our obligations.&nbsp; However, responding to formal complaints is a time consuming and costly exercise.&nbsp; &nbsp;For that reason, if you complain about our services to the Lawyers Complaints Service and the relevant Standards Committee and, if applicable, the Legal Complaints Review Officer, determines that no action is required in respect of the complaint, we may, in our absolute discretion, charge $500 (plus GST) to you to partially compensate us for the time and resources required to respond to the complaint.</p>
-                <p><em>Professional Indemnity Insurance</em></p>
-                <p>We hold professional indemnity insurance that meets or exceeds the minimum standards specified by the New Zealand Law Society.</p>
-                <p><em>Lawyers’ Fidelity Fund</em></p>
+                 <p><em>Lawyers’ Fidelity Fund</em></p>
                 <p>The New Zealand Law Society maintains the Lawyers’ Fidelity Fund to provide clients with protection against pecuniary loss arising from theft by lawyers.&nbsp; The maximum amount payable by the Fidelity Fund by way of compensation to an individual claimant is limited to $100,000.&nbsp; Except in certain circumstances specified in the Lawyers and Conveyancers Act 2006, the Fidelity Fund does not cover a client for any loss relating to money that a lawyer is instructed to invest on behalf of a client.</p>
                 <p><em>End of the Engagement</em></p>
                 <p>You may end our engagement at any time by notice in writing.&nbsp; Until we receive such notice, we may continue acting on a matter for you.</p>
