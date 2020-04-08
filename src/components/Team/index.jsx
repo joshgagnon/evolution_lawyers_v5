@@ -28,7 +28,7 @@ const MEMBERS = [
         photo: 'Thomas-2'
     }, {
         name: 'Sophie Bloy',
-        title: 'Pratice Manager',
+        title: 'Practice Manager',
         phone: '+64 9 441 3425',
         mobile: '+64 21 024 39766',
         email: 'sophie@evolutionlawyers.nz',
