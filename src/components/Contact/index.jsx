@@ -12,7 +12,6 @@ const ContactForm = () => <form
   name="contact"
   method="post"
   data-netlify="true"
-  data-netlify-recaptcha="true" 
   data-netlify-honeypot="bot-field"
 >
 <input type="hidden" name="bot-field" />
