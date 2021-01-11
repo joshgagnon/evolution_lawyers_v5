@@ -142,7 +142,7 @@ module.exports = {
       `gatsby-plugin-favicon`,
 
 
-    {
+   /* {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
@@ -155,8 +155,18 @@ module.exports = {
           }
         ],
       },
-    },
+    },*/
 
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Material Icons`,
+          `Roboto\:400,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
 
     /*{
       resolve: "gatsby-plugin-feed",
