@@ -11,13 +11,13 @@ import Contact from '../Contact';
 const data = {
     headers: ['Service', 'Fee estimate*', 'Approximate invoice total**'],
     rows: [
-        ['Refinance', '$680', '$1,050'],
-        ['Sale', '$850', '$1,200'],
-        ['Purchase', '$950', '$1,400'],
-        ['Refinance & Transfer', '$1,000', '$1,500'],
-        ['Pre-auction Document Review', '$250', '$375'],
-        ['Increasing Priority Amount', '$480', '$730'],
-        ['Purchase “off the plans”', '$1,500', '$2,000']
+        ['Refinance', '$750', '$1,140'],
+        ['Sale', '$940', '$1,305'],
+        ['Purchase', '$1,050', '$1,515'],
+        ['Refinance & Transfer', '$1,100', '$1,615'],
+        ['Pre-auction Document Review', '$275', '$405'],
+        ['Increasing Priority Amount', '$530', '$790'],
+        ['Purchase “off the plans”', '$1,650', '$2,180']
     ]
 };
 
