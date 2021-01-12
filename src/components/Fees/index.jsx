@@ -51,13 +51,13 @@ class Fees extends Component {
           <div className="sub-title-section"><h2 className="line"> Standard Hourly Rates</h2></div>
           <p className="mid-para">Our services are charged by the hour. The applicable hourly rate depends on what we are doing and who needs to do it. We have three categories:</p>
 
-          <p className="emph-para">A. Core Legal Services – $350 per hour</p>
+          <p className="emph-para">A. Core Legal Services – $385 per hour</p>
  <p className="mid-para bottom-pad">For services that require a lawyer experienced in the relevant area of law.</p>
 
- <p className="emph-para">B. Related Legal Services – $250 per hour</p>
+ <p className="emph-para">B. Related Legal Services – $275 per hour</p>
 <p className="mid-para bottom-pad">For services that could be provided by a junior lawyer or legal executive.</p>
 
- <p className="emph-para">C. Incidental Services – $150 per hour</p>
+ <p className="emph-para">C. Incidental Services – $165 per hour</p>
 <p className="mid-para bottom-pad">For services that could be performed by a competent administrator supervised by a lawyer.</p>
 
 <div className="sub-title-section"><h2 className="line"> Fixed Fees</h2></div>

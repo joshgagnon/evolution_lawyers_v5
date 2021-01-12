@@ -122,7 +122,7 @@ const Text = () => {
                                 <p>Core Legal Services</p>
                             </td>
                             <td className="md-table-column md-text-left md-table-column--plain md-table-column--adjusted md-text">
-                                <p>$350</p>
+                                <p>$385</p>
                             </td>
                             <td className="md-table-column md-text-left md-table-column--plain md-table-column--adjusted md-text">
                                 <p>Original drafting of instruments and claims, drafting legal opinions, providing written legal advice, corresponding with other lawyers, the Court, institutions, and other third parties on your behalf, providing substantive legal advice to you, representing you in Court or in another formal disputes process (and preparing for that representation), and attending a meeting at your request.</p>
@@ -134,7 +134,7 @@ const Text = () => {
                                 <p>Related Legal Services</p>
                             </td>
                             <td className="md-table-column md-text-left md-table-column--plain md-table-column--adjusted md-text">
-                                <p>$250</p>
+                                <p>$275</p>
                             </td>
                             <td className="md-table-column md-text-left md-table-column--plain md-table-column--adjusted md-text">
                                 <p>Reviewing documents and evidence, researching the law, considering application of the law, completing a basic precedent document, reporting to you about the progress of your matter, and seeking further instructions, information, or documents from you.</p>
@@ -146,7 +146,7 @@ const Text = () => {
                                 <p>Incidental Services</p>
                             </td>
                             <td className="md-table-column md-text-left md-table-column--plain md-table-column--adjusted md-text">
-                                <p>$150</p>
+                                <p>$165</p>
                             </td>
                             <td className="md-table-column md-text-left md-table-column--plain md-table-column--adjusted md-text">
                                 <p>Proof-reading, compiling a bundle of documents or authorities, and general matter management and administration.&nbsp;</p>
