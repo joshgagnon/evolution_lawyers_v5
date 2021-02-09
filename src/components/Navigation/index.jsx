@@ -20,10 +20,14 @@ const clickEmail = () => {
     typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'email link'  });
 }
 
+const clickPhone = () => {
+    typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'phone link'  });
+}
+
 
 const ContactMenu = (props) => {
   return <div>
-          <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}><span className="fa fa-phone" /> { config.phone }</a></div>
+          <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}  onClick={clickPhone}><span className="fa fa-phone" /> { config.phone }</a></div>
           <div className="contact-row"><a href={`tel:${config.fax.replace(' ', '')}`}><span className="fa fa-fax" /> { config.fax }</a></div>
           <div className="po-address">
            <div className="address-row"><em>Postal Address</em></div>

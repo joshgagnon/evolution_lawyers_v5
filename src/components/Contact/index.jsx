@@ -6,7 +6,12 @@ import './Contact.scss';
 const formSubmit = () => {
     typeof window !== "undefined" && window.gtag("event", "submit", {'event_category': 'contact form submission'  });
 }
-
+const phoneClick = () => {
+    typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'contact form telephone click'  });
+}
+const emailClick = () => {
+    typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'contact form email click'  });
+}
 
 const ContactForm = () => <form
   name="contact"
@@ -85,8 +90,8 @@ const Contact = ({ className }) => {
           <p className="big-para">
                Need legal assistance? Send us a message or give us a call. We’re happy to help.
           </p>
-          <div className="contact-row"><a href={`tel:${config.phone.replace(/ /g, '')}`}><span className="fa fa-phone" /> { config.phone }</a></div>
-          <div className="contact-row"><a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a></div>
+          <div className="contact-row"><a href={`tel:${config.phone.replace(/ /g, '')}`} onClick={phoneClick}><span className="fa fa-phone" /> { config.phone }</a></div>
+          <div className="contact-row"><a href={`mailto:${config.email}`} onClick={emailClick}><span className="fa fa-envelope" /> { config.email }</a></div>
 
           <div >
           <br/>
