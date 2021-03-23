@@ -11,7 +11,7 @@ import Contact from '../Contact';
 const data = {
     headers: ['Service', 'Fee estimate*', 'Approximate invoice total**'],
     rows: [
-        ['Refinance', '$750', '$1,140'],
+        ['Refinance', '$700', '$1,100'],
         ['Sale', '$940', '$1,305'],
         ['Purchase', '$1,050', '$1,515'],
         ['Refinance & Transfer', '$1,100', '$1,615'],
