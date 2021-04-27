@@ -18,7 +18,10 @@ const config = {
   linkedin: 'https://in.linkedin.com/company/evolution-lawyers-limited',
   newClientTarget: 'https://elf.evolutionlawyers.nz/contact-us',
   address: [
-'18/465 Mount Eden Rd',' Mount Eden', 'Auckland 1024',
+    'Suite 8 Floor 1',
+    '72 Dominion Road',
+    'Mount Eden',
+    'Auckland 1024'
   ],
   poAddress:[
 'PO Box 67003, Mount Eden, Auckland, 1349'
@@ -51,7 +54,7 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],*/
-  copyright: "Copyright © 2021. CataLex Ltd" // Copyright string for the footer of the website and RSS feed.
+  copyright: `Copyright © ${(new Date()).getFullYear()}. CataLex Ltd` // Copyright string for the footer of the website and RSS feed.
 
 
 };
