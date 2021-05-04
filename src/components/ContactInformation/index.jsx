@@ -2,112 +2,92 @@ import React, { Component } from "react";
 import { Button, TextField, Grid, Cell, Card } from 'react-md';
 import config from "../../../data/SiteConfig";
 import './ContactInformation.scss';
+import { clickPhone, clickEmail } from '../Navigation';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-const formSubmit = () => {
-    typeof window !== "undefined" && window.gtag("event", "submit", {'event_category': 'contact form submission'  });
-}
-const phoneClick = () => {
-    typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'contact form telephone click'  });
-}
-const emailClick = () => {
-    typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'contact form email click'  });
-}
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 
-const ContactForm = () => <form
-  name="contact"
-  method="post"
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
->
-<input type="hidden" name="bot-field" />
-  <input type="hidden" name="form-name" value="contact" />
-  <input type="hidden" name="subject" value="contact request" />
-<Grid>
-    <TextField
-        id="contact-name"
-        name="name"
-      label="Name"
-      lineDirection="center"
-      placeholder="Name"
-      className="md-cell md-cell--bottom md-cell--6"
-      required
-    />
-    <TextField
-    id="contact-phone"
-    name="phone"
-      label="Phone"
-      lineDirection="center"
-      placeholder="Phone"
-      className="md-cell md-cell--bottom md-cell--6"
-      required
-    />
+const containerStyle = {
+    width: '800px',
+    height: '400px',
+    margin: '20px auto',
+    maxWidth: '80%'
+};
 
-    <TextField
-    id="contact-email"
-    name="email"
-      label="Email"
-      type="email"
-      lineDirection="center"
-      placeholder="Email"
-      className="md-cell md-cell--bottom md-cell--12"
-      required
-    />
+const center = {
+    lat: -36.860686996627386,
+    lng: 174.74971966108103
+};
 
-     <TextField
-    id="contact-message"
-    name="message"
-        label="Message"
-      rows={4}
-      lineDirection="center"
-      placeholder="Your Message..."
-      className="md-cell md-cell--bottom  md-cell--12"
-      required
-    />
+function MyMap() {
 
-    <div className="button-row" >
-        <Button type="submit" raised secondary className="md-cell--right" iconClassName="fa fa-paper-plane" onClick={formSubmit}>Send</Button>
-    </div>
- </Grid>
-</form>
+    const { isLoaded } = useJsApiLoader({
+        id: 'google-map-script',
+        googleMapsApiKey: config.mapsKey
+    })
 
+    const [map, setMap] = React.useState(null)
 
-const CardForm = (props) => {
-    return <Card>
-        <ContactForm />
-    </Card>
+    const onLoad = React.useCallback(function callback(map) {
+       // const bounds = new window.google.maps.LatLngBounds();
+       // map.fitBounds(bounds);
+       // setMap(map)
+    }, [])
+
+    const onUnmount = React.useCallback(function callback(map) {
+        setMap(null)
+    }, [])
+
+    return isLoaded ? (
+        <GoogleMap
+            mapContainerStyle={containerStyle}
+            center={center}
+            zoom={16}
+            onLoad={onLoad}
+            onUnmount={onUnmount}
+        >
+            <Marker position={center} label={'Evolution Lawyers'} />
+        </GoogleMap>
+    ) : <></>
 }
 
+const Map = React.memo(MyMap)
 
-const Contact = ({ className }) => {
-   return <section id="contact">
-      <Grid>
-        <Cell size={6} tabletSize={6} phoneSize={4} desktopOffset={3} tabletOffset={1} phoneOffset={0} className="get-in-touch">
+const ContactInformation= ({ className }) => {
+   return <section id="contact-information">
+       <Grid>
+           <Cell  size={12} desktopOffset={0} tabletOffset={0} phoneOffset={0}>
+               <ScrollAnimation animateIn='slideInLeft' animateOnce={true} offset={10} style={{textAlign: 'center'}}>
+                   <div className="title-section" style={{marginTop: 50}}>
+                       <h1 className="line">Contact Information</h1>
 
-         <div className="title-section">
-            <h1 className="line">Get in touch</h1>
-            <div className="separator" />
-          </div>
-          <p className="big-para">
-               Need legal assistance? Send us a message or give us a call. We’re happy to help.
-          </p>
-          <div className="contact-row"><a href={`tel:${config.phone.replace(/ /g, '')}`} onClick={phoneClick}><span className="fa fa-phone" /> { config.phone }</a></div>
-          <div className="contact-row"><a href={`mailto:${config.email}`} onClick={emailClick}><span className="fa fa-envelope" /> { config.email }</a></div>
-
-          <div >
-          <br/>
-                    <Button raised secondary className="md-cell--right" href="/new-client" iconClassName="fa fa-user-plus">
-                      Become a Client
-                   </Button>
+                       <div className="separator" />
                    </div>
-          </Cell>
+               </ScrollAnimation>
+           </Cell>
+           <Cell  size={6} tabletSize={4}  desktopOffset={0} tabletOffset={0} phoneOffset={0} className={"address-col"}>
+            <div className="address">
+                <div className="address-row"><em>Address</em></div>
+                { config.address.map((add, i) => {
+                    return <div className="address-row" key={i}>
+                        { add }
+                    </div>
+                })}
+                <div className="address-row"><em>By appointment only</em></div>
+            </div>
+           </Cell>
 
-           <Cell size={6} tabletSize={6} phoneSize={4} desktopOffset={3} tabletOffset={1} phoneOffset={0}>
-              <CardForm />
-          </Cell>
-          </Grid>
+       <Cell  size={6}  tabletSize={4} tabletOffset={0} phoneOffset={0} className={"contact-col"}>
+           <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}  onClick={clickPhone}><span className="fa fa-phone" /> { config.phone }</a></div>
+           <div className="contact-row"><a href={`tel:${config.fax.replace(' ', '')}`}><span className="fa fa-fax" /> { config.fax }</a></div>
+           <div className="contact-row"><a href={`mailto:${config.email}`} onClick={clickEmail}><span className="fa fa-envelope" /> { config.email }</a></div>
+       </Cell>
+       </Grid>
+
+       { typeof window !== 'undefined' && <Map />}
        </section>
 
  };
 
 
- export default Contact;
+ export default ContactInformation;

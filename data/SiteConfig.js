@@ -52,8 +52,8 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],*/
-  copyright: `Copyright © ${(new Date()).getFullYear()}. CataLex Ltd` // Copyright string for the footer of the website and RSS feed.
-
+  copyright: `Copyright © ${(new Date()).getFullYear()}. CataLex Ltd`, // Copyright string for the footer of the website and RSS feed.
+  mapsKey: 'AIzaSyAOQMJlGJfLCTBpzNiluyr8dDjKmNwnqdo'
 
 };
 

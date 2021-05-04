@@ -12,15 +12,15 @@ import BackgroundImage from 'gatsby-background-image'
 import { Link } from "gatsby"
 
 
-const clickEmailTopMenu = () => {
+export const clickEmailTopMenu = () => {
     typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'email link - top menu'  });
 }
 
-const clickEmail = () => {
+export const clickEmail = () => {
     typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'email link'  });
 }
 
-const clickPhone = () => {
+export const clickPhone = () => {
     typeof window !== "undefined" && window.gtag("event", "click", {'event_category': 'phone link'  });
 }
 

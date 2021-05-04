@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 import Layout from "../layout";
 import ContactInformation from "../components/ContactInformation";
+import Contact from "../components/Contact";
 import config from "../../data/SiteConfig";
 
 class FeesPage extends Component {
@@ -14,6 +15,7 @@ class FeesPage extends Component {
             <link rel="canonical" href={`${config.siteUrl}/fees/`} />
           </Helmet>
           <ContactInformation />
+          <Contact />
         </div>
       </Layout>
     );
