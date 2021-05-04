@@ -6,31 +6,26 @@ import Button from "react-md/lib/Buttons";
 import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
-import Img from "gatsby-image/withIEPolyfill";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 
 const Insolvency = props =>  <StaticQuery
-    query={ graphql`
-      query {
-    file(relativePath: { eq: "images/s4.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(quality: 80) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
+    query={ graphql`{
+  file(relativePath: {eq: "images/s4.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 80, placeholder: NONE, layout: FIXED)
     }
-  }`}
+  }
+}
+`}
     render={data => <Grid>
           <Cell size={6} tabletSize={8} className="services-section services-section-img">
                   <ScrollAnimation animateIn='slideInLeft' animateOnce={true} offset={10} >
-            <Img
-            className="services-image"
-              fixed={data.file.childImageSharp.fixed}
+            <GatsbyImage
+              image={data.file.childImageSharp.gatsbyImageData}
+              className="services-image"
               alt="Evolution Lawyers"
-                          style={{maxWidth:'100%'}}
-            />
+              style={{maxWidth:'100%'}} />
             </ScrollAnimation>
         </Cell>
        <Cell size={5}  tabletSize={8}   phoneOffset={0}  className="services-section">

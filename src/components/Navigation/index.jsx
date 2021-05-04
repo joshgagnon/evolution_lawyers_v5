@@ -4,7 +4,7 @@ import ToolbarActions from "../ToolbarActions";
 import Footer from "../Footer";
 import GetNavList from "./NavList";
 import "./Navigation.scss";
-import Img from "gatsby-image/withIEPolyfill";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { StaticQuery, graphql } from "gatsby"
 import { Toolbar, MenuButton, ListItem, Grid, Cell  } from 'react-md';
 import config from "../../../data/SiteConfig";
@@ -52,7 +52,7 @@ const ContactMenu = (props) => {
 
 const NavMenu = (props) => {
 
-    const imageData = props.wolf.childImageSharp.fluid
+    const imageData = props.wolf.childImageSharp.gatsbyImageData
     return <div className="main-nav-menu md-dialog--full-page md-dialog">
    <BackgroundImage Tag="section"
           className={'guidebg'}
@@ -62,6 +62,7 @@ const NavMenu = (props) => {
       <Grid>
         <Cell className="nav-links" size={6} tabletSize={4}>
           <div><Link  to="/" onClick={props.onNavClick}>Home</Link></div>
+          <div><Link  to="/contact" onClick={props.onNavClick}>Contact Us</Link></div>
           <div><Link  to="/team" onClick={props.onNavClick}>The Team</Link></div>
           <div><Link  to="/services" onClick={props.onNavClick}>Services</Link></div>
           <div><Link  to="/fees" onClick={props.onNavClick}>Fees</Link></div>
@@ -125,27 +126,19 @@ class KebabMenu extends React.PureComponent {
     }
 };
 
-const query = graphql`
-  query {
-    logo: file(relativePath: { eq: "images/cropped-evologo.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(height: 40) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
+const query = graphql`{
+  logo: file(relativePath: {eq: "images/cropped-evologo.png"}) {
+    childImageSharp {
+      gatsbyImageData(height: 40, placeholder: NONE, layout: FIXED)
     }
-
-    wolf: file(relativePath: { eq: "images/hoverbg/wolf.png" }) {
-        childImageSharp {
-          fluid(quality: 70) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
-          }
-        }
-      }
-
-  }`;
+  }
+  wolf: file(relativePath: {eq: "images/hoverbg/wolf.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 70, placeholder: NONE, layout: FULL_WIDTH)
+    }
+  }
+}
+`;
 
 
 const Title = props =>  <StaticQuery
@@ -154,14 +147,13 @@ const Title = props =>  <StaticQuery
           <KebabMenu wolf={data.wolf} />
 
 
-            <Img
+            <GatsbyImage
+              image={data.logo.childImageSharp.gatsbyImageData}
               className="logo"
-              fixed={data.logo.childImageSharp.fixed}
               objectFit="contain"
               objectPosition="50% 50%"
               style={{maxWidth: '70vw'}}
-              alt="Evolution Lawyers"
-            />
+              alt="Evolution Lawyers" />
         </div> }
   />
 

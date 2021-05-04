@@ -5,7 +5,7 @@ import config from "../../../data/SiteConfig";
 import "./Team.scss";
 import Contact from '../Contact';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Img from "gatsby-image/withIEPolyfill";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const MEMBERS = [
     {
@@ -56,62 +56,65 @@ const MEMBERS = [
 
 const Member = (props) => {
     const { member: { name, qualifications, title, email, phone, mobile, linkedIn, photo }, image} = props;
-    return <div className="member">
+    return (
+        <div className="member">
 
 
-        <Img fluid={image} alt={name} />
-        <div className="text-block">
-    <div className="name">{ name }</div>
-    { qualifications && <div className="qualifications">{ qualifications }</div> }
-    <div className="title">{ title }</div>
-    <div className="phone">
-    <a href={`tel:${phone.replace(' ', '')}`}><i className="fa fa-phone"/> { phone }</a>
-    <a href={`tel:${mobile.replace(' ', '')}`}><i className="fa fa-mobile"/> { mobile }</a>
-    </div>
-      { email && <div className="email">
-      <a href={`mailto:${email}`}><i className="fa fa-envelope"/> { email }</a>
-    </div> }
-    { linkedIn && <div className="social">
-                <a href={linkedIn} target="_blank" rel="noopener">
-                    <i aria-hidden="true" className="fa fa-linkedin-square" title="LinkedIn"></i>
-                    <span className="sr-only">LinkedIn</span>
-                </a>
-                </div> }
-                </div>
+            <GatsbyImage image={image} alt={name} />
+            <div className="text-block">
+        <div className="name">{ name }</div>
+        { qualifications && <div className="qualifications">{ qualifications }</div> }
+        <div className="title">{ title }</div>
+        <div className="phone">
+        <a href={`tel:${phone.replace(' ', '')}`}><i className="fa fa-phone"/> { phone }</a>
+        <a href={`tel:${mobile.replace(' ', '')}`}><i className="fa fa-mobile"/> { mobile }</a>
+        </div>
+          { email && <div className="email">
+          <a href={`mailto:${email}`}><i className="fa fa-envelope"/> { email }</a>
+        </div> }
+        { linkedIn && <div className="social">
+                    <a href={linkedIn} target="_blank" rel="noopener">
+                        <i aria-hidden="true" className="fa fa-linkedin-square" title="LinkedIn"></i>
+                        <span className="sr-only">LinkedIn</span>
+                    </a>
+                    </div> }
+                    </div>
 
-    </div>
+        </div>
+    );
 }
 
 
 const Members = (props) => {
-    return <StaticQuery
-    query={graphql`
-      query allImgQuery {
-        source:  allFile(filter: { sourceInstanceName: { eq: "assets" } }) {
-          edges {
-            node {
-                 name
-              childImageSharp {
-                fluid(quality: 100) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
-          }
+    return (
+        <StaticQuery
+        query={graphql`query allImgQuery {
+  source: allFile(filter: {sourceInstanceName: {eq: "assets"}}) {
+    edges {
+      node {
+        name
+        childImageSharp {
+          gatsbyImageData(quality: 100, layout: FULL_WIDTH)
         }
       }
-    `}
+    }
+  }
+}
+`}
 
-    render={(data) => {
-        return <Grid className="members">
-            { MEMBERS.map((member, i) => {
-                const image = data.source.edges.find(e => e.node.name === member.photo).node.childImageSharp.fluid;
-                return <Cell size={4} key={i}>
-                    <Member member={member} key={i} image={image} />
-                    </Cell>
-            }) }
-        </Grid> }}
-    />
+        render={(data) => {
+            return (
+                <Grid className="members">
+                    { MEMBERS.map((member, i) => {
+                        const image = data.source.edges.find(e => e.node.name === member.photo).node.childImageSharp.gatsbyImageData;
+                        return <Cell size={4} key={i}>
+                            <Member member={member} key={i} image={image} />
+                            </Cell>
+                    }) }
+                </Grid>
+            ); }}
+        />
+    );
 }
 
 

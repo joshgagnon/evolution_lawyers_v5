@@ -6,7 +6,7 @@ import Button from "react-md/lib/Buttons";
 import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
-import Img from "gatsby-image/withIEPolyfill";
+import { GatsbyImage } from "gatsby-plugin-image";
 import Conveyancing from './conveyancing';
 import Trusts from './trusts'
 import Company from './company';
@@ -17,16 +17,14 @@ import Contact from '../Contact';
 
 const Title = (props) => (
     <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "images/feesbg.jpg" }) {
-          childImageSharp {
-            fluid(quality: 70) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }`}
+    query={graphql`{
+  file(relativePath: {eq: "images/feesbg.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 70, layout: FULL_WIDTH)
+    }
+  }
+}
+`}
      render={data => {
         return ( /*<BackgroundImage Tag="section"
                            className="services"

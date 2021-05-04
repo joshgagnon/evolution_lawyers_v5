@@ -9,35 +9,33 @@ import Tiger from './tiger';
 import Summary from './summary';
 import Features from './features';
 import Contact from '../Contact';
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const Award = (props) => (
-    <StaticQuery query={graphql`
-      query {
-        file(relativePath: { eq: "images/award.png" }) {
-          childImageSharp {
-            fixed(width: 852) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
-      }
-    `}
+    <StaticQuery query={graphql`{
+  file(relativePath: {eq: "images/award.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 852, layout: FIXED)
+    }
+  }
+}
+`}
      render={data => {
        // Set ImageData.
-       const imageData = data.file.childImageSharp.fixed
-       return (<ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
-        <Grid>
-     <Cell size={12} style={{textAlign: 'center'}}>
-        <Img fixed={data.file.childImageSharp.fixed} />
-        </Cell>
-        </Grid>
-        </ScrollAnimation>
-       )
+       const imageData = data.file.childImageSharp.gatsbyImageData
+       return (
+         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
+          <Grid>
+       <Cell size={12} style={{textAlign: 'center'}}>
+          <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
+          </Cell>
+          </Grid>
+          </ScrollAnimation>
+       );
      }
      }
     />

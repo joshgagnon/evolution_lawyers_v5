@@ -6,22 +6,18 @@ import Button from "react-md/lib/Buttons";
 import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
-import Img from "gatsby-image/withIEPolyfill";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 
 const Company = props =>  <StaticQuery
-    query={ graphql`
-      query {
-    file(relativePath: { eq: "images/s3.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(quality: 80) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
+    query={ graphql`{
+  file(relativePath: {eq: "images/s3.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 80, placeholder: NONE, layout: FIXED)
     }
-  }`}
+  }
+}
+`}
     render={data => <Grid>
        <Cell size={5} desktopOffset={1} tabletOffset={1} phoneOffset={0}  tabletSize={8}  className="services-section"  order={1} desktopOrder={0}>
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
@@ -33,12 +29,11 @@ Our team can assist with the formation and operation of your small-to-medium siz
        </Cell>
           <Cell tabletSize={6} size={6} className="services-section services-section-img"  tabletSize={8}  order={0} desktopOrder={1}>
                   <ScrollAnimation animateIn='slideInRight' animateOnce={true} offset={10}>
-            <Img
-            className="services-image"
-                        style={{maxWidth:'100%'}}
-              fixed={data.file.childImageSharp.fixed}
-              alt="Evolution Lawyers"
-            />
+            <GatsbyImage
+              image={data.file.childImageSharp.gatsbyImageData}
+              className="services-image"
+              style={{maxWidth:'100%'}}
+              alt="Evolution Lawyers" />
             </ScrollAnimation>
         </Cell>
         </Grid> }

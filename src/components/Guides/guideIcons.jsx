@@ -6,7 +6,7 @@ import Button from "react-md/lib/Buttons";
 import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
-import Img from "gatsby-image/withIEPolyfill";
+import { GatsbyImage } from "gatsby-plugin-image";
 import './GuideIcons.scss';
 import { Link } from "gatsby";
 

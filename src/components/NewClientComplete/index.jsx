@@ -8,45 +8,45 @@ import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import config from "../../../data/SiteConfig";
 import ScrollAnimation from 'react-animate-on-scroll';
-import Img from "gatsby-image/withIEPolyfill";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Title = (props) => (
     <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "images/keyboard.png" }) {
-          childImageSharp {
-            fluid(quality: 70) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }`}
+    query={graphql`{
+  file(relativePath: {eq: "images/keyboard.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 70, layout: FULL_WIDTH)
+    }
+  }
+}
+`}
      render={data => {
-        return <BackgroundImage Tag="section"
-                           className="guide-bg"
-                           fluid={data.file.childImageSharp.fluid}>
+        return (
+          <BackgroundImage Tag="section"
+                             className="guide-bg"
+                             fluid={data.file.childImageSharp.gatsbyImageData}>
 
-      <Grid>
-    <Cell size={6} tabletSize={8} desktopOffset={1} phoneOffset={0} tabletOffset={0} className="guides-title">
-        <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
-       <div className="title-section">
-       <h1 className="line"><em>New Client</em> Signup</h1>
-            <div className="separator" />
+        <Grid>
+      <Cell size={6} tabletSize={8} desktopOffset={1} phoneOffset={0} tabletOffset={0} className="guides-title">
+          <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
+         <div className="title-section">
+         <h1 className="line"><em>New Client</em> Signup</h1>
+              <div className="separator" />
 
-      </div>
-      </ScrollAnimation>
+        </div>
+        </ScrollAnimation>
 
-    <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
-            <p className="small-para">Thank you for your submission.</p>
-            <p className="small-para">We will review the information and documents provided and get back to you shortly.  We aim to answer all new client requests within one business day. </p>
-            <p className="small-para">If you wish to add to or follow up your submission, please contact us by email 
-            at <a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a> or call us on <a href={`tel:${config.phone.replace(/ /g, '')}`}><span className="fa fa-phone" /> { config.phone }</a></p>
-          </ScrollAnimation>
+      <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
+              <p className="small-para">Thank you for your submission.</p>
+              <p className="small-para">We will review the information and documents provided and get back to you shortly.  We aim to answer all new client requests within one business day. </p>
+              <p className="small-para">If you wish to add to or follow up your submission, please contact us by email 
+              at <a href={`mailto:${config.email}`}><span className="fa fa-envelope" /> { config.email }</a> or call us on <a href={`tel:${config.phone.replace(/ /g, '')}`}><span className="fa fa-phone" /> { config.phone }</a></p>
+            </ScrollAnimation>
 
-    </Cell>
-    </Grid>
-   </BackgroundImage>
+      </Cell>
+      </Grid>
+     </BackgroundImage>
+        );
   }
   }
   />);

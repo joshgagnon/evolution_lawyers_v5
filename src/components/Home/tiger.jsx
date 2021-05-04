@@ -11,20 +11,17 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const BackgroundSection = (props) => (
-    <StaticQuery query={graphql`
-      query {
-        tiger: file(relativePath: { eq: "images/lionbanner-copy.jpg" }) {
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp_noBase64
-            }
-          }
-        }
-      }
-    `}
+    <StaticQuery query={graphql`{
+  tiger: file(relativePath: {eq: "images/lionbanner-copy.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, placeholder: NONE, layout: FULL_WIDTH)
+    }
+  }
+}
+`}
      render={data => {
        // Set ImageData.
-       const imageData = data.tiger.childImageSharp.fluid
+       const imageData = data.tiger.childImageSharp.gatsbyImageData
        return (
           <BackgroundImage Tag="section"
                            className={'tiger'}

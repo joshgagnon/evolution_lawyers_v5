@@ -8,6 +8,9 @@ module.exports = {
   siteMetadata: {
     siteUrl: urljoin(config.siteUrl, config.pathPrefix)
   },
+    flags: {
+      DEV_SSR: false,
+    },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
@@ -91,8 +94,10 @@ module.exports = {
         color: "#c62828"
       }
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+
     "gatsby-plugin-catch-links",
     "gatsby-plugin-netlify-cms",
     //'gatsby-plugin-page-transitions',
@@ -139,8 +144,11 @@ module.exports = {
       }
     },
 
-      `gatsby-plugin-favicon`,
-
+  /*  {
+      resolve: `gatsby-plugin-favicon`,
+      icon: `src/favicon.png`,
+    },
+*/
 
    /* {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -240,5 +248,12 @@ module.exports = {
       }
     }*/
     "gatsby-plugin-offline",
+    {
+      resolve: "@ccalamos/gatsby-source-googlemaps-static",
+      options: {
+        key: process.env.GOOGLE_MAPS_STATIC_API_KEY || 'xxx',
+        center: "Auckland, NZ",
+      },
+    },
   ]
 };

@@ -10,20 +10,17 @@ import Cell  from "react-md/lib/Grids/Cell";
 
 
 const BackgroundSection = ({ className }) => (
-    <StaticQuery query={graphql`
-      query {
-        catalex: file(relativePath: { eq: "images/catalex.png" }) {
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    `}
+    <StaticQuery query={graphql`{
+  catalex: file(relativePath: {eq: "images/catalex.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+    }
+  }
+}
+`}
      render={data => {
 
-       const imageData = data.catalex.childImageSharp.fluid
+       const imageData = data.catalex.childImageSharp.gatsbyImageData
        return (
           <BackgroundImage Tag="section"
                            className={className}
