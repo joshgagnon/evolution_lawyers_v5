@@ -29,14 +29,7 @@ const ContactMenu = (props) => {
   return <div>
           <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}  onClick={clickPhone}><span className="fa fa-phone" /> { config.phone }</a></div>
           <div className="contact-row"><a href={`tel:${config.fax.replace(' ', '')}`}><span className="fa fa-fax" /> { config.fax }</a></div>
-          <div className="po-address">
-           <div className="address-row"><em>Postal Address</em></div>
-          { config.poAddress.map((add, i) => {
-            return <div className="address-row" key={i}>
-              { add }
-            </div>
-          })}
-          </div>
+            <br/>
           <div className="address">
            <div className="address-row"><em>Address</em></div>
           { config.address.map((add, i) => {
@@ -62,6 +55,7 @@ const NavMenu = (props) => {
       <Grid>
         <Cell className="nav-links" size={6} tabletSize={4}>
           <div><Link  to="/" onClick={props.onNavClick}>Home</Link></div>
+          <div><Link  to="/contact" onClick={props.onNavClick}>Contact Us</Link></div>
           <div><Link  to="/team" onClick={props.onNavClick}>The Team</Link></div>
           <div><Link  to="/services" onClick={props.onNavClick}>Services</Link></div>
           <div><Link  to="/fees" onClick={props.onNavClick}>Fees</Link></div>
