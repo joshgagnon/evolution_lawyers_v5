@@ -3,67 +3,17 @@ import { Button, TextField, Grid, Cell, Card } from 'react-md';
 import config from "../../../data/SiteConfig";
 import './ContactInformation.scss';
 import { clickPhone, clickEmail } from '../Navigation';
-import ScrollAnimation from 'react-animate-on-scroll';
 
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
-
-const containerStyle = {
-    width: '800px',
-    height: '400px',
-    margin: '20px auto',
-    maxWidth: '80%'
-};
-
-const center = {
-    lat: -36.860686996627386,
-    lng: 174.74971966108103
-};
-
-function MyMap() {
-
-    const { isLoaded } = useJsApiLoader({
-        id: 'google-map-script',
-        googleMapsApiKey: config.mapsKey
-    })
-
-    const [map, setMap] = React.useState(null)
-
-    const onLoad = React.useCallback(function callback(map) {
-       // const bounds = new window.google.maps.LatLngBounds();
-       // map.fitBounds(bounds);
-       // setMap(map)
-    }, [])
-
-    const onUnmount = React.useCallback(function callback(map) {
-        setMap(null)
-    }, [])
-
-    return isLoaded ? (
-        <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            zoom={16}
-            onLoad={onLoad}
-            onUnmount={onUnmount}
-        >
-            <Marker position={center} label={'Evolution Lawyers'} />
-        </GoogleMap>
-    ) : <></>
-}
-
-const Map = React.memo(MyMap)
 
 const ContactInformation= ({ className }) => {
    return <section id="contact-information">
        <Grid>
            <Cell  size={12} desktopOffset={0} tabletOffset={0} phoneOffset={0}>
-               <ScrollAnimation animateIn='slideInLeft' animateOnce={true} offset={10} style={{textAlign: 'center'}}>
                    <div className="title-section" style={{marginTop: 50}}>
                        <h1 className="line">Contact Information</h1>
 
                        <div className="separator" />
                    </div>
-               </ScrollAnimation>
            </Cell>
            <Cell  size={6} tabletSize={4}  desktopOffset={0} tabletOffset={0} phoneOffset={0} className={"address-col"}>
             <div className="address">
@@ -84,7 +34,10 @@ const ContactInformation= ({ className }) => {
        </Cell>
        </Grid>
 
-       { typeof window !== 'undefined' && <Map />}
+       <div style={{textAlign: 'center'}}><iframe
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102135.00877758703!2d174.7200727100854!3d-36.87314376116506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4632f97f9dd3%3A0xf3a15c8fb38e96c7!2sEvolution%20Lawyers!5e0!3m2!1sen!2sau!4v1620174014043!5m2!1sen!2sau"
+           width="600" height="450" style={{border:0, margin: '20px auto', maxWidth: '100%'}} allowFullScreen="" loading="lazy"></iframe>
+       </div>
        </section>
 
  };
