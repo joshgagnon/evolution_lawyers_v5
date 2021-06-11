@@ -279,22 +279,19 @@ const Text = () => {
                 <p>To assist the efficient management of your matter, please provide us with:</p>
                 <ul>
                     <li>clear instructions, preferably in writing and by email;</li>
-                </ul>
-                <ul>
+
                     <li>your expectations, including the desired outcome of the work we complete;</li>
-                </ul>
-                <ul>
+
                     <li>all information including correspondence relevant to the matter;</li>
-                </ul>
-                <ul>
+
                     <li>important time constraints and deadlines for completing the work;</li>
-                </ul>
-                <ul>
+
                     <li>the name(s) of anyone else who has authority to give instructions on your behalf; and</li>
-                </ul>
-                <ul>
+
                     <li>your current contact details.</li>
                 </ul>
+
+
                 <p><em>Conflicts of Interest</em></p>
                 <p>A conflict of interest may arise in the course of us acting for you.&nbsp; We will contact you immediately upon becoming aware of a potential conflict of interest.</p>
                 <p>In the event of a conflict of interest, we may need to cease working for you.</p>
@@ -304,24 +301,25 @@ const Text = () => {
                 <p>If your matter involves litigation of any form, we recommend that you consider the following:</p>
                 <ul>
                     <li>If the Court grants an award of costs in your favour, the amount of the award will most likely be less than fees, expenses, and disbursements due under these terms of engagement. Unless you have a contractual entitlement, only in rare cases, such as a serious abuse of process, will the Court be prepared to award full recovery of your actual legal costs.</li>
-                </ul>
-                <ul>
+
                     <li>If you are unsuccessful in any Court procedure, the Court may make a costs award against you. Your legal requirement to pay any costs award will not affect your liability under these terms.</li>
                 </ul>
         
 
                 <p><em>Privacy and Confidential Information</em></p>
-                <p>We will keep confidential all information concerning you or your affairs that we acquire during the course of acting for you.&nbsp; You have the right to access this information and you may request that we correct any information that is incorrect.&nbsp;</p>
-                <p>Confidential information will, as far as practicable, be made available only to those people within Evolution Lawyers who are providing legal services to you.&nbsp; We will not disclose any confidential information to a third party, except to the extent necessary or desirable to enable us to carry out your instructions, or as required by law, including the Rules.</p>
-                <p>We will sometimes need to collect, use, and disclose personal information about your employees, directors, or other people associated with you or your transactions, in order to carry out your instructions.&nbsp; Please make sure that these people are aware that our acting for you may involve collecting, using, and disclosing personal information about them. &nbsp;In most cases they can request access to the personal information we hold about them.</p>
-              
-              
+                <p>We will keep confidential all information concerning you or your affairs that we acquire while acting for you.  You have the right to access this information and you may request that we correct any information that is incorrect.  </p>
+                <p>Confidential information will, as far as practicable, be made available only to those people within Evolution Lawyers who are providing legal services to you.  We will not disclose any confidential information to a third party, except to the extent necessary or desirable to enable us to carry out your instructions, or as required by law, including the Rules.</p>
+                <p>We will sometimes need to collect, use, and disclose personal information about your employees, directors, or other people associated with you or your transactions, to carry out your instructions. </p>
+                <p>Please make sure that these people are aware that our acting for you may involve collecting, using, and disclosing personal information about them.  In most cases they can request access to the personal information we hold about them.</p>
+
                 <p><em>Electronic Communications</em></p>
-                <p>We will communicate with you and others by electronic means. These communications can be subject to third-party intrusion or contain viruses or other defects.&nbsp; We do not accept responsibility and will not be liable for any damage or loss caused by such intrusion, virus, or other defect of an electronic communication.</p>
+                <p>We will communicate with you and others by electronic means. These communications can be subject to third-party intrusion or contain viruses or other defects.  </p>
+                <p>We do not accept responsibility and will not be liable for any damage or loss caused by such intrusion, virus, or other defect of an electronic communication.</p>
                 <p>If you have any doubts about the authenticity of any communication or document appearing to be sent by us, please contact us immediately.</p>
+
                 <p><em>Complaints</em></p>
                 <p>We maintain procedures for handling complaints by clients, which are designed to ensure they are dealt with promptly and fairly.</p>
-                <p>You may refer any complaint either to the person who has overall responsibility for your work.&nbsp; Please email your written complaint to:</p>
+                <p>In the first instance, you may refer any complaint to the person who has overall responsibility for your work.  Please email your written complaint to:</p>
                 <ul>
                     <li>Tamina Cunningham-Adams, Director.</li>
                 </ul>
@@ -331,49 +329,49 @@ const Text = () => {
                 </ul>
                 <p>Email thomas@evolutionlawyers.nz.</p>
                 <p>The New Zealand Law Society operates the Lawyers Complaints Service.&nbsp; To make a complaint to that service, phone 0800 261 201 to be connected to your nearest Complaints Service Office.&nbsp;</p>
+
+
                  <p><em>Lawyers’ Fidelity Fund</em></p>
                 <p>The New Zealand Law Society maintains the Lawyers’ Fidelity Fund to provide clients with protection against pecuniary loss arising from theft by lawyers.&nbsp; The maximum amount payable by the Fidelity Fund by way of compensation to an individual claimant is limited to $100,000.&nbsp; Except in certain circumstances specified in the Lawyers and Conveyancers Act 2006, the Fidelity Fund does not cover a client for any loss relating to money that a lawyer is instructed to invest on behalf of a client.</p>
+
+
                 <p><em>End of the Engagement</em></p>
                 <p>You may end our engagement at any time by notice in writing.&nbsp; Until we receive such notice, we may continue acting on a matter for you.</p>
                 <p>If we become unable to act for you at any time, we will notify you in writing.&nbsp; The Rules provide certain circumstances where we may no longer act, including:</p>
                 <ul>
                     <li>conflict of interest;</li>
-                </ul>
-                <ul>
+
                     <li>your unwillingness or inability to pay our reasonable fee for completed work;</li>
-                </ul>
-                <ul>
+
                     <li>lack of available time;</li>
-                </ul>
-                <ul>
+
                     <li>instructions falling outside our normal areas of practice; and</li>
-                </ul>
-                <ul>
+
                     <li>instructions that could require us to act in breach of any law or professional obligation.</li>
                 </ul>
                 <p>We will endeavour to identify any potential situation preventing us from acting for you as soon as practicable.</p>
                 <p>At the end of our engagement, we will provide an invoice for all work completed and not already billed.</p>
                 <p>If we terminate your engagement while acting as solicitor on record for any litigation, you will continue to be liable for the fees, disbursements, and expenses we incur in connection with our withdrawal as counsel from that litigation.&nbsp; We may charge those fees, disbursements, and expenses to you in accordance with these standard terms, as if you were our client for the matter.&nbsp;</p>
                 <p>If you have given us an instruction that we have relied upon, including by giving an undertaking to a third party, you may not revoke that instruction, even if our engagement is terminated.</p>
+
+
                 <p><em>Retention of Files</em></p>
                 <p>You authorise us to destroy all files and documents for this matter, other than any documents that we have agreed to hold in safe custody for you:</p>
                 <ul>
                     <li>seven years after our engagement ends, or such longer period as required by law; or</li>
-                </ul>
-                <ul>
+
                     <li>earlier if we have converted those files and documents to an electronic format.</li>
                 </ul>
                 <p><em>Limitation of Liability</em></p>
                 <p>To the extent permitted by law, our aggregate liability to you, whether in contract, equity, tort, or otherwise, arising out of our provision of legal or other services to you, for this matter and any other matter you have with us, is limited to the greater of:</p>
                 <ul>
                     <li>the total amount charged in accordance with these terms; or</li>
-                </ul>
-                <ul>
+
                     <li>the amount available to be paid out under any relevant insurance held by us, up to a maximum of NZ$1,500,000.</li>
                 </ul>
                 <p><em>CataLex </em></p>
-                <p>In the course of your matter, we may use, or recommend that you or third parties use, software or services provided or designed by CataLex Limited (<strong>CataLex</strong>). &nbsp;We hereby disclose that the directors of Evolution Lawyers, Tamina Cunningham-Adams and Thomas Bloy, are directors and shareholders of CataLex.&nbsp; As such, they may have an interest that touches on your matter to the extent CataLex software is used or recommended.&nbsp;</p>
-                <p>You acknowledge that the directors’ interest in CataLex has been disclosed.&nbsp; You agree that, notwithstanding the interest, Evolution&nbsp;Lawyers is entitled to use or recommend CataLex software in its absolute discretion when providing services to you.</p>
+        <p>During your matter we may use, or recommend that you or third parties use, software or services provided or designed by CataLex Limited (<strong>CataLex</strong>).  We hereby disclose that the directors of Evolution Lawyers, Tamina Cunningham-Adams and Thomas Bloy, are directors and shareholders of CataLex.  As such, they may have an interest that touches on your matter to the extent CataLex software is used or recommended. </p>
+        <p>You acknowledge that the directors’ interest in CataLex has been disclosed.  You agree that, notwithstanding the interest, Evolution Lawyers is entitled to use or recommend CataLex software in its absolute discretion when providing services to you.</p>
                 <p><em>No Assignment</em></p>
                 <p>You may not assign or otherwise transfer your rights or obligations under these terms.</p>
                 <p><em>Governing Law</em></p>
