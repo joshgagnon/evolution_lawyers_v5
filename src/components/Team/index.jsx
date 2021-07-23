@@ -49,7 +49,13 @@ const MEMBERS = [
         phone: '+64 9 623 0927',
         mobile: '+64 27 546 9744',
         email: 'lindy@evolutionlawyers.nz',
-        photo: 'lindy-sml'
+        photo: 'Lindy_pp'
+    }, {
+        name: 'Georgia Jackson',
+        title: 'Office Administrator',
+        mobile: '+64 272 465 838',
+        email: 'georgia@evolutionlawyers.nz',
+        photo: 'Georgia_pp'
     }
 
 ]
@@ -65,8 +71,8 @@ const Member = (props) => {
     { qualifications && <div className="qualifications">{ qualifications }</div> }
     <div className="title">{ title }</div>
     <div className="phone">
-    <a href={`tel:${phone.replace(' ', '')}`}><i className="fa fa-phone"/> { phone }</a>
-    <a href={`tel:${mobile.replace(' ', '')}`}><i className="fa fa-mobile"/> { mobile }</a>
+        { phone && <a href={`tel:${phone.replace(' ', '')}`}><i className="fa fa-phone"/> { phone }</a> }
+        { mobile &&<a href={`tel:${mobile.replace(' ', '')}`}><i className="fa fa-mobile"/> { mobile }</a> }
     </div>
       { email && <div className="email">
       <a href={`mailto:${email}`}><i className="fa fa-envelope"/> { email }</a>
