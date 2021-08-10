@@ -384,7 +384,7 @@ const TextOLD = () => {
             disbursement.&nbsp; Mileage is charged at the rate of $0.79 per kilometre.</p>
         <p>Finally, if we need to complete customer due diligence on you in accordance with the Anti-Money Laundering
             and Countering Financing of Terrorism Act 2009 (<strong>AMLCFT Act</strong>), or on any other person in
-            connection with your matter, we will charge a one-off disbursement fee of $15 for every person on whom we
+            connection with your matter, we will charge a one-off disbursement fee of $30 for every person on whom we
             need to complete customer due diligence.&nbsp; </p>
 
         <p><em className="heading">Trust Account</em></p>
