@@ -3,17 +3,15 @@
 #contact-information {
   font-size:20px;
   color:white;
-
+  text-align: center;
   .address{
     em {
       font-size: 16px;
     }
-    @media #{$md-tablet-media} {
-      text-align: right;
-    }
+
   }
   a {
-    color: #3877d0;
+    color: $text-color;
   }
   div.title-section .separator {
     margin-bottom: 20px;

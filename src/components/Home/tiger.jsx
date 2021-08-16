@@ -35,14 +35,12 @@ const BackgroundSection = (props) => (
         <Cell desktopOffset={7} size={5} tabletOffset={3} phoneOffset={0}>
 
          <div className="title-section">
-            <h1 className="line">A Virtual <em>Law Firm</em></h1>
-            <h1 className="line">for modern</h1>
-            <h1 className="line">New Zealanders</h1>
-            <div className="separator" />
+             <h1 className="line">We’ve Adapted.</h1>
+             {/* <div className="separator" />
             <div className="button-row" >
                     <ScrollAnimation animateIn='pulse' animateOnce={true} offset={10} style={{display: 'inline-block', margin:8}}>
-                    <Button raised secondary className="md-cell--right" href="#contact" iconClassName="fa fa-paper-plane">
-                      Get In Touch
+                    <Button raised secondary className="md-cell--right" href="/contact" iconClassName="fa fa-paper-plane">
+                      Contact Us
                    </Button>
                    </ScrollAnimation>
 
@@ -51,7 +49,7 @@ const BackgroundSection = (props) => (
                       Become a Client
                    </Button>
                    </ScrollAnimation>
-          </div>
+          </div>*/}
           </div>
           </Cell>
           </Grid>

@@ -77,7 +77,7 @@ common services are set out below:</p>
 
 
           </section>
-          <Contact />
+
           </div>
     );
   }

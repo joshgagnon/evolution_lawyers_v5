@@ -80,12 +80,7 @@ const TextOLD = () => {
             that you use voluntarily or authorise the use of, whether expressly or by conduct, to provide us with
             instructions, information, or documents.&nbsp; This includes (without limitation) in person, post, courier,
             email, facsimile, telephone, and electronic messaging services such as WhatsApp.</p>
-        <p>We may also communicate with you via software called keytrack (<a href={"https://keytrack.me/"}
-                                                                             _target={"blank"}>https://keytrack.me/</a>).&nbsp; If
-            keytrack is used as part of your matter, you will be emailed an invitation to join.&nbsp; Once that
-            invitation is accepted, you will be deemed to have authorised our use of keytrack and any communication that
-            you receive from keytrack will be treated as a communication from us, given in accordance with these
-            terms.&nbsp; No additional communication, such as a follow by email or phone, will be required.</p>
+
 
 
         <p><em className="heading">Dealing with an Agent</em></p>
@@ -368,7 +363,7 @@ const TextOLD = () => {
         <p>If we use software for your matter and the fees for the software are charged in a way that allows us to
             allocate fees to individual matters, such software fees will be on charged to you as a
             disbursement.&nbsp; This includes (without limitation) some of the fees charged for our use of Landonline,
-            ADLS Webforms, the Companies Office website, keytrack, and CataLex Sign.&nbsp; </p>
+            ADLS Webforms, the Companies Office website, and CataLex Sign.&nbsp; </p>
         <p>It will be up to us to determine if any disbursement is necessary for your matter.&nbsp; We will not require
             your separate authorisation to incur disbursements if we believe they are reasonable and necessary to fulfil
             your instructions. </p>

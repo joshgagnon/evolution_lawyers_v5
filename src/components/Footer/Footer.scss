@@ -2,7 +2,7 @@
 
 .footer {
   background-color: $bg;
-  padding: 30px 5px ;
+  padding: 30px 5px 0 5px;
   color: $text-color;
    text-align: center;
    .copyright {
@@ -24,10 +24,10 @@ display: flex;
     justify-content: center;
 
        a {
-          color:$md-secondary-color;
+          color:$text-color;
          }
         a:visited{
-            color: $md-secondary-color;
+            color: $text-color;
         }
 
    }

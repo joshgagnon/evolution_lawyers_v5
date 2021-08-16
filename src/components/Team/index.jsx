@@ -148,7 +148,7 @@ class Team extends Component {
       <div className={"team"}>
           <TeamSummary />
           <Members />
-            <Contact />
+
 
       </div>
 

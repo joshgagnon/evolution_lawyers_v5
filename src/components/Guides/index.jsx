@@ -70,8 +70,7 @@ const Guides = (props) => {
   return <div className="guides container">
   <Title />
   <GuideIcons />
-  <Youtube />
-  <Contact/>
+
   </div>
 }
 

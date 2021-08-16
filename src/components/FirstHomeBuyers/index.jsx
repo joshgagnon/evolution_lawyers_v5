@@ -140,7 +140,7 @@ const Title = (props) => (
           >
           </Img>
 
-                     <Contact />
+
           </React.Fragment>
        )
      }

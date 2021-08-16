@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import UserLinks from "../UserLinks";
 import config from "../../../data/SiteConfig";
 import "./Footer.scss";
+import {clickEmailTopMenu} from "../Navigation";
 
 class Footer extends Component {
   render() {
@@ -16,23 +17,36 @@ class Footer extends Component {
     const year = (new Date).getFullYear();
     return (
       <footer className={fixedFooter ? "footer footer-fixed" : "footer"}>
-            <div className="copyright">© Evolution Lawyers Limited { year } All rights reserved.</div>
+
 
             <div className="nav-links">
-
               <Link to="/" >Home</Link>
              <Link to="/team" >The Team</Link>
               <Link to="/services" >Services</Link>
               <Link to="/fees" >Fees</Link>
-             <Link to="/resources" >Resources</Link>
+              <Link to="/contact" >Contact us</Link>
           </div>
 
-            <div className="links">
+
+
+
+            <div className="nav-links">
                 <a href="/docs/termsofengagement" >Terms of Engagement</a>
                 <a href="/docs/privacypolicy" >Privacy Policy</a>
                  <a href="/docs/amlcft" >AMLCFT Statement</a>
                  <a href="/docs/email">Email Disclaimer</a>
             </div>
+
+          <div className="nav-links">
+              <a href={`tel:${config.phone}`} target="_blank" rel="noopener">
+                  {config.phone}
+              </a>
+
+              <a href={`mailto:${config.email}`}  onClick={clickEmailTopMenu} target="_blank" rel="noopener">
+                  {config.email}
+              </a>
+          </div>
+          <div className="copyright">© Evolution Lawyers Limited { year } All rights reserved.</div>
       </footer>
     );
   }

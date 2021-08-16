@@ -19,7 +19,7 @@ div.title-section{
               line-height: 50px;
             font-size: 40px;
         em{
-            color: $md-secondary-color;
+            color: $text-color;
             font-style:normal;
         }
 
@@ -31,9 +31,9 @@ div.title-section{
       }
     }
     .separator {
+        display:none;
         height: 7px;
         background-color: $md-secondary-color;
-        display: inline-block;
         border-radius: 8px;
         margin-top: 16px;
         margin-bottom: 48px;
@@ -53,7 +53,7 @@ div.sub-title-section{
     .separator {
         height: 7px;
         background-color: $md-secondary-color;
-        display: inline-block;
+        display:none;
         border-radius: 8px;
         margin-top: 0px;
         margin-bottom: 48px;
@@ -195,5 +195,33 @@ a:link {
         font-weight: bold;
         margin: 10px 0;
         display: inline-block;
+    }
+}
+
+
+.major-button {
+    padding:12px;
+    background-color:black;
+
+    color:$text-color;
+    border: 3px solid $text-color;
+    text-decoration: none;
+    display: inline-block;
+    padding: .7rem 1rem;
+    font-size: 1.5rem;
+    margin:.5em;
+    transition: all 200ms linear;
+    &:hover {
+        background-color: $text-color;
+        color:$md-forth-color;
+        border-color:$md-forth-color;
+    }
+}
+
+section.contrast {
+    background-color: $text-color;
+    padding: 4em;
+    p {
+        color: $md-black-base;
     }
 }

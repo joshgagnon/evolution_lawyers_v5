@@ -72,7 +72,7 @@ We can also complete the entire process remotely, with no requirement for a face
           >
           </Img>
 
-                     <Contact />
+
           </React.Fragment>
        )
      }

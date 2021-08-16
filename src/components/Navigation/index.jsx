@@ -6,7 +6,7 @@ import GetNavList from "./NavList";
 import "./Navigation.scss";
 import Img from "gatsby-image/withIEPolyfill";
 import { StaticQuery, graphql } from "gatsby"
-import { Toolbar, MenuButton, ListItem, Grid, Cell  } from 'react-md';
+import {Toolbar, MenuButton, ListItem, Grid, Cell, Button} from 'react-md';
 import config from "../../../data/SiteConfig";
 import BackgroundImage from 'gatsby-background-image'
 import { Link } from "gatsby"
@@ -27,8 +27,8 @@ export const clickPhone = () => {
 
 const ContactMenu = (props) => {
   return <div>
-          <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}  onClick={clickPhone}><span className="fa fa-phone" /> { config.phone }</a></div>
-          <div className="contact-row"><a href={`tel:${config.fax.replace(' ', '')}`}><span className="fa fa-fax" /> { config.fax }</a></div>
+          <div className="contact-row"><a href={`tel:${config.phone.replace(' ', '')}`}  onClick={clickPhone}>{ config.phone }</a></div>
+          <div className="contact-row"><a href={`tel:${config.fax.replace(' ', '')}`}> { config.fax }</a></div>
             <br/>
           <div className="address">
            <div className="address-row"><em>Address</em></div>
@@ -39,7 +39,7 @@ const ContactMenu = (props) => {
           })}
           <div className="address-row"><em>(By appointment only)</em></div>
           </div>
-          <div className="contact-row"><a href={`mailto:${config.email}`} onClick={clickEmail}><span className="fa fa-envelope" /> { config.email }</a></div>
+          <div className="contact-row"><a href={`mailto:${config.email}`} onClick={clickEmail}>{ config.email }</a></div>
 </div>
 }
 
@@ -53,7 +53,7 @@ const NavMenu = (props) => {
           fluid={imageData}
         >
       <Grid>
-        <Cell className="nav-links" size={6} tabletSize={4}>
+        <Cell className="nav-links" size={12} style={{textAlign: 'center'}}>
           <div><Link  to="/" onClick={props.onNavClick}>Home</Link></div>
           <div><Link  to="/contact" onClick={props.onNavClick}>Contact Us</Link></div>
           <div><Link  to="/team" onClick={props.onNavClick}>The Team</Link></div>
@@ -62,12 +62,8 @@ const NavMenu = (props) => {
           <div><Link  to="/resources" onClick={props.onNavClick}>Resources</Link></div>
           <div><Link  to="/new-client" onClick={props.onNavClick}>New Client Signup</Link></div>
         </Cell>
-        <Cell  className="contact-menu" size={6}  tabletSize={4}>
-          <ContactMenu />
-        </Cell>
-        <Cell size={12} style={{textAlign: 'center'}}>
-           <ExternalLinks />
-        </Cell>
+
+
       </Grid>
       </BackgroundImage>
   </div>
@@ -193,6 +189,17 @@ const ExternalLinks = (props) =>   <div className="links">
 
             </div>;
 
+    const NavbarLinks = () => {
+        return <div className="links">
+            <Button className="md-cell--right major-button" href="/contact" >
+                Contact Us
+            </Button>
+            <Button  className="md-cell--right major-button" href="/new-client" >
+                Become Client
+            </Button>
+        </div>
+    }
+
 export default class Navigation extends Component {
   render() {
     const { children, config, LocalTitle, data } = this.props;
@@ -203,7 +210,7 @@ export default class Navigation extends Component {
             fixed
             title={<Title />}
               actions={
-                <ExternalLinks />
+                <NavbarLinks />
               }
             >
             </Toolbar>

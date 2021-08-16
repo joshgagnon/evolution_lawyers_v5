@@ -60,15 +60,12 @@ class Fees extends Component {
  <p className="emph-para">C. Incidental Services – $165 per hour</p>
 <p className="mid-para bottom-pad">For services that could be performed by a competent administrator supervised by a lawyer.</p>
 
-<div className="sub-title-section"><h2 className="line"> Fixed Fees</h2></div>
-    <p className="mid-para bottom-pad">Outside of our standard fee estimates, we are happy to talk about agreeing a fixed fee for your matter.</p>
-
 <div className="sub-title-section"><h2 className="line"> Disbursements</h2></div>
     <p className="mid-para bottom-pad">Disbursements are the costs we incur and pay on your behalf, such as registration and court filing fees, and our standard office cost. Disbursements, like GST, are charged in addition to our fee.</p>
 
     </Cell>
           </section>
-          <Contact />
+
           </div>
     );
   }

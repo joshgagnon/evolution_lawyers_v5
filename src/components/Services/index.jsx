@@ -55,7 +55,8 @@ const Services = (props) => {
   <Company />
   <Insolvency />
   <Litigation />
-  <Contact />
+
+
   </div>
 }
 

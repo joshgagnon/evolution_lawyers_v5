@@ -62,4 +62,23 @@ const BackgroundSection = (props) => (
     />
 )
 
-export default BackgroundSection;
+
+const Summary = (props) => {
+    return  <section className={"contrast"}><Grid>
+        <Cell  size={8} phoneSize={12} desktopOffset={2} tabletOffset={1} phoneOffset={0}>
+            <ScrollAnimation animateIn='slideInLeft' animateOnce={true} >
+                <p className="big-para">
+                We are a general practice law firm adapted to the needs of modern New Zealanders
+    and their businesses.  Powered by technology and Kiwi ingenuity, we provide high-
+    quality and cost-effective legal services in the areas of property, trusts and estates,
+        commercial, company, and insolvency law.  Whether it be transactions or
+    relationships, agreements or disputes, residential or commercial, settlement or
+    litigation, or personal or business, we’ve got your back.
+                </p>
+            </ScrollAnimation>
+        </Cell>
+    </Grid>
+    </section>
+}
+
+export default Summary;

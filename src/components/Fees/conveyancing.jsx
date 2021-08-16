@@ -66,7 +66,7 @@ the more common services are set out below: </p>
 
 
 
-          <Contact />
+
 
           </div>
     );

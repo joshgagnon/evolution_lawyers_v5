@@ -56,9 +56,7 @@ class Home extends Component {
     return ( <div className={"home"}>
             <Tiger />
             <Summary />
-            <Award/>
-            <Features />
-            <Contact />
+
       </div>
     );
   }

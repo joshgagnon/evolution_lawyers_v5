@@ -65,7 +65,7 @@ const ContactForm = () => <form
     />
 
     <div className="button-row" >
-        <Button type="submit" raised secondary className="md-cell--right" iconClassName="fa fa-paper-plane" onClick={formSubmit}>Send</Button>
+        <Button type="submit"  className="md-cell--right major-button" iconClassName="fa fa-paper-plane" onClick={formSubmit}>Send</Button>
     </div>
  </Grid>
 </form>
@@ -90,13 +90,13 @@ const Contact = ({ className }) => {
           <p className="big-para">
                Need legal assistance? Send us a message or give us a call. We’re happy to help.
           </p>
-          <div className="contact-row"><a href={`tel:${config.phone.replace(/ /g, '')}`} onClick={phoneClick}><span className="fa fa-phone" /> { config.phone }</a></div>
-          <div className="contact-row"><a href={`mailto:${config.email}`} onClick={emailClick}><span className="fa fa-envelope" /> { config.email }</a></div>
+          <div className="contact-row"><a href={`tel:${config.phone.replace(/ /g, '')}`} onClick={phoneClick}>{ config.phone }</a></div>
+          <div className="contact-row"><a href={`mailto:${config.email}`} onClick={emailClick}>{ config.email }</a></div>
 
           <div >
           <br/>
-                    <Button raised secondary className="md-cell--right" href="/new-client" iconClassName="fa fa-user-plus">
-                      Become a Client
+                    <Button  className="md-cell--right major-button" href="/new-client" >
+                      Become Client
                    </Button>
                    </div>
           </Cell>
