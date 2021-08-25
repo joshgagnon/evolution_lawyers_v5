@@ -98,7 +98,7 @@ class Reviews extends Component {
             render={data => <section className={"reviews"}>
                 <Grid>
 
-                    <Cell size={6} desktopOffset={3} tabletSize={10} tabletOffset={1} phoneSize={12} phoneOffset={0}>
+                    <Cell desktopSize={6} desktopOffset={3} tabletSize={10} phoneSize={12} phoneOffset={0}>
                         <Summary file={data.file}/>
 
                         {shuffle(data.allReviewsJson.edges).map((p, index) => <Review {...p.node} index={index} />)}
