@@ -64,9 +64,9 @@ const Summary = (props) => {
                 starSpacing="4px"
                 starRatedColor={"rgb(255, 180, 0)"}
             />
-            <div className="google-review-count">{ReviewSummary.count} Reviews</div>
-        </div>
 
+        </div>
+        <span className="google-review-count">{ReviewSummary.count} Reviews</span>
     </div>
 }
 
@@ -82,7 +82,8 @@ const Review = props => {
                     starDimension="30px"
                     starSpacing="4px"
                     starRatedColor={"rgb(255, 180, 0)"}
-                /><span className="google-review-count">{props.relative_time_description}</span></span>
+                /></span>
+                <span className="google-review-count">{props.relative_time_description}</span>
             </span>
         </span>
         <span className="google-review-text">{props.text}</span>

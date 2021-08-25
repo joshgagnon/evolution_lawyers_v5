@@ -103,17 +103,24 @@ a:link {
     font-display:swap;
 }
 .giant-para{
-    font-size: 22px;
+    font-size: 18px;
     line-height: 33px;
+    @media #{$md-tablet-media} {
+        font-size: 22px;
+        line-height: 50px;
+    }
     @media #{$md-desktop-media} {
         font-size: 22px;
         line-height: 50px;
     }
 }
 .big-para {
-
-    font-size: 22px;
+    font-size: 18px;
     line-height: 33px;
+    @media #{$md-tablet-media} {
+        font-size: 22px;
+        line-height: 33px;
+    }
 }
 .mid-para {
      font-size:18px;
@@ -212,7 +219,10 @@ a:link {
 
 section.contrast {
     background-color: $background-quartery;
-    padding:2em;
+    padding:2em 0;
+    @media #{$md-tablet-media} {
+        padding: 2em;
+    }
     @media #{$md-desktop-media} {
         padding: 8em;
     }

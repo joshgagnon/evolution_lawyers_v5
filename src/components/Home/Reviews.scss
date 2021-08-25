@@ -7,7 +7,7 @@
 a.google-review, .google-review-summary {
     background-color: $background-quartery;
     border-radius: 4px;
-    margin: 3em;
+    margin: 3em 0;
     padding: 1em;
     color:$md-primary-color;
     &:visited, &:active, &:focus, &:target {
@@ -26,7 +26,10 @@ a.google-review, .google-review-summary {
         font-size: 20px;
         padding-left: 12px;
     }
+    .google-review-count {
+        color: #969696;
 
+    }
     .google-review-rating {
         display: flex;
         flex-wrap: wrap;
@@ -35,11 +38,6 @@ a.google-review, .google-review-summary {
         .google-review-rating-number {
             font-size: 18px;
             padding-right: 8px;
-        }
-
-        .google-review-count {
-            color: #969696;
-            padding-left: 12px;
         }
 
     }

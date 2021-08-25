@@ -11,7 +11,7 @@
   text-align: right;
   text-shadow: 1px 1px black;
   margin-bottom: 30px;
-  margin-right:20%;
+
 
   .title-section .line {
     font-size: 30px;
@@ -25,7 +25,7 @@
 
   @media #{$md-tablet-media} {
     height: 50vh;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     margin-right:0;
     .title-section .line {
