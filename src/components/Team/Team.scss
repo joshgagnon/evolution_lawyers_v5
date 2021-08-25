@@ -7,9 +7,22 @@
 }
 
 .member{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 486px;
+    background-color: $md-forth-color;
+    color: $text-color;
+    text-align:center;
+    height:100%;
     .text-block {
+        flex-grow: 1;
         padding:20px;
         font-size:16px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .qualifications {
            
         }
@@ -30,11 +43,5 @@
             margin:4px 0;
         }
     }
-    margin: 0 auto;
-    display: block;
-    max-width: 486px;
-    background-color: $md-forth-color;
-    color: $text-color;
-    text-align:center;
-    height:100%;
+
 }

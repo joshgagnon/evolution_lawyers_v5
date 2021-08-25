@@ -19,18 +19,24 @@ const Title = (props) => (
     <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "images/feesbg.jpg" }) {
+        file(relativePath: { eq: "images/Chimp.jpg" }) {
           childImageSharp {
-            fluid(quality: 70) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
       }`}
      render={data => {
-        return ( /*<BackgroundImage Tag="section"
+        return ( <BackgroundImage Tag="section"
                            className="services"
-                           fluid={data.file.childImageSharp.fluid}> */
+                                  style={{
+                                      // Defaults are overwrite-able by setting one or each of the following:
+                                      backgroundSize: 'contain',
+                                      backgroundPosition: 'bottom',
+                                      backgroundRepeat: 'no-repeat',
+                                  }}
+                           fluid={data.file.childImageSharp.fluid}>
 
       <Grid>
     <Cell size={12} style={{textAlign: 'center'}}>
@@ -40,7 +46,14 @@ const Title = (props) => (
       </div>
     </Cell>
     </Grid>
-   /* </BackgroundImage> */ )
+
+            <Conveyancing />
+            <Trusts />
+            <Company />
+            <Insolvency />
+            <Litigation />
+
+        </BackgroundImage>  )
   }
   }
   />);
@@ -50,11 +63,6 @@ const Services = (props) => {
 
   return <div className="services container">
   <Title />
-  <Conveyancing />
-  <Trusts />
-  <Company />
-  <Insolvency />
-  <Litigation />
 
 
   </div>

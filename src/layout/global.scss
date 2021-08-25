@@ -141,26 +141,7 @@ a:link {
 .bottom-pad{
     padding-bottom:30px;
 }
-.services-section {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-        overflow-x: hidden;
-    h1 {
-        color: $md-secondary-color;
-    }
-    a {
-        color: $md-secondary-color;
-    }
 
-    &.services-section-img{
-       text-align: center;
-        img {
-            border-radius: 35px;
-
-        }
-    }
-}
 .text-block {
     background-color:rgba(0,0,0,0.4);
     padding:1em;
@@ -224,8 +205,8 @@ a:link {
     line-height: 1.3em;
     &:hover {
         background-color: $text-color;
-        color:$md-forth-color !important;
-        border-color:$md-forth-color;
+        color:black !important;
+        border-color:$text-color;
     }
 }
 

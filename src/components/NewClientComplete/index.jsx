@@ -25,6 +25,12 @@ const Title = (props) => (
      render={data => {
         return <BackgroundImage Tag="section"
                            className="newclient-bg"
+                                style={{
+                                    // Defaults are overwrite-able by setting one or each of the following:
+                                    backgroundSize: 'contain',
+                                    backgroundPosition: 'right',
+                                    backgroundRepeat: 'no-repeat',
+                                }}
                            fluid={data.file.childImageSharp.fluid}>
 
       <Grid>

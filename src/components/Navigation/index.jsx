@@ -46,7 +46,7 @@ const NavMenu = (props) => {
     return <div className="main-nav-menu md-dialog--full-page md-dialog">
         <BackgroundImage Tag="section"
                          className={'guidebg'}
-                         style={{backgroundSize: 'contain'}}
+                         style={{backgroundSize: 'cover'}}
                          fluid={imageData}
         >
             <Grid>

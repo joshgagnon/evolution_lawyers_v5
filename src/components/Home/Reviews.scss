@@ -1,6 +1,8 @@
 @import "../../layout/theme.scss";
 
-
+.reviews{
+    background-color: $md-secondary-text-color;
+}
 
 a.google-review, .google-review-summary {
     background-color: $background-quartery;

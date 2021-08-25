@@ -10,7 +10,7 @@ import Img from "gatsby-image/withIEPolyfill";
 
 
 const Company = props =>  <Grid>
-    <Cell size={6} desktopOffset={3} tabletSize={6} tabletOffset={3} phoneSize={12} phoneOffset={0}   className="services-section" order={1} desktopOrder={0}>
+    <Cell size={6} desktopOffset={3} tabletSize={12}   phoneSize={12} phoneOffset={0}   className="services-section" order={1} desktopOrder={0}>
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
         <h1>Company & Commercial</h1>
 
