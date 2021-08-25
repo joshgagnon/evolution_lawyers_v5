@@ -9,16 +9,16 @@ import Contact from '../Contact';
 
 
 const company = {
-    headers: ['Service', 'Fee estimate*', 'Approximate invoice total**'],
+    headers: ['Service', 'Fee estimate*'],
     title: 'Company',
     rows: [
-['Incorporating a Company', '$250', '$500'],
-['Incorporating a Company with a Standard Constitution', '$500', '$800'],
+['Incorporating a Company', '$250'],
+['Incorporating a Company with a Standard Constitution', '$500'],
 
-['Assisting with Company Administration (Annual Fee)', '$250', '$450'],
+['Assisting with Company Administration (Annual Fee)', '$250'],
 
-['Effecting Change of Directors', '$150', '$260'],
-['Effecting Simple Transfer or Issue of Shares', '$250', '$380'],
+['Effecting Change of Directors', '$150'],
+['Effecting Simple Transfer or Issue of Shares', '$250'],
 
     ]
 };
@@ -62,10 +62,6 @@ common services are set out below:</p>
 
           <p className="small-para">
           *Fee estimates are exclusive of GST and disbursements. Our fee may be higher if the attendances required for your matter are more than usual.
-          </p>
-
-          <p className="small-para">
-**The approximate invoice total includes our fee estimate, GST, and the disbursements we would typically incur on your matter. Additional disbursements, such as mileage, may be incurred.
           </p>
 
            <p className="small-para">

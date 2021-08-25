@@ -14,7 +14,7 @@ const Title = (props) => (
     <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "images/keyboard.png" }) {
+        file(relativePath: { eq: "images/White tiger 3.jpg" }) {
           childImageSharp {
             fluid(quality: 70) {
               ...GatsbyImageSharpFluid_withWebp
@@ -24,7 +24,7 @@ const Title = (props) => (
       }`}
      render={data => {
         return <BackgroundImage Tag="section"
-                           className="guide-bg"
+                           className="newclient-bg"
                            fluid={data.file.childImageSharp.fluid}>
 
       <Grid>

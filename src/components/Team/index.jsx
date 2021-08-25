@@ -128,7 +128,6 @@ const TeamSummary = (props) => {
          <div className="title-section">
             <h1 className="line"><em>Meet</em></h1>
             <h1 className="line">the team</h1>
-            <div className="separator" />
 
           </div>
           </Cell>d

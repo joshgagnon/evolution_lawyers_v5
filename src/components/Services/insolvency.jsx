@@ -9,31 +9,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Img from "gatsby-image/withIEPolyfill";
 
 
-const Insolvency = props =>  <StaticQuery
-    query={ graphql`
-      query {
-    file(relativePath: { eq: "images/s4.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(quality: 80) {
-          ...GatsbyImageSharpFixed_noBase64
-        }
-      }
-    }
-  }`}
-    render={data => <Grid>
-          <Cell size={6} tabletSize={8} className="services-section services-section-img">
-                  <ScrollAnimation animateIn='slideInLeft' animateOnce={true} offset={10} >
-            <Img
-            className="services-image"
-              fixed={data.file.childImageSharp.fixed}
-              alt="Evolution Lawyers"
-                          style={{maxWidth:'100%'}}
-            />
-            </ScrollAnimation>
-        </Cell>
-       <Cell size={5}  tabletSize={8}   phoneOffset={0}  className="services-section">
+const Insolvency = props =>  <Grid>
+
+    <Cell size={6} desktopOffset={3} tabletSize={6} tabletOffset={3} phoneSize={12} phoneOffset={0}   className="services-section" order={1} desktopOrder={0}>
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
         <h1>Insolvency</h1>
 
@@ -42,7 +20,7 @@ Evolution Lawyers are specialists in most areas of insolvency law, including sum
        </p>
    </ScrollAnimation>
        </Cell>
-        </Grid> }
-  />
+        </Grid>
+
 
 export default  Insolvency;

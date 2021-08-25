@@ -7,26 +7,25 @@ import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Img from "gatsby-image/withIEPolyfill";
-import './GuideIcons.scss';
+
 import { Link } from "gatsby";
+const buttonClass = 'md-btn md-btn--flat md-btn--text md-pointer--hover md-text md-inline-block md-cell--right major-button';
 
 
 export const ConveyancingIcons = (props) => {
     return <Cell size={8} desktopOffset={2} className="guide-button-row">
 
-        <Link  className="guide-button" to="/docs/buying">
-        <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}><img src="/assets/images/guidehome.jpg" alt="Buying" /></ScrollAnimation>
-            <span className="guide-text">BUYING</span>
+        <Link  className={buttonClass} to="/docs/buying">
+
+            BUYING
         </Link>
 
-        <Link className="guide-button"  to="/docs/selling">
-            <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}><img src="/assets/images/guidesell.jpg" alt="Selling" /></ScrollAnimation>
-            <span className="guide-text">SELLING</span>
+        <Link className={buttonClass} to="/docs/selling">
+            SELLING
            </Link>
 
-        <Link  className="guide-button"  to="/docs/refinancing">
-            <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}><img src="/assets/images/guideref.jpg" alt="Refinancing" /></ScrollAnimation>
-            <span className="guide-text">REFINANCING</span>
+        <Link  className={buttonClass}  to="/docs/refinancing">
+            REFINANCING
            </Link>
 
     </Cell>
@@ -35,9 +34,8 @@ export const ConveyancingIcons = (props) => {
 
 export const DebtRecoveryIcons = (props) => {
     return     <Cell size={8} desktopOffset={2} className="guide-button-row">
-        <Link  className="guide-button" to="/docs/debtrecovery">
-            <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}><img src="/assets/images/debt.jpg" alt="Debt recovery and disbursements" /></ScrollAnimation>
-            <span className="guide-text">DEBT RECOVERY &amp; DISBURSEMENTS</span>
+        <Link  className={buttonClass} to="/docs/debtrecovery">
+           DEBT RECOVERY &amp; DISBURSEMENTS
            </Link>
 
 

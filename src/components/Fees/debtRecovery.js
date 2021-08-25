@@ -10,9 +10,9 @@ import Contact from '../Contact';
 
 const personal = {
         'title': 'Debt Recovery – Personal',
-    headers: ['Service', 'Fee estimate*', 'Approximate invoice total**'],
+    headers: ['Service', 'Fee estimate*'],
     rows: [
-['Formal Demand',  '$250', '$380'],
+['Formal Demand',  '$250'],
 
 [<React.Fragment>
     Prepare and File Proceeding
@@ -21,7 +21,6 @@ const personal = {
    </React.Fragment>,
 
     <React.Fragment><br/>$950 - $1,500<br/>$950 - $1,800</React.Fragment>,
-    <React.Fragment><br/>From $1,450<br/>From $2,800</React.Fragment>,
     ],
 
 [<React.Fragment>
@@ -31,7 +30,6 @@ const personal = {
    </React.Fragment>,
 
     <React.Fragment><br/>$500<br/>$750</React.Fragment>,
-    <React.Fragment><br/>$920<br/>$1,100</React.Fragment>,
     ],
 
 [<React.Fragment>
@@ -41,7 +39,6 @@ Prepare and File Summary Judgment Application
    </React.Fragment>,
 
     <React.Fragment><br/>$1,500 - $1,850<br/>$1,500 - $2,500</React.Fragment>,
-    <React.Fragment><br/>From $2,400<br/>From $3,400</React.Fragment>,
     ],
 
 [<React.Fragment>
@@ -51,23 +48,22 @@ Order for Summary Judgment (undefended hearing)
    </React.Fragment>,
 
     <React.Fragment><br/>$950<br/>$950</React.Fragment>,
-    <React.Fragment><br/>$1,250<br/>$1,250</React.Fragment>,
     ],
 
-['Bankruptcy Notice',  '$900', '$1,350'],
-['Creditors Application',  '$1,800', '$2,700'],
-['Order for Adjudication',  '$750', '$1,000'],
+['Bankruptcy Notice',  '$900'],
+['Creditors Application',  '$1,800'],
+['Order for Adjudication',  '$750'],
 ]
 };
 
 const company = {
     'title': 'Debt Recovery – Company',
-    headers: ['Service', 'Fee estimate*', 'Approximate invoice total**'],
+    headers: ['Service', 'Fee estimate*'],
     rows: [
-['Formal Demand',  '$250', '$380'],
-['Statutory Demand',  '$350', '$490'],
-['Liquidation Application',  '$1,800', '$2,800'],
-['Order for Liquidation (undefended)',  '$750', '$1,000'],
+['Formal Demand',  '$250'],
+['Statutory Demand',  '$350'],
+['Liquidation Application',  '$1,800'],
+['Order for Liquidation (undefended)',  '$750'],
 
     ]
 }
@@ -102,9 +98,6 @@ the more common services are set out below: </p>
 *Fee estimates are exclusive of GST and disbursements. Our fee may be higher if the attendances required for your matter are more than usual.
           </p>
 
-          <p className="small-para">
-**The approximate invoice total includes our fee estimate, GST, court filing fees, and the disbursements we would typically incur on your matter. Additional disbursements, such as mileage, process service costs and statutory advertising expenses, may be incurred.
-          </p>
 
            <p className="small-para">
            For more information about Debt Recovery, check out our <a href="/resources">Resources</a> page

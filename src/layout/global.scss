@@ -19,7 +19,7 @@ div.title-section{
               line-height: 50px;
             font-size: 40px;
         em{
-            color: $text-color;
+            color: $md-secondary-text-color;
             font-style:normal;
         }
 
@@ -45,9 +45,11 @@ div.title-section{
 div.sub-title-section{
 
     .line{
-   color: $md-secondary-color;
+   color: $text-color;
               line-height: 40px;
             font-size: 30px;
+
+        margin-bottom:0;
 
     }
     .separator {
@@ -100,10 +102,18 @@ a:link {
     font-family: 'Material Icons';
     font-display:swap;
 }
-
+.giant-para{
+    font-size: 22px;
+    line-height: 33px;
+    @media #{$md-desktop-media} {
+        font-size: 22px;
+        line-height: 50px;
+    }
+}
 .big-para {
-    font-size:22px;
-    line-height:50px;
+
+    font-size: 22px;
+    line-height: 33px;
 }
 .mid-para {
      font-size:18px;
@@ -151,7 +161,10 @@ a:link {
         }
     }
 }
-
+.text-block {
+    background-color:rgba(0,0,0,0.4);
+    padding:1em;
+}
 .fee-table{
     margin-bottom:36px;
     .table-title{
@@ -218,7 +231,10 @@ a:link {
 
 section.contrast {
     background-color: $background-quartery;
-    padding: 8em;
+    padding:2em;
+    @media #{$md-desktop-media} {
+        padding: 8em;
+    }
     p {
         color: $md-black-base;
     }

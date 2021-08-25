@@ -12,21 +12,12 @@ import GuideIcons from './guideIcons';
 import Contact from '../Contact';
 
 
-const Youtube = (props) => {
-  return <Grid>
-    <Cell  size={12} style={{textAlign: 'center', margin: '36px 0'}}>
-     <iframe style={{maxWidth: '100%'}} width="560" height="315" src="https://www.youtube.com/embed/Hhf33QabDrM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
-     </Cell>
-  </Grid>
-}
-
 
 const Title = (props) => (
     <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "images/keyboard.png" }) {
+        file(relativePath: { eq: "images/Rhino.jpg" }) {
           childImageSharp {
             fluid(quality: 70) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -59,6 +50,7 @@ legal advice from a registered lawyer. If you need that, please get in touch.
       </ScrollAnimation>
     </Cell>
     </Grid>
+            <GuideIcons />
    </BackgroundImage>
   }
   }
@@ -69,7 +61,7 @@ const Guides = (props) => {
 
   return <div className="guides container">
   <Title />
-  <GuideIcons />
+
 
   </div>
 }

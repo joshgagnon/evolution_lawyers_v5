@@ -8,6 +8,7 @@ import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import config from "../../../data/SiteConfig";
 import ScrollAnimation from 'react-animate-on-scroll';
+import './NewClient.scss'
 import Img from "gatsby-image/withIEPolyfill";
 //import './Guides.scss';
 //import GuideIcons from './guideIcons';
@@ -60,21 +61,27 @@ const Title = (props) => (
     <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "images/keyboard.png" }) {
+        file(relativePath: { eq: "images/White tiger 3.jpg" }) {
           childImageSharp {
-            fluid(quality: 70) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
       }`}
      render={data => {
-        return <BackgroundImage Tag="section"
-                           className="guide-bg"
+        return (<BackgroundImage Tag="section"
+                                 style={{
+                                     // Defaults are overwrite-able by setting one or each of the following:
+                                     backgroundSize: 'contain',
+                                     backgroundPosition: 'right',
+                                     backgroundRepeat: 'no-repeat',
+                                 }}
+                           className="newclient-bg"
                            fluid={data.file.childImageSharp.fluid}>
 
       <Grid>
-    <Cell size={6} tabletSize={8} desktopOffset={1} phoneOffset={0} tabletOffset={0} className="guides-title">
+    <Cell size={6} tabletSize={8} desktopOffset={1} phoneOffset={0} tabletOffset={0} className="new-client-text text-block">
         <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
        <div className="title-section">
        <h1 className="line"><em>New Client</em> Signup</h1>
@@ -115,7 +122,7 @@ will not be required to provide any card details or other payment information. W
           </ScrollAnimation>
     </Cell>
     </Grid>
-   </BackgroundImage>
+   </BackgroundImage>)
   }
   }
   />);

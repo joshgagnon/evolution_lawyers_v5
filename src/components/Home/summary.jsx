@@ -48,7 +48,7 @@ const BackgroundSection = (props) => (
 
           </Cell>
           <Cell tabletSize={12}>
-               <ScrollAnimation animateIn='slideInRight' animateOnce={true} offset={10}>
+               <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={10}>
           <p className="big-para">
                Evolution Lawyers is an Auckland based law firm specialising in insolvency, commercial, company, and property law. We provide both litigation and transactional services to New Zealanders and small to medium-sized New Zealand businesses.
                </p>
@@ -66,8 +66,8 @@ const BackgroundSection = (props) => (
 const Summary = (props) => {
     return  <section className={"contrast"}><Grid>
         <Cell  size={8} phoneSize={12} desktopOffset={2} tabletOffset={1} phoneOffset={0}>
-            <ScrollAnimation animateIn='slideInLeft' animateOnce={true} >
-                <p className="big-para">
+            <ScrollAnimation animateIn='fadeIn' animateOnce={true} >
+                <p className="giant-para">
                 We are a general practice law firm adapted to the needs of modern New Zealanders
     and their businesses.  Powered by technology and Kiwi ingenuity, we provide high-
     quality and cost-effective legal services in the areas of property, trusts and estates,

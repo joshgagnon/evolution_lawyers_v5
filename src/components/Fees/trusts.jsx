@@ -68,9 +68,7 @@ services are set out below: </p>
           *Fee estimates are exclusive of GST and disbursements. Our fee may be higher if the attendances required for your matter are more than usual.
           </p>
 
-          <p className="small-para">
-**The approximate invoice total includes our fee estimate, GST, and the disbursements we would typically incur on your matter. Additional disbursements, such as mileage, may be incurred.
-          </p>
+
 
            <p className="small-para">
            For more information about Trusts &amp; Estates, check out our <a href="/resources">Resources</a> page

@@ -9,15 +9,14 @@ import Contact from '../Contact';
 // also see components/Services
 
 const data = {
-    headers: ['Service', 'Fee estimate*', 'Approximate invoice total**'],
+    headers: ['Service', 'Fee estimate*'],
     rows: [
-        ['Refinance', '$700', '$1,100'],
-        ['Sale', '$940', '$1,305'],
-        ['Purchase', '$1,050', '$1,515'],
-        ['Refinance & Transfer', '$1,100', '$1,615'],
-        ['Pre-auction Document Review', '$275', '$405'],
-        ['Increasing Priority Amount', '$530', '$790'],
-        ['Purchase “off the plans”', '$1,650', '$2,180']
+        ['Refinance', '$700'],
+        ['Sale', '$940-$1,300'],
+        ['Purchase', '$1,050-$1,500'],
+        ['Refinance & Transfer', '$1,100'],
+        ['Pre-auction Document Review', '$275'],
+        ['Purchase “off the plans”', '$1,650']
     ]
 };
 
@@ -49,10 +48,6 @@ the more common services are set out below: </p>
 
           <p className="small-para">
           *Fee estimates are exclusive of GST and disbursements. Our fee may be higher if the attendances required for your matter are more than usual.
-          </p>
-
-          <p className="small-para">
-**The approximate invoice total includes our fee estimate, GST, and the disbursements we would typically incur on your matter. Additional disbursements, such as mileage, may be incurred.
           </p>
 
            <p className="small-para">

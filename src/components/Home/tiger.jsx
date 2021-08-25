@@ -35,7 +35,7 @@ const BackgroundSection = (props) => (
         <Cell desktopOffset={7} size={5} tabletOffset={3} phoneOffset={0}>
 
          <div className="title-section">
-             <h1 className="line">We’ve Adapted.</h1>
+             <h1 className="line"><em>We’ve</em>       <ScrollAnimation animateIn='fadeIn' animateOnce={true} delay={500}>Adapted.</ScrollAnimation></h1>
              {/* <div className="separator" />
             <div className="button-row" >
                     <ScrollAnimation animateIn='pulse' animateOnce={true} offset={10} style={{display: 'inline-block', margin:8}}>

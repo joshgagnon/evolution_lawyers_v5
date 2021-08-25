@@ -184,7 +184,7 @@ const getGoogleReviews = function() {
 
             // Converting reviews to netlify format
             reviews.forEach(item => {
-              if(item.rating < 5) {
+              if(item.rating < 4) {
                 return;
               }
               let content = {
