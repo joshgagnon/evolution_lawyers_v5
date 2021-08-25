@@ -46,7 +46,7 @@ class Footer extends Component {
                   {config.email}
               </a>
           </div>
-          <div className="copyright">© Evolution Lawyers Limited { year } All rights reserved.</div>
+          <div className="copyright">© Evolution Lawyers Limited { year }. All rights reserved.</div>
       </footer>
     );
   }

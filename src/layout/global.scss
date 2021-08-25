@@ -103,7 +103,7 @@ a:link {
 
 .big-para {
     font-size:22px;
-    line-height:33px;
+    line-height:50px;
 }
 .mid-para {
      font-size:18px;
@@ -200,27 +200,25 @@ a:link {
 
 
 .major-button {
-    padding:12px;
     background-color:black;
 
     color:$text-color;
     border: 3px solid $text-color;
     text-decoration: none;
     display: inline-block;
-    padding: .7rem 1rem;
-    font-size: 1.5rem;
     margin:.5em;
     transition: all 200ms linear;
+    line-height: 1.3em;
     &:hover {
         background-color: $text-color;
-        color:$md-forth-color;
+        color:$md-forth-color !important;
         border-color:$md-forth-color;
     }
 }
 
 section.contrast {
-    background-color: $text-color;
-    padding: 4em;
+    background-color: $background-quartery;
+    padding: 8em;
     p {
         color: $md-black-base;
     }

@@ -1,8 +1,11 @@
 const path = require("path");
+const fs = require("fs");
 const _ = require("lodash");
 const moment = require("moment");
 const siteConfig = require("./data/SiteConfig");
-
+const axios = require('axios');
+const yaml = require('js-yaml');
+const slugify = require('slugify');
 const postNodes = [];
 
 function addSiblingNodes(createNodeField) {
@@ -94,13 +97,12 @@ exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
   }
 };
 
+/*
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const postPage = path.resolve("src/templates/post.jsx");
-    const tagPage = path.resolve("src/templates/tag.jsx");
-    const categoryPage = path.resolve("src/templates/category.jsx");
+    const postPage = path.resolve("src/templates/review.jsx");
     resolve(
       graphql(
         `
@@ -122,7 +124,7 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
-          /* eslint no-console: "off" */
+          /* eslint no-console: "off" *//*
           console.log(result.errors);
           reject(result.errors);
         }
@@ -149,17 +151,6 @@ exports.createPages = ({ graphql, actions }) => {
           });
         });
 
-        const tagList = Array.from(tagSet);
-        tagList.forEach(tag => {
-          createPage({
-            path: `/tags/${_.kebabCase(tag)}/`,
-            component: tagPage,
-            context: {
-              tag
-            }
-          });
-        });
-
         const categoryList = Array.from(categorySet);
         categoryList.forEach(category => {
           createPage({
@@ -174,3 +165,68 @@ exports.createPages = ({ graphql, actions }) => {
     );
   });
 };
+*/
+
+
+const getGoogleReviews = function() {
+  console.log('=> Fetching reviews data..')
+  return new Promise((resolve, reject) => {
+    let reviews;
+    const url = 'https://maps.googleapis.com/maps/api/place/details/json?placeid='+siteConfig.placeId+'&key='+siteConfig.map;
+    return axios.get(url)
+        .then(res => {
+          console.log('=> Reviews data fetched!')
+          console.log(res.data)
+          if(res.data.status == 'OK') {
+            console.log('=> Saving new reviews to markdown..')
+            let today = new Date('now');
+            reviews = res.data.result.reviews
+
+            // Converting reviews to netlify format
+            reviews.forEach(item => {
+              if(item.rating < 5) {
+                return;
+              }
+              let content = {
+                image: item.profile_photo_url,
+                title: item.author_name,
+                link: item.author_url,
+                company: '',
+                text: item.text,
+                rating: item.rating,
+                google: true,
+                time: item.time,
+                relative_time_description: item.relative_time_description
+              }
+              content = JSON.stringify(content)
+              let path = `./content/reviews/${slugify(item.author_name)}.json`
+              if (!fs.existsSync(path)) {
+                fs.writeFileSync(path, content, err => {
+                  if (err) {
+                    console.error(err)
+                    return
+                  }
+                })
+              }
+            })
+          }
+          fs.writeFileSync('./content/reviewSummary.json', JSON.stringify({
+            url: res.data.result.url,
+            count: res.data.result.user_ratings_total,
+            rating: res.data.result.rating
+          }), err => {
+            if (err) {
+              console.error(err)
+              return
+            }
+          })
+          resolve(reviews)
+        })
+  })
+}
+
+
+
+exports.createPages = () => {
+  return getGoogleReviews();
+}

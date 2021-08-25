@@ -13,6 +13,7 @@ import Img from "gatsby-image"
 import Grid  from "react-md/lib/Grids";
 import Cell  from "react-md/lib/Grids/Cell";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Reviews from "./reviews";
 
 
 const Award = (props) => (
@@ -37,6 +38,7 @@ const Award = (props) => (
         </Cell>
         </Grid>
         </ScrollAnimation>
+
        )
      }
      }
@@ -56,6 +58,7 @@ class Home extends Component {
     return ( <div className={"home"}>
             <Tiger />
             <Summary />
+            <Reviews />
 
       </div>
     );

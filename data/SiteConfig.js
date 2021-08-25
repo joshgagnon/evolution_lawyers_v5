@@ -53,7 +53,8 @@ const config = {
     }
   ],*/
   copyright: `Copyright © ${(new Date()).getFullYear()}. CataLex Ltd`, // Copyright string for the footer of the website and RSS feed.
-  mapsKey: 'AIzaSyAOQMJlGJfLCTBpzNiluyr8dDjKmNwnqdo'
+  map: 'AIzaSyB8kTzlztVvWICObRLEWdW-W72o6hzU2CA',
+  placeId: 'ChIJ051_-TJGDW0Rx5aOs49cofM',
 
 };
 

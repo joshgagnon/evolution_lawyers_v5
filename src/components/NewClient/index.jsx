@@ -46,7 +46,7 @@ class NewClientForm  extends React.Component {
     <GoogleReCaptcha onVerify={token => this.setState({recaptcha: true})} />
 
             <div className="button-row" >
-                <Button type="submit"  className="md-cell--right major-button" iconClassName="fa fa-paper-plane" disabled={!this.state.value || !this.state.recaptcha}>Next</Button>
+                <Button flat type="submit"  className="md-cell--right major-button" iconClassName="fa fa-paper-plane" disabled={!this.state.value || !this.state.recaptcha}>Next</Button>
             </div>
          </Grid>
         </form>

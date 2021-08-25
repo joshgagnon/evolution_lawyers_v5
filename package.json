@@ -5,6 +5,7 @@
   "author": "Joshua Gagnon <josh@catalex.nz>",
   "dependencies": {
     "animate.css": "^3.7.0",
+    "axios": "^0.21.1",
     "font-awesome": "^4.7.0",
     "gatsby": "2.0.91",
     "gatsby-background-image": "^0.3.4",
@@ -33,9 +34,11 @@
     "gatsby-remark-relative-images": "0.2.1",
     "gatsby-remark-responsive-iframe": "2.0.8",
     "gatsby-source-filesystem": "^2.0.16",
+    "gatsby-transformer-json": "1",
     "gatsby-transformer-remark": "2.2.0",
     "gatsby-transformer-sharp": "^2.1.18",
     "intersection-observer": "^0.5.1",
+    "js-yaml": "^4.1.0",
     "lodash": "^4.17.10",
     "material-icons": "^0.3.1",
     "moment": "^2.23.0",
@@ -51,7 +54,9 @@
     "react-helmet": "^5.2.0",
     "react-md": "^1.9.2",
     "react-share": "^2.4.0",
+    "react-star-ratings": "^2.3.0",
     "react-twitter-widgets": "^1.7.1",
+    "slugify": "^1.6.0",
     "styled-components": "^4.2.0",
     "typeface-roboto": "^0.0.54",
     "url-join": "^4.0.0"
@@ -79,7 +84,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --port 8001",
     "dev": "npm run develop",
     "serve": "gatsby serve",
     "build": "gatsby build",
