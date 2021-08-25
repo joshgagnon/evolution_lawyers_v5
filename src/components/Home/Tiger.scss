@@ -1,48 +1,59 @@
 @import "../../layout/theme.scss";
 
-.tiger{
+.tiger {
 
   background-position: center left;
   background-repeat: no-repeat;
   background-size: contain;
-      display: flex;
+  display: flex;
   justify-content: start;
   flex-direction: column;
   text-align: right;
-  text-shadow:1px 1px black;
-  margin-bottom:30px;
+  text-shadow: 1px 1px black;
+  margin-bottom: 30px;
+  margin-right:20%;
+
   .title-section .line {
     font-size: 30px;
     line-height: 36px;
   }
+
   .button-row {
     text-align: center;
     margin-top: 250px;
   }
 
+  @media #{$md-tablet-media} {
+    height: 50vh;
+    text-align: left;
+    justify-content: center;
+    margin-right:0;
+    .title-section .line {
+      font-size: 60px;
+      line-height: 70px;
+    }
 
 
-      @media #{$md-desktop-media} {
-              height: 100vh;
-        text-align: left;
-          justify-content: center;
-          .title-section .line {
-            font-size: 60px;
-            line-height: 70px;
-          }
-        .button-row {
-          text-align: center;
-           margin-top:0;
-        }
-      }
+  }
 
-      @media #{$md-desktop-media} {
+  @media #{$md-desktop-media} {
+    height: 100vh;
+    text-align: left;
+    justify-content: center;
+    .title-section .line {
+      font-size: 60px;
+      line-height: 70px;
+    }
 
-          text-shadow:none;
-      }
+  }
 
-  .md-grid{
-    width:100%;
+  @media #{$md-desktop-media} {
+
+    text-shadow: none;
+  }
+
+  .md-grid {
+    width: 100%;
   }
 
 }

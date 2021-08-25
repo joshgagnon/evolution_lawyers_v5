@@ -65,7 +65,7 @@ const BackgroundSection = (props) => (
 
 const Summary = (props) => {
     return  <section className={"contrast"}><Grid>
-        <Cell  size={8} phoneSize={12} desktopOffset={2} tabletOffset={1} phoneOffset={0}>
+        <Cell  size={8} offset={2} tabletSize={10} tabletOffset={1}  phoneSize={12} phoneOffset={0}>
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} >
                 <p className="giant-para">
                 We are a general practice law firm adapted to the needs of modern New Zealanders
