@@ -172,7 +172,7 @@ const getGoogleReviews = function() {
   console.log('=> Fetching reviews data..')
   return new Promise((resolve, reject) => {
     let reviews;
-    const url = 'https://maps.googleapis.com/maps/api/place/details/json?placeid='+siteConfig.placeId+'&key='+siteConfig.map;
+    const url = 'https://maps.googleapis.com/maps/api/place/details/json?placeid='+siteConfig.placeId+'&key='+Buffer.from(siteConfig.map, 'base64').toString();
     return axios.get(url)
         .then(res => {
           console.log('=> Reviews data fetched!')
