@@ -201,7 +201,7 @@ const NavbarLinks = () => {
             Contact Us
         </Button>
         <Button flat className="md-cell--right major-button" href="/new-client">
-            Become Client
+            Client Signup
         </Button>
     </div>
 }

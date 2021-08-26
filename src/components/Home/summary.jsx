@@ -64,10 +64,10 @@ const BackgroundSection = (props) => (
 
 
 const Summary = (props) => {
-    return  <section className={"contrast"}><Grid>
+    return  <section className={"contrast summary"}><Grid>
         <Cell  desktopSize={8} desktopOffset={2}  tabletSize={10} tabletOffset={0} phoneSize={12} phoneOffset={0}>
             <ScrollAnimation animateIn='fadeIn' animateOnce={true} >
-                <p className="giant-para">
+                <p className="big-para">
                 We are a general practice law firm adapted to the needs of modern New Zealanders
     and their businesses.  Powered by technology and Kiwi ingenuity, we provide high-
     quality and cost-effective legal services in the areas of property, trusts and estates,

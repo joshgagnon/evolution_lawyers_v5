@@ -2,12 +2,11 @@
 
 
 .summary {
-      width: 100%;
-  min-height:100vh;
-  max-height: 500px;
-    display: flex;
-  justify-content: center;
-  flex-direction: column;
 
+  .big-para {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 33px;
+  }
 }
 
