@@ -53,6 +53,7 @@
     "react-google-recaptcha-v3": "^1.4.0",
     "react-helmet": "^5.2.0",
     "react-md": "^1.9.2",
+    "react-responsive-carousel": "^3.2.21",
     "react-share": "^2.4.0",
     "react-star-ratings": "^2.3.0",
     "react-twitter-widgets": "^1.7.1",

@@ -6,7 +6,8 @@ import {Cell, Grid} from "react-md";
 import './Reviews.scss';
 import Img from "gatsby-image"
 import ScrollAnimation from "react-animate-on-scroll";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const query = graphql`query reviews {
     allReviewsJson {
@@ -71,8 +72,7 @@ const Summary = (props) => {
 }
 
 const Review = props => {
-    return          <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={1000*props.index}>
-        <a className={'google-review'} href={props.link} target={"_blank"}>
+    return   <a className={'google-review'} href={props.link} target={"_blank"}>
         <span className={"google-review-top-row"}>
             <img src={props.image} />
             <span className={"google-review-details"}>
@@ -88,7 +88,6 @@ const Review = props => {
         </span>
         <span className="google-review-text">{props.text}</span>
     </a>
-    </ScrollAnimation>
 }
 
 class Reviews extends Component {
@@ -99,10 +98,13 @@ class Reviews extends Component {
             render={data => <section className={"reviews"}>
                 <Grid>
 
-                    <Cell desktopSize={6} desktopOffset={3} tabletSize={10} phoneSize={12} phoneOffset={0}>
+                    <Cell desktopSize={6} desktopOffset={3} tabletSize={10} phoneSize={12} phoneOffset={0} >
                         <Summary file={data.file}/>
-
-                        {shuffle(data.allReviewsJson.edges).map((p, index) => <Review {...p.node} index={index} />)}
+                        <Carousel autoPlay interval={6000} showStatus={false} infiniteLoop>
+                        { data.allReviewsJson.edges.map((p, index) => {
+                            return <Review {...p.node} index={index}/>
+                        }) }
+                        </Carousel>
                     </Cell>
                 </Grid>
             </section>
