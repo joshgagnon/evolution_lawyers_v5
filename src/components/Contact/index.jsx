@@ -65,7 +65,7 @@ const ContactForm = () => <form
     />
 
     <div className="button-row" >
-        <Button type="submit"  flat className="md-cell--right major-button submit-get-in-touch" iconClassName="fa fa-paper-plane" onClick={formSubmit}>Send</Button>
+        <Button type="submit"  flat className="md-cell--right major-button submit-get-in-touch"  onClick={formSubmit}>Send</Button>
     </div>
  </Grid>
 </form>
