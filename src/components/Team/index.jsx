@@ -39,7 +39,7 @@ const MEMBERS = [
         qualifications: 'LLB',
         title: 'Senior Solicitor',
         phone: '+64 9 441 3596',
-        mobile: '+64 27 715 0587',
+        mobile: '+64 27 2727 572',
         email: 'kieran@evolutionlawyers.nz',
         linkedIn: 'https://nz.linkedin.com/in/kieran-boyle-29564399',
         photo: 'Kieran'
