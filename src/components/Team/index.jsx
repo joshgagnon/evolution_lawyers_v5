@@ -45,7 +45,7 @@ const MEMBERS = [
         photo: 'Kieran'
     }, {
         name: 'Lindy van Eck',
-        title: 'Legal Secretary',
+        title: ' Legal Executive',
         phone: '+64 9 623 0927',
         mobile: '+64 27 546 9744',
         email: 'lindy@evolutionlawyers.nz',
@@ -53,9 +53,15 @@ const MEMBERS = [
     }, {
         name: 'Georgia Jackson',
         title: 'Office Administrator',
+        phone: '+64 9 553 5355',
         mobile: '+64 272 465 838',
         email: 'georgia@evolutionlawyers.nz',
         photo: 'Georgia_pp'
+    }, {
+        name: 'George Acton-Adams',
+        phone: '+64 9 623 0644',
+        email: 'george@evolutionlawyers.nz',
+        photo: 'male-placeholder-image'
     }
 
 ]
@@ -69,15 +75,15 @@ const Member = (props) => {
         <div className="text-block">
     <div className="name">{ name }</div>
     { qualifications && <div className="qualifications">{ qualifications }</div> }
-    <div className="title">{ title }</div>
+            { title && <div className="title">{ title }</div> }
     <div className="phone">
         { phone && <a href={`tel:${phone.replace(' ', '')}`}><i className="fa fa-phone"/> { phone }</a> }
-        { mobile &&<a href={`tel:${mobile.replace(' ', '')}`}><i className="fa fa-mobile"/> { mobile }</a> }
+        { false && mobile &&<a href={`tel:${mobile.replace(' ', '')}`}><i className="fa fa-mobile"/> { mobile }</a> }
     </div>
       { email && <div className="email">
       <a href={`mailto:${email}`}><i className="fa fa-envelope"/> { email }</a>
     </div> }
-    { linkedIn && <div className="social">
+    { false && linkedIn && <div className="social">
                 <a href={linkedIn} target="_blank" rel="noopener">
                     <i aria-hidden="true" className="fa fa-linkedin-square" title="LinkedIn"></i>
                     <span className="sr-only">LinkedIn</span>

@@ -57,7 +57,7 @@ const NavMenu = (props) => {
                     <div><Link to="/services" onClick={props.onNavClick}>Services</Link></div>
                     <div><Link to="/fees" onClick={props.onNavClick}>Fees</Link></div>
                     <div><Link to="/resources" onClick={props.onNavClick}>Resources</Link></div>
-                    <div><Link to="/new-client" onClick={props.onNavClick}>New Client Signup</Link></div>
+                    {/* <div><Link to="/new-client" onClick={props.onNavClick}>New Client Signup</Link></div> */}
                 </Cell>
 
 
@@ -200,9 +200,9 @@ const NavbarLinks = () => {
         <Button flat className="md-cell--right major-button" href="/contact">
             Contact Us
         </Button>
-        <Button flat className="md-cell--right major-button" href="/new-client">
+        {/* <Button flat className="md-cell--right major-button" href="/new-client">
             Client Signup
-        </Button>
+        </Button> */ }
     </div>
 }
 
