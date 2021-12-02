@@ -12,8 +12,8 @@ const data = {
     headers: ['Service', 'Fee estimate*'],
     rows: [
         ['Refinance', '$800'],
-        ['Sale', '$$1,200'],
-        ['Purchase', '$1450'],
+        ['Sale', '$1,200'],
+        ['Purchase', '$1,450'],
         ['Pre-auction Document Review', '$350'],
         ['Purchase “off the plans”', '$2,150']
     ]
