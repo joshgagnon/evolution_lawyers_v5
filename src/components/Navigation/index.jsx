@@ -45,7 +45,7 @@ const NavMenu = (props) => {
     const imageData = props.wolf.childImageSharp.fluid
     return <div className="main-nav-menu md-dialog--full-page md-dialog">
         <BackgroundImage Tag="section"
-                         className={'guidebg'}
+                         className={'navbg'}
                          style={{backgroundSize: 'cover'}}
                          fluid={imageData}
         >

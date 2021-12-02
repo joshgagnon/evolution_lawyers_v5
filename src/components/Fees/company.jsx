@@ -61,8 +61,7 @@ common services are set out below:</p>
           <FeeTable data={commercial} />
 
           <p className="small-para">
-          *Fee estimates are exclusive of GST and disbursements. Our fee may be higher if the attendances required for your matter are more than usual.
-          </p>
+              *Fee estimates are exclusive of GST, disbursements, and expenses. Our fee may be higher if the attendances required for your matter are more than usual.          </p>
 
            <p className="small-para">
            For more information about Company &amp; Commercial Law, check out our <a href="/resources">Resources</a> page

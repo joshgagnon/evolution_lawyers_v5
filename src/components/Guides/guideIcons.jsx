@@ -49,7 +49,7 @@ const GuideIcons = (props) => (
             <ConveyancingIcons/>
 
 
-            <Cell size={10} tabletSize={8} desktopOffset={1} phoneOffset={0} tabletOffset={0}>
+            {/*<Cell size={10} tabletSize={8} desktopOffset={1} phoneOffset={0} tabletOffset={0}>
                 <div className="sub-title-section" style={{textAlign: 'center'}}>
                     <h1 className="line">Debt Recovery</h1>
                     <div className="separator"/>
@@ -57,7 +57,7 @@ const GuideIcons = (props) => (
                 </div>
             </Cell>
 
-            <DebtRecoveryIcons/>
+            <DebtRecoveryIcons/>*/}
 
         </Grid>
     </section>

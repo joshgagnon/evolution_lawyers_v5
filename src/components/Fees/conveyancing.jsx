@@ -11,12 +11,11 @@ import Contact from '../Contact';
 const data = {
     headers: ['Service', 'Fee estimate*'],
     rows: [
-        ['Refinance', '$700'],
-        ['Sale', '$940-$1,300'],
-        ['Purchase', '$1,050-$1,500'],
-        ['Refinance & Transfer', '$1,100'],
-        ['Pre-auction Document Review', '$275'],
-        ['Purchase “off the plans”', '$1,650']
+        ['Refinance', '$800'],
+        ['Sale', '$$1,200'],
+        ['Purchase', '$1450'],
+        ['Pre-auction Document Review', '$350'],
+        ['Purchase “off the plans”', '$2,150']
     ]
 };
 
@@ -47,8 +46,7 @@ the more common services are set out below: </p>
           <FeeTable data={data} />
 
           <p className="small-para">
-          *Fee estimates are exclusive of GST and disbursements. Our fee may be higher if the attendances required for your matter are more than usual.
-          </p>
+              *Fee estimates are exclusive of GST, disbursements, and expenses. Our fee may be higher if the attendances required for your matter are more than usual.          </p>
 
            <p className="small-para">
            For more information about Conveyancing and Property, check out our <a href="/resources">Resources</a> page

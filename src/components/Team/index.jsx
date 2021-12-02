@@ -45,14 +45,14 @@ const MEMBERS = [
         photo: 'Kieran'
     }, {
         name: 'Lindy van Eck',
-        title: ' Legal Executive',
+        title: 'Legal Executive',
         phone: '+64 9 623 0927',
         mobile: '+64 27 546 9744',
         email: 'lindy@evolutionlawyers.nz',
         photo: 'Lindy_pp'
     }, {
         name: 'Georgia Jackson',
-        title: 'Office Administrator',
+        title: 'Legal Secretary',
         phone: '+64 9 553 5355',
         mobile: '+64 272 465 838',
         email: 'georgia@evolutionlawyers.nz',
