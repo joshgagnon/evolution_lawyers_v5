@@ -93,12 +93,12 @@ const Contact = ({ className }) => {
           <div className="contact-row"><a href={`tel:${config.phone.replace(/ /g, '')}`} onClick={phoneClick}>{ config.phone }</a></div>
           <div className="contact-row"><a href={`mailto:${config.email}`} onClick={emailClick}>{ config.email }</a></div>
 
-          <div >
+          <div>
           <br/>
-                    <Button flat className="md-cell--right major-button" href="/new-client" >
+              {/* <Button flat className="md-cell--right major-button" href="/new-client" >
                       Become Client
-                   </Button>
-                   </div>
+                   </Button> */}
+          </div>
           </Cell>
 
            <Cell size={6} tabletSize={6} phoneSize={4} desktopOffset={3} tabletOffset={1} phoneOffset={0}>

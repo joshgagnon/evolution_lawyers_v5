@@ -61,7 +61,7 @@ const MEMBERS = [
         name: 'George Acton-Adams',
         phone: '+64 9 623 0644',
         email: 'george@evolutionlawyers.nz',
-        photo: 'male-placeholder-image'
+        photo: 'George'
     }
 
 ]
