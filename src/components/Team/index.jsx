@@ -35,15 +35,6 @@ const MEMBERS = [
         linkedIn: 'https://nz.linkedin.com/in/sophie-gagnon-405b1299',
         photo: 'Sophie'
     }, {
-        name: 'Kieran Boyle',
-        qualifications: 'LLB',
-        title: 'Senior Solicitor',
-        phone: '+64 9 441 3596',
-        mobile: '+64 27 2727 572',
-        email: 'kieran@evolutionlawyers.nz',
-        linkedIn: 'https://nz.linkedin.com/in/kieran-boyle-29564399',
-        photo: 'Kieran'
-    }, {
         name: 'Lindy van Eck',
         title: 'Legal Executive',
         phone: '+64 9 623 0927',
