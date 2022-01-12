@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import Layout from "../layout";
 import Comp from "../components/NewClient";
 import config from "../../data/SiteConfig";
+import Contact from "../components/Contact";
 
 class NewClientPage extends Component {
   render() {
@@ -13,7 +14,8 @@ class NewClientPage extends Component {
             <title>{`New Client | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}/new-client`} />
           </Helmet>
-          <Comp />
+          {/* } <Comp /> */}
+          { <Contact /> }
         </div>
       </Layout>
     );
