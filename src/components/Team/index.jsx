@@ -35,7 +35,8 @@ const MEMBERS = [
         name: 'Zabariah Naz',
         title: 'Associate',
         email: 'zabariah@evolutionlawyers.nz',
-        photo: 'male-placeholder-image'
+        photo: 'male-placeholder-image',
+        phone: '+64 9 441 3596'
     },{
         name: 'George Acton-Adams',
         title: 'Solicitor',
@@ -54,7 +55,8 @@ const MEMBERS = [
         name: 'Susanne Ealey',
         title: 'Legal Executive',
         email: 'susanne@evolutionlawyers.nz',
-        photo: 'male-placeholder-image'
+        photo: 'male-placeholder-image',
+        phone:'+64 9 280 4300'
 
     },{
         name: 'Georgia Jackson',
