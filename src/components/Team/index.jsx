@@ -43,14 +43,6 @@ const MEMBERS = [
         phone: '+64 9 623 0644',
         email: 'george@evolutionlawyers.nz',
         photo: 'George'
-    },
-    {
-        name: 'Lindy van Eck',
-        title: 'Legal Executive',
-        phone: '+64 9 623 0927',
-        mobile: '+64 27 546 9744',
-        email: 'lindy@evolutionlawyers.nz',
-        photo: 'Lindy_pp'
     }, {
         name: 'Susanne Ealey',
         title: 'Legal Executive',
