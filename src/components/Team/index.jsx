@@ -37,20 +37,32 @@ const MEMBERS = [
         email: 'zabariah@evolutionlawyers.nz',
         photo: 'male-placeholder-image',
         phone: '+64 9 441 3596'
-    },{
+    },
+
+
+    {
         name: 'George Acton-Adams',
         title: 'Solicitor',
         phone: '+64 9 623 0644',
         email: 'george@evolutionlawyers.nz',
         photo: 'George'
-    }, {
-        name: 'Susanne Ealey',
-        title: 'Legal Executive',
-        email: 'susanne@evolutionlawyers.nz',
-        photo: 'male-placeholder-image',
-        phone:'+64 9 280 4300'
+    },
+    {
+        name: 'Bryden Lloyd',
+        title: 'Solicitor',
+        phone: '09 623 0927',
+        email: 'bryden@evolutionlawyers.nz',
+        photo: 'male-placeholder-image'
+    },
+    {
+        name: 'Samuel Chand',
+        title: 'Solicitor',
+        phone: '09 280 4300',
+        email: 'samuel@evolutionlawyers.nz   ',
+        photo: 'male-placeholder-image'
+    },
 
-    },{
+    {
         name: 'Georgia Jackson',
         title: 'Legal Secretary',
         phone: '+64 9 553 5355',
