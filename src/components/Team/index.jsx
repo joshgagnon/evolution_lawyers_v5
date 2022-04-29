@@ -31,15 +31,7 @@ const MEMBERS = [
         email: 'sophie@evolutionlawyers.nz',
         linkedIn: 'https://nz.linkedin.com/in/sophie-gagnon-405b1299',
         photo: 'Sophie'
-    }, {
-        name: 'Zabariah Naz',
-        title: 'Associate',
-        email: 'zabariah@evolutionlawyers.nz',
-        photo: 'male-placeholder-image',
-        phone: '+64 9 441 3596'
     },
-
-
     {
         name: 'George Acton-Adams',
         title: 'Solicitor',
