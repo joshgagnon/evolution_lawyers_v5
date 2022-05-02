@@ -53,7 +53,7 @@ const config = {
     }
   ],*/
   copyright: `Copyright © ${(new Date()).getFullYear()}. CataLex Ltd`, // Copyright string for the footer of the website and RSS feed.
-  map: 'QUl6YVN5QjhrVHpsenRWdldJQ09iUkxFV2RXLVc3Mm82aHpVMkNB',
+  map: 'QUl6YVN5QUxZeVozMDhjMXU5OWw0VmtOVm9lYWRCV205SGRsdFNF',
   placeId: 'ChIJ051_-TJGDW0Rx5aOs49cofM',
 
 };
